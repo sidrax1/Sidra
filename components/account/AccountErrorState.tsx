@@ -21,12 +21,6 @@ export function AccountErrorState({
 }: AccountErrorStateProps): React.JSX.Element {
   return (
     <ErrorState
-      icon={
-        <ShieldAlert
-          aria-hidden={true}
-          className="size-7"
-        />
-      }
       title={title}
       description={description}
       action={
