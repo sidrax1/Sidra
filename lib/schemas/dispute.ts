@@ -214,6 +214,10 @@ export type CreateDisputeInput = z.infer<
   typeof createDisputeSchema
 >;
 
+export type CreateDisputeFormValues = z.input<
+  typeof createDisputeSchema
+>;
+
 export type DisputeEvidenceInput = z.infer<
   typeof disputeEvidenceSchema
 >;

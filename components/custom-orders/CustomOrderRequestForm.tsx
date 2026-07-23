@@ -35,6 +35,11 @@ type CustomOrderRequestInput =
    typeof submitCustomOrderSchema
   >;
 
+type CustomOrderRequestFormValues =
+  z.input<
+   typeof submitCustomOrderSchema
+  >;
+
 interface CustomOrderRequestFormProps {
   readonly categoryId?: string;
   readonly studioId?: string;
@@ -63,7 +68,11 @@ export function CustomOrderRequestForm({
     },
     handleSubmit,
     register,
-  } = useForm<CustomOrderRequestInput>({
+  } = useForm<
+    CustomOrderRequestFormValues,
+    unknown,
+    CustomOrderRequestInput
+  >({
     resolver:
       zodResolver(
         submitCustomOrderSchema

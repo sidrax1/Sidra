@@ -23,6 +23,7 @@ import { Textarea } from "@/components/ui/Textarea";
 import {
   createDisputeSchema,
   type CreateDisputeInput,
+  type CreateDisputeFormValues,
 } from "@/lib/schemas/dispute";
 import type {
   Order,
@@ -121,7 +122,11 @@ export function CreateDisputeForm({
     handleSubmit,
     register,
     watch,
-  } = useForm<CreateDisputeInput>({
+  } = useForm<
+    CreateDisputeFormValues,
+    unknown,
+    CreateDisputeInput
+  >({
     resolver: zodResolver(
       createDisputeSchema
     ),
