@@ -12,6 +12,8 @@ import {
   zodResolver,
 } from "@hookform/resolvers/zod";
 
+import type { z } from "zod";
+
 import {
   Button,
 } from "@/components/ui/Button";
@@ -78,7 +80,7 @@ export function AddressForm({
     register,
     reset,
     watch,
-  } = useForm<AddressInput>({
+  } = useForm<z.input<typeof addressSchema>>({
     resolver:
       zodResolver(
         addressSchema
@@ -140,7 +142,7 @@ return (
  className="grid gap-6"
  onSubmit={handleSubmit(
    async (input) => {
-     await onSubmit(input);
+     await onSubmit(addressSchema.parse(input));
    }
  )}
 >
