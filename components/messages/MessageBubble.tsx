@@ -32,6 +32,12 @@ export function MessageBubble({
    message.senderId ===
    currentUserId;
 
+  const readByRecipient =
+   message.readBy.some(
+     (readerId) =>
+       readerId !== message.senderId
+   );
+
  return (
   <article
     className={cn(
@@ -103,13 +109,13 @@ export function MessageBubble({
  {own ? (
   <CheckCheck
    aria-label={
-     message.read
+     readByRecipient
       ? "Read"
       : "Delivered"
    }
    className={cn(
      "size-3.5",
-     message.read &&
+     readByRecipient &&
       "text-[var(--color-success)]"
 
            )}

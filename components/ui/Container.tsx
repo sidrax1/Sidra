@@ -62,7 +62,7 @@ const containerVariants = cva(
 export interface ContainerProps
   extends HTMLAttributes<HTMLDivElement>,
    VariantProps<typeof containerVariants> {
-  readonly as?: "div" | "section" | "main";
+  readonly as?: "div" | "section" | "main" | "article";
 }
 
 export const Container = forwardRef<

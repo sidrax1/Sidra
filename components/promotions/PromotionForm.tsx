@@ -119,14 +119,18 @@ export function PromotionForm({
       maximumDiscountPaise:
         promotion?.eligibility.maximumDiscountPaise ??
         undefined,
-      productIds:
-        promotion?.eligibility.productIds ?? [],
-      categoryIds:
-        promotion?.eligibility.categoryIds ?? [],
-      studioIds:
-        promotion?.eligibility.studioIds ?? [],
-      customerIds:
-        promotion?.eligibility.customerIds ?? [],
+      productIds: [
+        ...(promotion?.eligibility.productIds ?? []),
+      ],
+      categoryIds: [
+        ...(promotion?.eligibility.categoryIds ?? []),
+      ],
+      studioIds: [
+        ...(promotion?.eligibility.studioIds ?? []),
+      ],
+      customerIds: [
+        ...(promotion?.eligibility.customerIds ?? []),
+      ],
       firstOrderOnly:
         promotion?.eligibility.firstOrderOnly ?? false,
       totalUsageLimit:
