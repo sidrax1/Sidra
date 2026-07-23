@@ -42,7 +42,7 @@ export function CustomOrderReferenceGallery({
         )}
       >
         <span className="mx-auto flex size-14 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.08)] text-[var(--color-gold-600)]">
-          <Images aria-hidden="true" className="size-6" />
+          <Images aria-hidden={true} className="size-6" />
         </span>
 
         <h2 className="mt-5 font-heading text-3xl font-medium tracking-[-0.03em] text-foreground">
@@ -98,7 +98,7 @@ export function CustomOrderReferenceGallery({
                   <div className="flex size-full flex-col items-center justify-center gap-4 p-6 text-center">
                     <span className="flex size-16 items-center justify-center rounded-full border border-border bg-card text-[var(--color-gold-600)]">
                       <FileText
-                        aria-hidden="true"
+                        aria-hidden={true}
                         className="size-7"
                       />
                     </span>
@@ -113,7 +113,7 @@ export function CustomOrderReferenceGallery({
                   {onPreview ? (
                     <IconButton
                       label={`Preview ${reference.fileName}`}
-                      icon={<Expand aria-hidden="true" />}
+                      icon={<Expand aria-hidden={true} />}
                       appearance="glass"
                       size="sm"
                       onClick={() =>
@@ -131,7 +131,7 @@ export function CustomOrderReferenceGallery({
                     className="flex size-9 items-center justify-center rounded-full border border-white/20 bg-black/45 text-white backdrop-blur-xl"
                   >
                     <Download
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-4"
                     />
                   </a>

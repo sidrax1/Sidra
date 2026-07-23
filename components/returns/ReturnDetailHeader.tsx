@@ -45,7 +45,7 @@ export function ReturnDetailHeader({
     >
       <div className="relative overflow-hidden bg-[var(--color-black-900)] px-6 py-10 text-white md:px-10">
         <div
-          aria-hidden="true"
+          aria-hidden={true}
           className="pointer-events-none absolute inset-0"
           style={{
             background: urgent
@@ -106,7 +106,7 @@ export function ReturnDetailHeader({
             <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/60">
               <span className="inline-flex items-center gap-2">
                 <ReceiptText
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 Order #
@@ -117,7 +117,7 @@ export function ReturnDetailHeader({
 
               <span className="inline-flex items-center gap-2">
                 <Store
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 {
@@ -127,7 +127,7 @@ export function ReturnDetailHeader({
 
               <span className="inline-flex items-center gap-2">
                 <UserRound
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 {
@@ -137,7 +137,7 @@ export function ReturnDetailHeader({
 
               <span className="inline-flex items-center gap-2">
                 <CalendarClock
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 Due{" "}
@@ -169,7 +169,7 @@ export function ReturnDetailHeader({
                 ) : (
                   <div className="flex size-full items-center justify-center">
                     <PackageCheck
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-10 text-[var(--color-gold-500)]"
                     />
                   </div>
@@ -273,7 +273,7 @@ export function ReturnDetailHeader({
         <section className="rounded-[var(--radius-lg)] border border-border bg-background p-5">
           <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-muted">
             <ShieldCheck
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5"
             />
             Final Refund

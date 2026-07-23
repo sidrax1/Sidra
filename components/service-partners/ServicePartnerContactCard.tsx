@@ -46,7 +46,7 @@ export function ServicePartnerContactCard({
         <div className="flex items-center gap-3">
           <span className="flex size-10 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.07)] text-[var(--color-gold-600)]">
             <UserRound
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           </span>
@@ -95,7 +95,7 @@ export function ServicePartnerContactCard({
             className="flex items-center gap-3 rounded-[var(--radius-md)] border border-border bg-background p-4 text-sm transition-[border-color,background-color] hover:border-[color:rgb(200_169_106_/_0.4)] hover:bg-card"
           >
             <Mail
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4 shrink-0 text-[var(--color-gold-600)]"
             />
 
@@ -104,7 +104,7 @@ export function ServicePartnerContactCard({
             </span>
 
             <ExternalLink
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-muted"
             />
           </a>
@@ -114,7 +114,7 @@ export function ServicePartnerContactCard({
             className="flex items-center gap-3 rounded-[var(--radius-md)] border border-border bg-background p-4 text-sm transition-[border-color,background-color] hover:border-[color:rgb(200_169_106_/_0.4)] hover:bg-card"
           >
             <Phone
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4 shrink-0 text-[var(--color-gold-600)]"
             />
 
@@ -125,7 +125,7 @@ export function ServicePartnerContactCard({
             </span>
 
             <ExternalLink
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-muted"
             />
           </a>
@@ -136,7 +136,7 @@ export function ServicePartnerContactCard({
               className="flex items-center gap-3 rounded-[var(--radius-md)] border border-border bg-background p-4 text-sm transition-[border-color,background-color] hover:border-[color:rgb(200_169_106_/_0.4)] hover:bg-card"
             >
               <Phone
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 shrink-0 text-[var(--color-gold-600)]"
               />
 
@@ -162,7 +162,7 @@ export function ServicePartnerContactCard({
               className="flex items-center gap-3 rounded-[var(--radius-md)] border border-border bg-background p-4 text-sm transition-[border-color,background-color] hover:border-[color:rgb(200_169_106_/_0.4)] hover:bg-card"
             >
               <ExternalLink
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 shrink-0 text-[var(--color-gold-600)]"
               />
 
@@ -178,7 +178,7 @@ export function ServicePartnerContactCard({
         <address className="not-italic">
           <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-muted">
             <MapPin
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             Registered Address

@@ -69,7 +69,7 @@ export function AdminSearchToolbar({
           disabled={loading}
           onClick={onOpenFilters}
         >
-          <Filter aria-hidden="true" />
+          <Filter aria-hidden={true} />
           Filters
         </Button>
       ) : null}
@@ -82,7 +82,7 @@ export function AdminSearchToolbar({
      }}
     >
      <RefreshCw
-       aria-hidden="true"
+       aria-hidden={true}
        className={cn("size-4", loading && "animate-spin")}
      />
      Refresh

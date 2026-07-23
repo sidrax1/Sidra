@@ -194,7 +194,7 @@ export function ReturnPickupDialog({
             description="The selected logistics provider and pickup schedule are recorded server-side and shared with the customer."
             icon={
               <Truck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             }
@@ -259,7 +259,7 @@ export function ReturnPickupDialog({
             >
               <div className="relative">
                 <CalendarClock
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-muted"
                 />
 
@@ -295,7 +295,7 @@ export function ReturnPickupDialog({
           <section className="grid gap-5 rounded-[var(--radius-lg)] border border-border bg-card p-5">
             <div className="flex items-center gap-3">
               <MapPin
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5 text-[var(--color-gold-600)]"
               />
 
@@ -533,7 +533,7 @@ export function ReturnPickupDialog({
             }}
           >
             <Truck
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Schedule Pickup

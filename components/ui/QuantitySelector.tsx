@@ -33,7 +33,7 @@ export function QuantitySelector({
 shadow-[var(--shadow-card)]">
     <IconButton
      label="Decrease quantity"
-     icon={<Minus aria-hidden="true" />}
+     icon={<Minus aria-hidden={true} />}
      appearance="ghost"
      size="sm"
      disabled={disabled || value <= minimum}
@@ -49,7 +49,7 @@ shadow-[var(--shadow-card)]">
 
     <IconButton
      label="Increase quantity"
-     icon={<Plus aria-hidden="true" />}
+     icon={<Plus aria-hidden={true} />}
      appearance="ghost"
      size="sm"
      disabled={disabled || value >= maximum}

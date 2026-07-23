@@ -26,7 +26,7 @@ export function PayoutCard({
 border-[color:rgb(200_169_106_/_0.28)] bg-[color:rgb(200_169_106_/_0.08)]
 text-[var(--color-gold-600)]">
          <CircleDollarSign
-           aria-hidden="true"
+           aria-hidden={true}
            className="size-5"
          />
        </span>
@@ -43,7 +43,7 @@ text-[var(--color-gold-600)]">
        <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-xs text-muted">
         <span className="inline-flex items-center gap-2">
          <CalendarDays
-           aria-hidden="true"
+           aria-hidden={true}
            className="size-3.5"
          />
          Created {formatDate(payout.createdAt)}
@@ -52,7 +52,7 @@ text-[var(--color-gold-600)]">
 
      <span className="inline-flex items-center gap-2">
       <ReceiptText
-        aria-hidden="true"
+        aria-hidden={true}
         className="size-3.5"
       />
       {payout.orderIds.length.toLocaleString("en-IN")} orders

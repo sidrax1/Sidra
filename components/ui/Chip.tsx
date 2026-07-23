@@ -52,7 +52,7 @@ focus-visible:ring-[var(--color-gold-500)]"
 hover:bg-black/5 focus-visible:ring-2 focus-visible:ring-[var(--color-gold-500)]
 dark:hover:bg-white/5"
        >
-         <X aria-hidden="true" className="size-3.5" />
+         <X aria-hidden={true} className="size-3.5" />
        </button>
      ) : null}
     </span>

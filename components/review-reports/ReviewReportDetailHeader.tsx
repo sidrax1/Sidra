@@ -38,7 +38,7 @@ export function ReviewReportDetailHeader({
     >
       <div className="relative overflow-hidden bg-[var(--color-black-900)] px-6 py-10 text-white md:px-10">
         <div
-          aria-hidden="true"
+          aria-hidden={true}
           className="pointer-events-none absolute inset-0"
           style={{
             background: highRisk
@@ -68,7 +68,7 @@ export function ReviewReportDetailHeader({
                 }
               >
                 <ShieldAlert
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="mr-1 size-3.5"
                 />
                 Risk {report.riskScore}
@@ -86,7 +86,7 @@ export function ReviewReportDetailHeader({
             <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/60">
               <span className="inline-flex items-center gap-2">
                 <UserRound
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 {report.reporter.reporterName}
@@ -94,7 +94,7 @@ export function ReviewReportDetailHeader({
 
               <span className="inline-flex items-center gap-2">
                 <CalendarDays
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 {formatDateTime(report.createdAt)}
@@ -102,7 +102,7 @@ export function ReviewReportDetailHeader({
 
               <span className="inline-flex items-center gap-2">
                 <Flag
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 {report.reportCountAtSubmission.toLocaleString(

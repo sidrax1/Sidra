@@ -90,7 +90,7 @@ export function ServicePartnerApplicationSidebarSummary({
           <div className="flex items-start justify-between gap-5">
             <dt className="inline-flex items-center gap-2 text-sm text-muted">
               <Building2
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mt-0.5 size-4 text-[var(--color-gold-600)]"
               />
               Legal Name
@@ -106,7 +106,7 @@ export function ServicePartnerApplicationSidebarSummary({
           <div className="flex items-start justify-between gap-5">
             <dt className="inline-flex items-center gap-2 text-sm text-muted">
               <UserRound
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mt-0.5 size-4 text-[var(--color-gold-600)]"
               />
               Contact
@@ -123,7 +123,7 @@ export function ServicePartnerApplicationSidebarSummary({
           <div className="flex items-start justify-between gap-5">
             <dt className="inline-flex items-center gap-2 text-sm text-muted">
               <MapPin
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mt-0.5 size-4 text-[var(--color-gold-600)]"
               />
               Location
@@ -147,7 +147,7 @@ export function ServicePartnerApplicationSidebarSummary({
           <div className="flex items-start justify-between gap-5">
             <dt className="inline-flex items-center gap-2 text-sm text-muted">
               <Wrench
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mt-0.5 size-4 text-[var(--color-gold-600)]"
               />
               Capabilities
@@ -164,7 +164,7 @@ export function ServicePartnerApplicationSidebarSummary({
           <div className="flex items-start justify-between gap-5">
             <dt className="inline-flex items-center gap-2 text-sm text-muted">
               <FileCheck2
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mt-0.5 size-4 text-[var(--color-gold-600)]"
               />
               Documents
@@ -181,7 +181,7 @@ export function ServicePartnerApplicationSidebarSummary({
           <div className="flex items-start justify-between gap-5">
             <dt className="inline-flex items-center gap-2 text-sm text-muted">
               <CalendarClock
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mt-0.5 size-4 text-[var(--color-gold-600)]"
               />
               Submitted

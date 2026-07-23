@@ -129,7 +129,7 @@ export function AdminNavigation({
        )}
       >
        <item.icon
-         aria-hidden="true"
+         aria-hidden={true}
          className="size-4 shrink-0"
        />
 

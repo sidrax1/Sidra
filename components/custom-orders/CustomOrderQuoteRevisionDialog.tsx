@@ -98,7 +98,7 @@ export function CustomOrderQuoteRevisionDialog({
             }
             icon={
               <ShieldAlert
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             }
@@ -112,7 +112,7 @@ export function CustomOrderQuoteRevisionDialog({
           >
             <div className="relative">
               <MessageSquareText
-                aria-hidden="true"
+                aria-hidden={true}
                 className="pointer-events-none absolute left-4 top-4 size-4 text-muted"
               />
 

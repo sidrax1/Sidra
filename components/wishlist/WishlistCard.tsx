@@ -140,7 +140,7 @@ text-[var(--color-gold-600)]">
       <IconButton
        label={`Remove ${product.title} from wishlist`}
        icon={
-         <Trash2 aria-hidden="true" />
+         <Trash2 aria-hidden={true} />
 
        }
        appearance="glass"
@@ -196,7 +196,7 @@ tracking-[-0.025em] text-foreground">
        }}
      >
        <ShoppingBag
-         aria-hidden="true"
+         aria-hidden={true}
        />
        {unavailable
          ? "Unavailable"

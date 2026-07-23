@@ -176,7 +176,7 @@ export function CreateReviewReportDialog({
             description="Provide accurate details. Repeated misuse of reporting tools may result in account restrictions."
             icon={
               <ShieldAlert
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             }
@@ -255,7 +255,7 @@ export function CreateReviewReportDialog({
               loadingLabel="Submitting Report"
             >
               <Flag
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
               Submit Report

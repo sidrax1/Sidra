@@ -50,7 +50,7 @@ export function CmsSectionListEditor({
            disabled={disabled}
            onClick={onAddSection}
          >
-           <Plus aria-hidden="true" />
+           <Plus aria-hidden={true} />
            Add Section
          </Button>
        }
@@ -77,7 +77,7 @@ export function CmsSectionListEditor({
   disabled={disabled}
   onClick={onAddSection}
  >
-  <Plus aria-hidden="true" />
+  <Plus aria-hidden={true} />
   Add Section
  </Button>
 </header>

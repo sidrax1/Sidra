@@ -85,7 +85,7 @@ export function ProductDetails({
        {product.featured ? (
          <Badge variant="gold">
            <Sparkles
-            aria-hidden="true"
+            aria-hidden={true}
             className="mr-1 size-3.5"
            />
            Curated by Sidra
@@ -190,7 +190,7 @@ leading-[0.95] tracking-[-0.05em] text-foreground">
 
  >
   <ShoppingBag
-   aria-hidden="true"
+   aria-hidden={true}
   />
   {soldOut
    ? "Unavailable"
@@ -231,7 +231,7 @@ leading-[0.95] tracking-[-0.05em] text-foreground">
  }}
 >
  <Heart
-   aria-hidden="true"
+   aria-hidden={true}
 
     className={cn(
       wished &&
@@ -249,7 +249,7 @@ leading-[0.95] tracking-[-0.05em] text-foreground">
 <div className="grid gap-4 text-sm text-muted sm:grid-cols-3">
  <div className="flex items-start gap-3">
   <ShieldCheck
-    aria-hidden="true"
+    aria-hidden={true}
     className="mt-0.5 size-5 shrink-0 text-[var(--color-gold-600)]"
   />
 
@@ -265,7 +265,7 @@ leading-[0.95] tracking-[-0.05em] text-foreground">
 
  <div className="flex items-start gap-3">
   <Truck
-   aria-hidden="true"
+   aria-hidden={true}
    className="mt-0.5 size-5 shrink-0 text-[var(--color-gold-600)]"
   />
 
@@ -282,7 +282,7 @@ leading-[0.95] tracking-[-0.05em] text-foreground">
 
       <div className="flex items-start gap-3">
        <Sparkles
-        aria-hidden="true"
+        aria-hidden={true}
         className="mt-0.5 size-5 shrink-0 text-[var(--color-gold-600)]"
        />
 

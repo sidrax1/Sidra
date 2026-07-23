@@ -52,7 +52,7 @@ export function AddressSelector({
             {selected ? (
               <span className="absolute right-4 top-4 z-10 flex size-7 items-center justify-center rounded-full bg-[var(--color-gold-500)] text-[var(--color-black-900)]">
                 <CheckCircle2
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
               </span>

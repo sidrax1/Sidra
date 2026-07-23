@@ -55,7 +55,7 @@ export function ReviewSortMenu({
       )}
     >
       <ArrowDownUp
-        aria-hidden="true"
+        aria-hidden={true}
         className="pointer-events-none absolute left-4 top-1/2 z-10 size-4 -translate-y-1/2 text-muted"
       />
 

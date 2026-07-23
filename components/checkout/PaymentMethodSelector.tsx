@@ -137,7 +137,7 @@ export function PaymentMethodSelector({
             )}
           >
             <Icon
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           </span>

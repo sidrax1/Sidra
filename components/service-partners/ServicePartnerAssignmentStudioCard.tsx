@@ -56,7 +56,7 @@ export function ServicePartnerAssignmentStudioCard({
       <header className="flex items-center justify-between gap-4 border-b border-border bg-[color:rgb(200_169_106_/_0.05)] p-5">
         <div className="flex items-center gap-3">
           <Building2
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5 text-[var(--color-gold-600)]"
           />
 
@@ -86,7 +86,7 @@ export function ServicePartnerAssignmentStudioCard({
             ) : (
               <div className="flex size-full items-center justify-center">
                 <ShieldCheck
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-8 text-[var(--color-gold-600)]"
                 />
               </div>
@@ -109,7 +109,7 @@ export function ServicePartnerAssignmentStudioCard({
           <div className="flex items-start justify-between gap-5 rounded-[var(--radius-md)] border border-border bg-background p-4">
             <dt className="inline-flex items-center gap-2 text-sm text-muted">
               <Hash
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mt-0.5 size-4 text-[var(--color-gold-600)]"
               />
               Studio ID
@@ -127,7 +127,7 @@ export function ServicePartnerAssignmentStudioCard({
             <div className="flex items-start justify-between gap-5 rounded-[var(--radius-md)] border border-border bg-background p-4">
               <dt className="inline-flex items-center gap-2 text-sm text-muted">
                 <MapPin
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="mt-0.5 size-4 text-[var(--color-gold-600)]"
                 />
                 Location
@@ -146,7 +146,7 @@ export function ServicePartnerAssignmentStudioCard({
               className="flex items-center gap-3 rounded-[var(--radius-md)] border border-border bg-background p-4 text-sm transition-[border-color] hover:border-[color:rgb(200_169_106_/_0.4)]"
             >
               <Mail
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 shrink-0 text-[var(--color-gold-600)]"
               />
 
@@ -162,7 +162,7 @@ export function ServicePartnerAssignmentStudioCard({
               className="flex items-center gap-3 rounded-[var(--radius-md)] border border-border bg-background p-4 text-sm transition-[border-color] hover:border-[color:rgb(200_169_106_/_0.4)]"
             >
               <Phone
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 shrink-0 text-[var(--color-gold-600)]"
               />
 
@@ -180,7 +180,7 @@ export function ServicePartnerAssignmentStudioCard({
               className="flex items-center gap-3 rounded-[var(--radius-md)] border border-border bg-background p-4 text-sm transition-[border-color] hover:border-[color:rgb(200_169_106_/_0.4)]"
             >
               <ExternalLink
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 shrink-0 text-[var(--color-gold-600)]"
               />
 

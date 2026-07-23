@@ -46,7 +46,7 @@ export function GiftCardBalanceChecker({
       <header className="flex items-start gap-4">
         <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.08)] text-[var(--color-gold-600)]">
           <Gift
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -92,7 +92,7 @@ export function GiftCardBalanceChecker({
             }}
           >
             <Search
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Check
@@ -105,7 +105,7 @@ export function GiftCardBalanceChecker({
           <div className="rounded-[var(--radius-lg)] border border-[color:rgb(62_107_82_/_0.3)] bg-[color:rgb(62_107_82_/_0.06)] p-6">
             <div className="flex items-center gap-3">
               <BadgeCheck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5 text-[var(--color-success)]"
               />
 
@@ -138,7 +138,7 @@ export function GiftCardBalanceChecker({
             description={result.message}
             icon={
               <ShieldCheck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             }

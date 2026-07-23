@@ -100,7 +100,7 @@ export function ReviewAnalyticsSummary({
           )} total collector reviews`}
           icon={
             <Star
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5 fill-current"
             />
           }
@@ -116,7 +116,7 @@ export function ReviewAnalyticsSummary({
           )} awaiting moderation`}
           icon={
             <MessageSquareText
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           }
@@ -130,7 +130,7 @@ export function ReviewAnalyticsSummary({
           )} reviews linked to completed orders`}
           icon={
             <BadgeCheck
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           }
@@ -144,7 +144,7 @@ export function ReviewAnalyticsSummary({
           description="Requires moderation investigation"
           icon={
             <Flag
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           }

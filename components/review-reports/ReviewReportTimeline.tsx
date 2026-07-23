@@ -64,7 +64,7 @@ export function ReviewReportTimeline({
       )}
     >
       <div
-        aria-hidden="true"
+        aria-hidden={true}
         className="absolute bottom-6 left-[1.35rem] top-6 hidden w-px bg-border sm:block"
       />
 
@@ -92,7 +92,7 @@ export function ReviewReportTimeline({
               )}
             >
               <Icon
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             </span>
@@ -107,7 +107,7 @@ export function ReviewReportTimeline({
                 )}
               >
                 <Icon
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
               </span>

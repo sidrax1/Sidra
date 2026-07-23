@@ -35,13 +35,13 @@ dark:bg-[color:rgb(17_17_17_/_0.88)] md:px-8">
       <div className="flex items-center gap-2">
        <IconButton
         label="Search"
-        icon={<Search aria-hidden="true" />}
+        icon={<Search aria-hidden={true} />}
         appearance="ghost"
        />
 
        <IconButton
         label="Notifications"
-        icon={<Bell aria-hidden="true" />}
+        icon={<Bell aria-hidden={true} />}
         appearance="ghost"
        />
 

@@ -76,12 +76,12 @@ export function ServicePartnerAssignmentStatusBadge({
       {status ===
       "inProgress" ? (
         <PlayCircle
-          aria-hidden="true"
+          aria-hidden={true}
           className="mr-1 size-3.5 animate-pulse"
         />
       ) : (
         <Icon
-          aria-hidden="true"
+          aria-hidden={true}
           className="mr-1 size-3.5"
         />
       )}

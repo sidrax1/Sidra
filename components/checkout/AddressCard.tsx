@@ -92,12 +92,12 @@ focus-visible:ring-primary focus-visible:ring-offset-2"
         >
           {selected ? (
             <CheckCircle2
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           ):(
             <MapPin
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           )}
@@ -120,7 +120,7 @@ focus-visible:ring-primary focus-visible:ring-offset-2"
     <IconButton
       label={`Edit address for ${address.fullName}`}
       icon={
-        <Pencil aria-hidden="true" />
+        <Pencil aria-hidden={true} />
       }
       appearance="ghost"
       size="sm"
@@ -135,7 +135,7 @@ focus-visible:ring-primary focus-visible:ring-offset-2"
     <IconButton
       label={`Delete address for ${address.fullName}`}
       icon={
-        <Trash2 aria-hidden="true" />
+        <Trash2 aria-hidden={true} />
       }
       appearance="ghost"
       size="sm"

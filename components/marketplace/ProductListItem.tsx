@@ -184,7 +184,7 @@ text-foreground transition-colors group-hover:text-[var(--color-gold-600)]">
         }
         icon={
           <Heart
-           aria-hidden="true"
+           aria-hidden={true}
            className={cn(
 
                wished &&
@@ -219,7 +219,7 @@ text-foreground transition-colors group-hover:text-[var(--color-gold-600)]">
              }}
             >
              <ShoppingBag
-               aria-hidden="true"
+               aria-hidden={true}
              />
              {unavailable
                ? "Unavailable"

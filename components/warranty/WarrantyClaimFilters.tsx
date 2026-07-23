@@ -187,7 +187,7 @@ export function WarrantyClaimFilters({
           placeholder="Search claim, warranty, product or customer"
           leadingIcon={
             <Search
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           }
@@ -264,7 +264,7 @@ export function WarrantyClaimFilters({
             }
           >
             <X
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Reset

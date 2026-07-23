@@ -42,7 +42,7 @@ export function AccountSecuritySummaryCard({
           }
         >
           <ShieldCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="mr-1 size-3.5"
           />
           {security.emailVerified
@@ -55,7 +55,7 @@ export function AccountSecuritySummaryCard({
         <div className="rounded-[var(--radius-md)] border border-border bg-background p-5">
           <div className="flex items-center justify-between gap-4">
             <BadgeCheck
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5 text-[var(--color-success)]"
             />
 
@@ -84,7 +84,7 @@ export function AccountSecuritySummaryCard({
         <div className="rounded-[var(--radius-md)] border border-border bg-background p-5">
           <div className="flex items-center justify-between gap-4">
             <Link2
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5 text-[var(--color-gold-600)]"
             />
 
@@ -112,7 +112,7 @@ export function AccountSecuritySummaryCard({
 
         <div className="rounded-[var(--radius-md)] border border-border bg-background p-5">
           <KeyRound
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5 text-[var(--color-gold-600)]"
           />
 
@@ -131,7 +131,7 @@ export function AccountSecuritySummaryCard({
 
         <div className="rounded-[var(--radius-md)] border border-border bg-background p-5">
           <MonitorSmartphone
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5 text-[var(--color-gold-600)]"
           />
 

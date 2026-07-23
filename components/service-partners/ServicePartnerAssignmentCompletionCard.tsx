@@ -48,12 +48,12 @@ export function ServicePartnerAssignmentCompletionCard({
         >
           {completed ? (
             <CheckCircle2
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           ) : (
             <Clock3
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           )}
@@ -77,7 +77,7 @@ export function ServicePartnerAssignmentCompletionCard({
       {assignment.completionNote ? (
         <div className="mt-5 flex items-start gap-3 rounded-[var(--radius-md)] border border-border bg-card p-4">
           <FileCheck2
-            aria-hidden="true"
+            aria-hidden={true}
             className="mt-0.5 size-4 shrink-0 text-[var(--color-gold-600)]"
           />
 

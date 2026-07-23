@@ -114,7 +114,7 @@ export function ServicePartnerAssignmentSlaCard({
       <header className="flex items-center justify-between gap-4 border-b border-border bg-[color:rgb(200_169_106_/_0.05)] p-5">
         <div className="flex items-center gap-3">
           <Clock3
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5 text-[var(--color-gold-600)]"
           />
 
@@ -153,7 +153,7 @@ export function ServicePartnerAssignmentSlaCard({
         >
           <div className="flex items-center justify-between gap-4">
             <CalendarClock
-              aria-hidden="true"
+              aria-hidden={true}
               className={cn(
                 "size-5",
                 responseOverdue
@@ -164,12 +164,12 @@ export function ServicePartnerAssignmentSlaCard({
 
             {responseOverdue ? (
               <ShieldAlert
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 text-[var(--color-error)]"
               />
             ) : (
               <CheckCircle2
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 text-[var(--color-success)]"
               />
             )}
@@ -208,7 +208,7 @@ export function ServicePartnerAssignmentSlaCard({
           )}
         >
           <Clock3
-            aria-hidden="true"
+            aria-hidden={true}
             className={cn(
               "size-5",
               completionOverdue

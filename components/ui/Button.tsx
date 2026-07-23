@@ -222,7 +222,7 @@ export const Button = forwardRef<
    {loading ? (
      <>
        <LoaderCircle
-         aria-hidden="true"
+         aria-hidden={true}
          className="animate-spin"
        />
 

@@ -78,7 +78,7 @@ export function SupportReplyComposer({
        <IconButton
         label="Attach files"
         icon={
-          <Paperclip aria-hidden="true" />
+          <Paperclip aria-hidden={true} />
         }
         appearance="ghost"
         disabled={
@@ -97,7 +97,7 @@ export function SupportReplyComposer({
        loading={loading}
        loadingLabel="Sending"
       >
-       <Send aria-hidden="true" />
+       <Send aria-hidden={true} />
        Send Reply
       </Button>
     </div>

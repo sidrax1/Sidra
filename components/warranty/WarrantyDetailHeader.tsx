@@ -66,7 +66,7 @@ export function WarrantyDetailHeader({
     >
       <div className="relative overflow-hidden bg-[var(--color-black-900)] px-6 py-10 text-white md:px-10">
         <div
-          aria-hidden="true"
+          aria-hidden={true}
           className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_85%_10%,rgba(200,169,106,0.36),transparent_44%)]"
         />
 
@@ -128,7 +128,7 @@ export function WarrantyDetailHeader({
             <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/60">
               <span className="inline-flex items-center gap-2">
                 <ReceiptText
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 Order #
@@ -140,7 +140,7 @@ export function WarrantyDetailHeader({
 
               <span className="inline-flex items-center gap-2">
                 <Store
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 {
@@ -151,7 +151,7 @@ export function WarrantyDetailHeader({
 
               <span className="inline-flex items-center gap-2">
                 <UserRound
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 {
@@ -162,7 +162,7 @@ export function WarrantyDetailHeader({
 
               <span className="inline-flex items-center gap-2">
                 <CalendarDays
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 Expires{" "}
@@ -193,7 +193,7 @@ export function WarrantyDetailHeader({
               ) : (
                 <div className="flex size-full items-center justify-center">
                   <ShieldCheck
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-12 text-[var(--color-gold-500)]"
                   />
                 </div>

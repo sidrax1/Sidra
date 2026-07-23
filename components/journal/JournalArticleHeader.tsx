@@ -48,7 +48,7 @@ leading-[0.9] tracking-[-0.06em] text-foreground">
       <div className="mt-7 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-muted">
        <span className="inline-flex items-center gap-2">
         <UserRound
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-4 text-[var(--color-gold-600)]"
         />
         {authorName}
@@ -64,7 +64,7 @@ leading-[0.9] tracking-[-0.06em] text-foreground">
 
        <span className="inline-flex items-center gap-2">
          <Clock3
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-4 text-[var(--color-gold-600)]"
          />
          {article.readingTimeMinutes} minute read

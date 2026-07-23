@@ -36,7 +36,7 @@ export function AdminPayoutCard({
        <span className="flex size-12 shrink-0 items-center justify-center rounded-full border
 border-[color:rgb(200_169_106_/_0.28)] bg-[color:rgb(200_169_106_/_0.08)]
 text-[var(--color-gold-600)]">
-         <CircleDollarSign aria-hidden="true" className="size-5" />
+         <CircleDollarSign aria-hidden={true} className="size-5" />
        </span>
 
       <div>
@@ -50,7 +50,7 @@ text-[var(--color-gold-600)]">
 
        <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-xs text-muted">
         <span className="inline-flex items-center gap-2">
-         <Store aria-hidden="true" className="size-3.5" />
+         <Store aria-hidden={true} className="size-3.5" />
          {studioName}
         </span>
 
@@ -86,7 +86,7 @@ text-[var(--color-gold-600)]">
         onClick={() => onView(payout)}
       >
         Review
-        <ArrowRight aria-hidden="true" className="size-4" />
+        <ArrowRight aria-hidden={true} className="size-4" />
       </Button>
      </div>
     </div>

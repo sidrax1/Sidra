@@ -62,7 +62,7 @@ export function LoyaltyRedemptionCard({
         <div className="flex items-start gap-4">
           <span className="flex size-11 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-card text-[var(--color-gold-600)]">
             <Gift
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           </span>
@@ -91,7 +91,7 @@ export function LoyaltyRedemptionCard({
                 label="Redemption actions"
                 icon={
                   <MoreVertical
-                    aria-hidden="true"
+                    aria-hidden={true}
                   />
                 }
                 appearance="ghost"
@@ -158,7 +158,7 @@ export function LoyaltyRedemptionCard({
           <div className="flex items-center justify-between gap-4">
             <dt className="inline-flex items-center gap-2 text-muted">
               <CalendarDays
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
               />
               Expires
@@ -196,7 +196,7 @@ export function LoyaltyRedemptionCard({
                 }}
               >
                 <Copy
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 Copy Code
@@ -208,7 +208,7 @@ export function LoyaltyRedemptionCard({
         {redemption.appliedOrderId ? (
           <p className="inline-flex items-center gap-2 text-xs text-muted">
             <ReceiptText
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             Applied to order {redemption.appliedOrderId}
@@ -217,7 +217,7 @@ export function LoyaltyRedemptionCard({
 
         <p className="inline-flex items-center gap-2 border-t border-border pt-4 text-xs text-muted">
           <ShieldCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-3.5 text-[var(--color-success)]"
           />
           Issued rewards are protected by server-side redemption

@@ -66,7 +66,7 @@ focus-visible:ring-inset focus-visible:ring-[var(--color-gold-500)]"
           </span>
 
         <ChevronDown
-         aria-hidden="true"
+         aria-hidden={true}
          className={cn(
            "size-4 shrink-0 text-muted transition-transform duration-[var(--duration-base)]",
            open && "rotate-180"

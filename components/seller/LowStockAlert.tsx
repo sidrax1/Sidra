@@ -28,7 +28,7 @@ export function LowStockAlert({
     description="Available inventory has reached the configured low-stock threshold."
     icon={
       <TriangleAlert
-        aria-hidden="true"
+        aria-hidden={true}
         className="size-5"
       />
     }
@@ -38,7 +38,7 @@ export function LowStockAlert({
         size="sm"
         onClick={onReviewInventory}
       >
-        <Boxes aria-hidden="true" />
+        <Boxes aria-hidden={true} />
         Review Inventory
       </Button>
     }

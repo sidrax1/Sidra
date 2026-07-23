@@ -59,7 +59,7 @@ export function MobileNavigation({
 
       <IconButton
        label="Close menu"
-       icon={<X aria-hidden="true" />}
+       icon={<X aria-hidden={true} />}
        appearance="ghost"
        onClick={onClose}
       />

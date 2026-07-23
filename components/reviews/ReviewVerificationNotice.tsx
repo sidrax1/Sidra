@@ -27,12 +27,12 @@ export function ReviewVerificationNotice({
       <span className="flex size-10 shrink-0 items-center justify-center rounded-full border border-border bg-card">
         {verified ? (
           <BadgeCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5 text-[var(--color-success)]"
           />
         ) : (
           <ShieldCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5 text-muted"
           />
         )}

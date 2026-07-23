@@ -49,7 +49,7 @@ lg:bg-gradient-to-l" />
 
     <div className="relative flex flex-col justify-center p-8 text-white md:p-12 lg:p-16">
      <div
-      aria-hidden="true"
+      aria-hidden={true}
       className="absolute inset-0 opacity-50"
       style={{
         background:
@@ -60,7 +60,7 @@ lg:bg-gradient-to-l" />
       <div className="relative z-10">
        <Badge variant="gold">
         <Sparkles
-          aria-hidden="true"
+          aria-hidden={true}
           className="mr-1 size-3.5"
         />
         Featured Story
@@ -88,7 +88,7 @@ tracking-[0.14em] text-white/55">
 
         <span className="inline-flex items-center gap-2">
          <Clock3
-           aria-hidden="true"
+           aria-hidden={true}
            className="size-3.5"
          />
          {article.readingTimeMinutes} min
@@ -106,7 +106,7 @@ tracking-[0.14em] text-white/55">
             )}
           >
             Read the Story
-            <ArrowRight aria-hidden="true" />
+            <ArrowRight aria-hidden={true} />
           </Link>
          </Button>
        </div>

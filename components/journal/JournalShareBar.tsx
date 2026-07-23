@@ -53,7 +53,7 @@ export function JournalShareBar({
      <span className="ml-3 mr-2 inline-flex items-center gap-2 text-xs font-semibold uppercase
 tracking-[0.15em] text-muted">
        <Share2
-         aria-hidden="true"
+         aria-hidden={true}
          className="size-3.5"
        />
        Share
@@ -61,7 +61,7 @@ tracking-[0.15em] text-muted">
 
    <IconButton
     label="Share on X"
-    icon={<Twitter aria-hidden="true" />}
+    icon={<Twitter aria-hidden={true} />}
     appearance="ghost"
     size="sm"
     onClick={() =>
@@ -73,7 +73,7 @@ tracking-[0.15em] text-muted">
 
    <IconButton
     label="Share on Facebook"
-    icon={<Facebook aria-hidden="true" />}
+    icon={<Facebook aria-hidden={true} />}
     appearance="ghost"
     size="sm"
     onClick={() =>
@@ -86,7 +86,7 @@ tracking-[0.15em] text-muted">
 
       <IconButton
        label="Share on LinkedIn"
-       icon={<Linkedin aria-hidden="true" />}
+       icon={<Linkedin aria-hidden={true} />}
        appearance="ghost"
        size="sm"
        onClick={() =>
@@ -98,7 +98,7 @@ tracking-[0.15em] text-muted">
 
     <IconButton
      label="Copy article link"
-     icon={<Copy aria-hidden="true" />}
+     icon={<Copy aria-hidden={true} />}
      appearance="ghost"
      size="sm"
      onClick={() => {

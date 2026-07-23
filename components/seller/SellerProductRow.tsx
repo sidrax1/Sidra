@@ -107,7 +107,7 @@ text-foreground">
  <DropdownMenuTrigger>
   <IconButton
    label={`Actions for ${product.title}`}
-   icon={<MoreHorizontal aria-hidden="true" />}
+   icon={<MoreHorizontal aria-hidden={true} />}
    appearance="ghost"
    disabled={loading}
   />
@@ -115,12 +115,12 @@ text-foreground">
 
  <DropdownMenuContent>
   <DropdownMenuItem onSelect={() => onView(product)}>
-   <Eye aria-hidden="true" className="size-4" />
+   <Eye aria-hidden={true} className="size-4" />
    View Listing
   </DropdownMenuItem>
 
   <DropdownMenuItem onSelect={() => onEdit(product)}>
-   <Edit3 aria-hidden="true" className="size-4" />
+   <Edit3 aria-hidden={true} className="size-4" />
    Edit Product
   </DropdownMenuItem>
 
@@ -129,7 +129,7 @@ text-foreground">
      void onDuplicate(product);
    }}
   >
-   <Copy aria-hidden="true" className="size-4" />
+   <Copy aria-hidden={true} className="size-4" />
    Duplicate
   </DropdownMenuItem>
 
@@ -142,7 +142,7 @@ text-foreground">
            void onArchive(product);
          }}
        >
-         <Archive aria-hidden="true" className="size-4" />
+         <Archive aria-hidden={true} className="size-4" />
          Archive
        </DropdownMenuItem>
      </DropdownMenuContent>

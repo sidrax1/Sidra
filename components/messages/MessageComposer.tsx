@@ -97,7 +97,7 @@ export function MessageComposer({
   <IconButton
     label="Attach file"
     icon={
-      <Paperclip aria-hidden="true" />
+      <Paperclip aria-hidden={true} />
     }
     appearance="ghost"
     disabled={
@@ -111,7 +111,7 @@ export function MessageComposer({
    <IconButton
     label="Attach image"
     icon={
-      <ImagePlus aria-hidden="true" />
+      <ImagePlus aria-hidden={true} />
     }
     appearance="ghost"
     disabled={
@@ -132,7 +132,7 @@ export function MessageComposer({
        loading={loading}
        loadingLabel="Sending"
       >
-       <Send aria-hidden="true" />
+       <Send aria-hidden={true} />
        Send
       </Button>
     </div>

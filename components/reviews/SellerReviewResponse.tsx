@@ -61,7 +61,7 @@ export function SellerReviewResponse({
           <div className="flex flex-wrap items-center gap-3">
             <span className="inline-flex items-center gap-2 font-medium text-foreground">
               <Store
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 text-[var(--color-gold-600)]"
               />
               {response.studioName}
@@ -69,7 +69,7 @@ export function SellerReviewResponse({
 
             <Badge variant="gold">
               <MessageSquareReply
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mr-1 size-3.5"
               />
               Studio Response
@@ -78,7 +78,7 @@ export function SellerReviewResponse({
             {response.verifiedStudio ? (
               <Badge variant="success">
                 <BadgeCheck
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="mr-1 size-3.5"
                 />
                 Verified

@@ -24,7 +24,7 @@ export function ServicePartnerApplicationEmptyState({
     <EmptyState
       icon={
         <FileSearch
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-10"
         />
       }

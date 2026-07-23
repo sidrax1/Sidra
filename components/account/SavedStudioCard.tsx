@@ -50,13 +50,13 @@ export function SavedStudioCard({
     >
      {notificationsEnabled ? (
        <BellOff
-         aria-hidden="true"
+         aria-hidden={true}
          className="size-4"
        />
 
        ):(
          <Bell
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-4"
          />
        )}
@@ -78,7 +78,7 @@ export function SavedStudioCard({
        className="text-[var(--color-error)]"
      >
        <UserMinus
-         aria-hidden="true"
+         aria-hidden={true}
          className="size-4"
        />
        Unfollow

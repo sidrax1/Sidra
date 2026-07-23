@@ -253,7 +253,7 @@ export function ServicePartnerAssignmentCard({
               label="Assignment actions"
               icon={
                 <MoreVertical
-                  aria-hidden="true"
+                  aria-hidden={true}
                 />
               }
               appearance="ghost"
@@ -358,7 +358,7 @@ export function ServicePartnerAssignmentCard({
           completionOverdue) ? (
           <section className="flex items-start gap-3 rounded-[var(--radius-md)] border border-[color:rgb(145_59_59_/_0.32)] bg-[color:rgb(145_59_59_/_0.06)] p-4">
             <ShieldAlert
-              aria-hidden="true"
+              aria-hidden={true}
               className="mt-0.5 size-5 shrink-0 text-[var(--color-error)]"
             />
 
@@ -385,7 +385,7 @@ export function ServicePartnerAssignmentCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
             <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
               <CalendarClock
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-gold-600)]"
               />
               Response Due
@@ -408,7 +408,7 @@ export function ServicePartnerAssignmentCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
             <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
               <Clock3
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-gold-600)]"
               />
               Completion Due
@@ -433,7 +433,7 @@ export function ServicePartnerAssignmentCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
             <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
               <BadgeIndianRupee
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-gold-600)]"
               />
               Approved Cost
@@ -453,7 +453,7 @@ export function ServicePartnerAssignmentCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
             <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
               <Wrench
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-gold-600)]"
               />
               Partner Payable
@@ -474,7 +474,7 @@ export function ServicePartnerAssignmentCard({
         <div className="flex flex-wrap gap-x-6 gap-y-3 text-xs text-muted">
           <span className="inline-flex items-center gap-2">
             <Store
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             Studio{" "}
@@ -483,7 +483,7 @@ export function ServicePartnerAssignmentCard({
 
           <span className="inline-flex items-center gap-2">
             <UserRound
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             Customer{" "}
@@ -493,7 +493,7 @@ export function ServicePartnerAssignmentCard({
           {assignment.scheduledAt ? (
             <span className="inline-flex items-center gap-2">
               <CalendarClock
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-success)]"
               />
               Scheduled{" "}
@@ -514,7 +514,7 @@ export function ServicePartnerAssignmentCard({
           >
             View Assignment
             <ArrowUpRight
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           </Button>

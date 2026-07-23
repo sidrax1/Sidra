@@ -70,7 +70,7 @@ to-transparent" />
            className="backdrop-blur-xl"
          >
            <BadgeCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="mr-1 size-3.5"
            />
            Verified Studio
@@ -119,7 +119,7 @@ tracking-[-0.03em] text-foreground transition-colors group-hover:text-[var(--col
 text-xs text-muted">
         <span className="inline-flex items-center gap-2">
           <Package
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4 text-[var(--color-gold-600)]"
           />
           {studio.productCount.toLocaleString(
@@ -130,7 +130,7 @@ text-xs text-muted">
 
        <span className="inline-flex items-center gap-2">
         <Users
-         aria-hidden="true"
+         aria-hidden={true}
          className="size-4 text-[var(--color-gold-600)]"
         />
         {studio.followers.toLocaleString(

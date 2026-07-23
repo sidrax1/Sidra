@@ -189,7 +189,7 @@ export function ServicePartnerApplicationTimeline({
               >
                 {!finalStep ? (
                   <span
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className={cn(
                       "absolute left-5 top-10 h-[calc(100%-1rem)] w-px",
                       step.complete
@@ -214,12 +214,12 @@ export function ServicePartnerApplicationTimeline({
                   {step.complete ||
                   step.current ? (
                     <Icon
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-4"
                     />
                   ) : (
                     <Circle
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-4"
                     />
                   )}

@@ -129,7 +129,7 @@ export function ServicePartnerPerformanceCard({
               className="rounded-[var(--radius-lg)] border border-border bg-background p-5"
             >
               <Icon
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5 text-[var(--color-gold-600)]"
               />
 

@@ -47,7 +47,7 @@ export function ServicePartnerDashboardHeader({
       )}
     >
       <div
-        aria-hidden="true"
+        aria-hidden={true}
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_88%_4%,rgba(200,169,106,0.4),transparent_44%)]"
       />
 
@@ -56,7 +56,7 @@ export function ServicePartnerDashboardHeader({
           <div className="flex flex-wrap items-center gap-3">
             <Badge variant="gold">
               <ShieldCheck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mr-1 size-3.5"
               />
               Verified Service Network
@@ -87,7 +87,7 @@ export function ServicePartnerDashboardHeader({
           <div className="mt-7 flex flex-wrap gap-x-7 gap-y-3 text-sm text-white/60">
             <span className="inline-flex items-center gap-2">
               <Building2
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
               {totalPartners.toLocaleString(
@@ -116,7 +116,7 @@ export function ServicePartnerDashboardHeader({
               }}
             >
               <RefreshCw
-                aria-hidden="true"
+                aria-hidden={true}
                 className={cn(
                   "size-4",
                   refreshing &&
@@ -136,7 +136,7 @@ export function ServicePartnerDashboardHeader({
               }}
             >
               <Download
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
               Export
@@ -150,7 +150,7 @@ export function ServicePartnerDashboardHeader({
               }
             >
               <Plus
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
               New Application

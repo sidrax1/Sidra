@@ -8,7 +8,7 @@ export default function Loading(): React.JSX.Element {
       <div
        className="h-20 w-20 animate-spin rounded-full border-[3px] border-primary/20
 border-t-primary"
-       aria-hidden="true"
+       aria-hidden={true}
       />
 
           <div className="space-y-3 text-center">

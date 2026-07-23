@@ -56,7 +56,7 @@ export function ServicePartnerApplicationDetailHeader({
     >
       <div className="relative overflow-hidden bg-[var(--color-black-900)] px-6 py-10 text-white md:px-10">
         <div
-          aria-hidden="true"
+          aria-hidden={true}
           className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_85%_8%,rgba(200,169,106,0.36),transparent_45%)]"
         />
 
@@ -110,7 +110,7 @@ export function ServicePartnerApplicationDetailHeader({
           <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/60">
             <span className="inline-flex items-center gap-2">
               <UserRound
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
               {
@@ -121,7 +121,7 @@ export function ServicePartnerApplicationDetailHeader({
 
             <span className="inline-flex items-center gap-2">
               <MapPin
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
               {
@@ -137,7 +137,7 @@ export function ServicePartnerApplicationDetailHeader({
 
             <span className="inline-flex items-center gap-2">
               <CalendarClock
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
               {application.submittedAt
@@ -153,7 +153,7 @@ export function ServicePartnerApplicationDetailHeader({
       <div className="grid gap-4 p-6 sm:grid-cols-2 xl:grid-cols-4">
         <article className="rounded-[var(--radius-lg)] border border-border bg-background p-5">
           <Wrench
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5 text-[var(--color-gold-600)]"
           />
 
@@ -171,7 +171,7 @@ export function ServicePartnerApplicationDetailHeader({
 
         <article className="rounded-[var(--radius-lg)] border border-border bg-background p-5">
           <MapPin
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5 text-[var(--color-gold-600)]"
           />
 
@@ -189,7 +189,7 @@ export function ServicePartnerApplicationDetailHeader({
 
         <article className="rounded-[var(--radius-lg)] border border-border bg-background p-5">
           <FileCheck2
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5 text-[var(--color-gold-600)]"
           />
 
@@ -208,12 +208,12 @@ export function ServicePartnerApplicationDetailHeader({
         <article className="rounded-[var(--radius-lg)] border border-border bg-background p-5">
           {application.reviewerId ? (
             <Building2
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5 text-[var(--color-success)]"
             />
           ) : (
             <ShieldAlert
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5 text-[var(--color-warning)]"
             />
           )}

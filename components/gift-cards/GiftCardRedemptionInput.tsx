@@ -49,7 +49,7 @@ export function GiftCardRedemptionInput({
         }
         icon={
           <ShieldCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         }
@@ -65,7 +65,7 @@ export function GiftCardRedemptionInput({
               }}
             >
               <X
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
               Remove
@@ -87,7 +87,7 @@ export function GiftCardRedemptionInput({
     <div className="grid gap-3 rounded-[var(--radius-lg)] border border-border bg-card p-5">
       <div className="inline-flex items-center gap-2 text-sm font-medium text-foreground">
         <Gift
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-4 text-[var(--color-gold-600)]"
         />
         Apply Gift Card

@@ -84,7 +84,7 @@ group-hover:scale-[1.035]"
       ):(
         <div className="flex size-full flex-col items-center justify-center gap-3 text-muted">
           <FileText
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-10"
           />
           <span className="max-w-[80%] truncate text-sm">
@@ -98,7 +98,7 @@ group-hover:scale-[1.035]"
 rounded-full bg-[var(--color-gold-500)] text-[var(--color-black-900)]
 shadow-[var(--shadow-card)]">
         <Check
-         aria-hidden="true"
+         aria-hidden={true}
          className="size-4"
         />
       </span>
@@ -129,7 +129,7 @@ shadow-[var(--shadow-card)]">
        <IconButton
         label={`Actions for ${asset.originalFileName}`}
         icon={
-          <MoreHorizontal aria-hidden="true" />
+          <MoreHorizontal aria-hidden={true} />
         }
         appearance="ghost"
         size="sm"
@@ -144,7 +144,7 @@ shadow-[var(--shadow-card)]">
         }}
        >
         <Copy
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-4"
         />
         Copy URL
@@ -159,7 +159,7 @@ shadow-[var(--shadow-card)]">
           }}
          >
           <Trash2
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
           Delete Asset

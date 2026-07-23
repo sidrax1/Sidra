@@ -148,7 +148,7 @@ export function CreateDisputeForm({
       <header className="flex items-start gap-4">
         <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.08)] text-[var(--color-gold-600)]">
           <Scale
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -175,7 +175,7 @@ export function CreateDisputeForm({
         description="For routine delivery or product questions, contact the Studio or support first. Disputes are reserved for unresolved order, payment or fulfilment concerns."
         icon={
           <FileWarning
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         }
@@ -310,7 +310,7 @@ export function CreateDisputeForm({
 
         <p className="inline-flex items-start gap-3 border-t border-border pt-5 text-xs leading-6 text-muted">
           <ShieldCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="mt-0.5 size-4 shrink-0 text-[var(--color-success)]"
           />
           Dispute creation, payment holds and participant
@@ -326,7 +326,7 @@ export function CreateDisputeForm({
             loadingLabel="Opening Dispute"
           >
             <Scale
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Open Dispute

@@ -61,7 +61,7 @@ export function OrderPricingSummary({
       <header className="flex items-start gap-4 border-b border-border bg-[color:rgb(200_169_106_/_0.05)] px-6 py-5">
         <span className="flex size-11 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.28)] bg-card text-[var(--color-gold-600)]">
           <BadgeIndianRupee
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -137,7 +137,7 @@ export function OrderPricingSummary({
 
         <div className="mt-2 flex items-start gap-3 border-t border-border pt-5 text-xs leading-6 text-muted">
           <ShieldCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="mt-0.5 size-4 shrink-0 text-[var(--color-success)]"
           />
 

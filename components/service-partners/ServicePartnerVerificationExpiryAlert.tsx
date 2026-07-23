@@ -66,7 +66,7 @@ export function ServicePartnerVerificationExpiryAlert({
         )}. New assignments should remain blocked until reverification is completed.`}
         icon={
           <CalendarX2
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         }
@@ -82,7 +82,7 @@ export function ServicePartnerVerificationExpiryAlert({
         description="Complete the reverification workflow before the partner receives additional assignments."
         icon={
           <CalendarClock
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         }
@@ -103,7 +103,7 @@ export function ServicePartnerVerificationExpiryAlert({
       )}. Begin the renewal workflow before expiry.`}
       icon={
         <ShieldCheck
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5"
         />
       }

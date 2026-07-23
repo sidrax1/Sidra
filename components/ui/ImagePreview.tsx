@@ -72,7 +72,7 @@ bg-gradient-to-t from-black/80 via-black/35 to-transparent p-4 pt-12 text-white"
       {onRemove ? (
         <IconButton
           label={`Remove ${file.name}`}
-          icon={<X aria-hidden="true" />}
+          icon={<X aria-hidden={true} />}
           appearance="glass"
           size="sm"
           onClick={onRemove}

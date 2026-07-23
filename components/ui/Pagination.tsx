@@ -44,7 +44,7 @@ export function Pagination({
   aria-label="Previous page"
   onClick={() => onPageChange(currentPage - 1)}
  >
-  <ChevronLeft aria-hidden="true" />
+  <ChevronLeft aria-hidden={true} />
  </Button>
 
  {pages.map((page, index) => {
@@ -80,7 +80,7 @@ export function Pagination({
 
      onClick={() => onPageChange(currentPage + 1)}
     >
-     <ChevronRight aria-hidden="true" />
+     <ChevronRight aria-hidden={true} />
     </Button>
    </nav>
  );

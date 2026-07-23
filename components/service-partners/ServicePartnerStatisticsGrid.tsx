@@ -181,7 +181,7 @@ export function ServicePartnerStatisticsGrid({
               <div className="flex items-start justify-between gap-4">
                 <span className="flex size-10 items-center justify-center rounded-full border border-current/20 bg-card/60">
                   <Icon
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-4"
                   />
                 </span>

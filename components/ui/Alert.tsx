@@ -122,7 +122,7 @@ export const Alert = forwardRef<
  {...props}
 >
  <div
-   aria-hidden="true"
+   aria-hidden={true}
    className="mt-0.5 shrink-0"
  >
    {icon ?? (

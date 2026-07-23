@@ -49,7 +49,7 @@ export function ServicePartnerAssignmentSourceCard({
       <div className="flex items-start justify-between gap-5">
         <span className="flex size-12 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.07)] text-[var(--color-gold-600)]">
           <FileSearch
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -71,7 +71,7 @@ export function ServicePartnerAssignmentSourceCard({
         <div className="flex items-start justify-between gap-5">
           <dt className="inline-flex items-center gap-2 text-sm text-muted">
             <Hash
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4 text-[var(--color-gold-600)]"
             />
             Source ID
@@ -111,7 +111,7 @@ export function ServicePartnerAssignmentSourceCard({
         <div className="flex items-center justify-between gap-5">
           <dt className="inline-flex items-center gap-2 text-sm text-muted">
             <ShieldCheck
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4 text-[var(--color-success)]"
             />
             Required Capability

@@ -73,7 +73,7 @@ export function SellerOrderCard({
             void onStartProcessing(order);
           }}
         >
-          <PackageCheck aria-hidden="true" />
+          <PackageCheck aria-hidden={true} />
           Start Production
         </Button>
       ) : null}
@@ -86,7 +86,7 @@ export function SellerOrderCard({
             void onMarkShipped(order);
           }}
         >
-          <Truck aria-hidden="true" />
+          <Truck aria-hidden={true} />
           Mark Shipped
         </Button>
       ) : null}
@@ -96,7 +96,7 @@ export function SellerOrderCard({
         onClick={() => onView(order)}
       >
         View Order
-        <ArrowRight aria-hidden="true" />
+        <ArrowRight aria-hidden={true} />
       </Button>
      </div>
     </div>

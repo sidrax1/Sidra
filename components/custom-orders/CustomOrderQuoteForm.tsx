@@ -100,7 +100,7 @@ export function CustomOrderQuoteForm({
       <header className="flex items-start gap-4">
         <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.08)] text-[var(--color-gold-600)]">
           <BadgeIndianRupee
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -244,7 +244,7 @@ export function CustomOrderQuoteForm({
           >
             <div className="relative">
               <CalendarClock
-                aria-hidden="true"
+                aria-hidden={true}
                 className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-muted"
               />
 
@@ -304,7 +304,7 @@ export function CustomOrderQuoteForm({
         >
           <div className="relative">
             <FileText
-              aria-hidden="true"
+              aria-hidden={true}
               className="pointer-events-none absolute left-4 top-4 size-4 text-muted"
             />
 

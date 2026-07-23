@@ -96,7 +96,7 @@ return (
 
    <div className="relative px-5 pt-5">
     <Search
-     aria-hidden="true"
+     aria-hidden={true}
      className="absolute left-9 top-1/2 mt-2 size-4 -translate-y-1/2 text-muted"
     />
 

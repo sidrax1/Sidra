@@ -156,7 +156,7 @@ export function ServicePartnerApplicationCard({
 
             <Badge variant="neutral">
               <Building2
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mr-1 size-3.5"
               />
               {
@@ -192,7 +192,7 @@ export function ServicePartnerApplicationCard({
               label="Application actions"
               icon={
                 <MoreVertical
-                  aria-hidden="true"
+                  aria-hidden={true}
                 />
               }
               appearance="ghost"
@@ -286,7 +286,7 @@ export function ServicePartnerApplicationCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
             <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
               <UserRound
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-gold-600)]"
               />
               Primary Contact
@@ -319,7 +319,7 @@ export function ServicePartnerApplicationCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
             <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
               <MapPin
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-gold-600)]"
               />
               Registered Location
@@ -353,7 +353,7 @@ export function ServicePartnerApplicationCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-card p-4">
             <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.12em] text-muted">
               <Wrench
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
               />
               Capabilities
@@ -369,7 +369,7 @@ export function ServicePartnerApplicationCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-card p-4">
             <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.12em] text-muted">
               <MapPin
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
               />
               Coverage
@@ -386,7 +386,7 @@ export function ServicePartnerApplicationCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-card p-4">
             <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.12em] text-muted">
               <FileCheck2
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
               />
               Documents
@@ -411,7 +411,7 @@ export function ServicePartnerApplicationCard({
             )}
           >
             <ShieldAlert
-              aria-hidden="true"
+              aria-hidden={true}
               className={cn(
                 "mt-0.5 size-4 shrink-0",
                 application.status ===
@@ -438,7 +438,7 @@ export function ServicePartnerApplicationCard({
         <div className="flex flex-wrap items-center justify-between gap-4 border-t border-border pt-5">
           <span className="inline-flex items-center gap-2 text-xs text-muted">
             <CalendarClock
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             {application.submittedAt
@@ -459,7 +459,7 @@ export function ServicePartnerApplicationCard({
           >
             Review Application
             <ArrowUpRight
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           </Button>

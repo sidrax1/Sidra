@@ -57,12 +57,12 @@ export function WarrantyRegistrationStatusCard({
         >
           {registered ? (
             <BadgeCheck
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           ) : (
             <ShieldAlert
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           )}
@@ -103,7 +103,7 @@ export function WarrantyRegistrationStatusCard({
           <div className="flex items-start justify-between gap-5">
             <dt className="inline-flex items-center gap-2 text-sm text-muted">
               <Hash
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 text-[var(--color-gold-600)]"
               />
               Serial Number
@@ -136,7 +136,7 @@ export function WarrantyRegistrationStatusCard({
           <div className="flex items-start justify-between gap-5">
             <dt className="inline-flex items-center gap-2 text-sm text-muted">
               <CalendarCheck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 text-[var(--color-success)]"
               />
               Registered At

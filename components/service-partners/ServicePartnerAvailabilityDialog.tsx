@@ -146,12 +146,12 @@ export function ServicePartnerAvailabilityDialog({
             icon={
               acceptingAssignments ? (
                 <ShieldCheck
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-5"
                 />
               ) : (
                 <PauseCircle
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-5"
                 />
               )
@@ -214,7 +214,7 @@ export function ServicePartnerAvailabilityDialog({
             <span>
               <span className="inline-flex items-center gap-2 text-sm font-medium text-foreground">
                 <UsersRound
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4 text-[var(--color-gold-600)]"
                 />
                 Accept new assignments
@@ -322,7 +322,7 @@ export function ServicePartnerAvailabilityDialog({
             }}
           >
             <UsersRound
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Save Availability

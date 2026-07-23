@@ -52,7 +52,7 @@ bg-[radial-gradient(circle_at_center,rgba(200,169,106,0.35),transparent_60%),lin
      <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em]
 text-muted">
       <Globe2
-        aria-hidden="true"
+        aria-hidden={true}
         className="size-3.5"
       />
       {domain}

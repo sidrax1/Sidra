@@ -97,7 +97,7 @@ export function DisputeCard({
               }
             >
               <ShieldAlert
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mr-1 size-3.5"
               />
               Risk {dispute.riskScore}
@@ -115,7 +115,7 @@ export function DisputeCard({
               label="Dispute actions"
               icon={
                 <MoreVertical
-                  aria-hidden="true"
+                  aria-hidden={true}
                 />
               }
               appearance="ghost"
@@ -208,7 +208,7 @@ export function DisputeCard({
 
             <dd className="mt-2 inline-flex items-center gap-2 text-sm font-medium text-foreground">
               <CalendarClock
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 text-[var(--color-gold-600)]"
               />
               {formatDateTime(
@@ -221,7 +221,7 @@ export function DisputeCard({
         <div className="flex flex-wrap gap-x-5 gap-y-3 text-xs text-muted">
           <span className="inline-flex items-center gap-2">
             <ReceiptText
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             Order #{dispute.order.orderNumber}
@@ -229,7 +229,7 @@ export function DisputeCard({
 
           <span className="inline-flex items-center gap-2">
             <UserRound
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             {dispute.order.customerEmail}
@@ -237,7 +237,7 @@ export function DisputeCard({
 
           <span className="inline-flex items-center gap-2">
             <Store
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             {dispute.order.studioName}
@@ -253,7 +253,7 @@ export function DisputeCard({
           >
             Review Dispute
             <ArrowUpRight
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           </Button>

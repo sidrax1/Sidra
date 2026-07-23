@@ -52,7 +52,7 @@ export function ServicePartnerAssignmentCustomerCard({
       <header className="flex items-center justify-between gap-4 border-b border-border bg-[color:rgb(200_169_106_/_0.05)] p-5">
         <div className="flex items-center gap-3">
           <UserRound
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5 text-[var(--color-gold-600)]"
           />
 
@@ -96,7 +96,7 @@ export function ServicePartnerAssignmentCustomerCard({
           <div className="flex items-start justify-between gap-5 rounded-[var(--radius-md)] border border-border bg-background p-4">
             <dt className="inline-flex items-center gap-2 text-sm text-muted">
               <Hash
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mt-0.5 size-4 text-[var(--color-gold-600)]"
               />
               Customer ID
@@ -115,7 +115,7 @@ export function ServicePartnerAssignmentCustomerCard({
               className="flex items-center gap-3 rounded-[var(--radius-md)] border border-border bg-background p-4 text-sm transition-[border-color] hover:border-[color:rgb(200_169_106_/_0.4)]"
             >
               <Mail
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 shrink-0 text-[var(--color-gold-600)]"
               />
 
@@ -131,7 +131,7 @@ export function ServicePartnerAssignmentCustomerCard({
               className="flex items-center gap-3 rounded-[var(--radius-md)] border border-border bg-background p-4 text-sm transition-[border-color] hover:border-[color:rgb(200_169_106_/_0.4)]"
             >
               <Phone
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 shrink-0 text-[var(--color-gold-600)]"
               />
 

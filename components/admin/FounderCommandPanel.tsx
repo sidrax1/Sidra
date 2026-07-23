@@ -63,7 +63,7 @@ export function FounderCommandPanel({
       <span className="flex size-12 shrink-0 items-center justify-center rounded-full border
 border-[color:rgb(200_169_106_/_0.35)] bg-[color:rgb(200_169_106_/_0.1)]
 text-[var(--color-gold-600)] shadow-[var(--shadow-gold-glow)]">
-       <Command aria-hidden="true" className="size-5" />
+       <Command aria-hidden={true} className="size-5" />
       </span>
 
       <div>
@@ -104,7 +104,7 @@ text-[var(--color-gold-600)]">
       void execute();
     }}
    >
-    <Sparkles aria-hidden="true" />
+    <Sparkles aria-hidden={true} />
     Execute Command
    </Button>
   </div>
@@ -123,7 +123,7 @@ text-[var(--color-gold-600)]">
        }
        description={result.message}
        icon={
-         <ShieldAlert aria-hidden="true" className="size-5" />
+         <ShieldAlert aria-hidden={true} className="size-5" />
        }
        action={
          result.status === "confirmationRequired" &&

@@ -28,7 +28,7 @@ export function ServicePartnerAssignmentNotes({
     >
       <header className="flex items-center gap-3 border-b border-border bg-[color:rgb(200_169_106_/_0.05)] p-5">
         <MessageSquareText
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5 text-[var(--color-gold-600)]"
         />
 
@@ -51,7 +51,7 @@ export function ServicePartnerAssignmentNotes({
         <article className="rounded-[var(--radius-lg)] border border-border bg-background p-5">
           <div className="flex items-center gap-2">
             <FileCheck2
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4 text-[var(--color-gold-600)]"
             />
 

@@ -23,7 +23,7 @@ export function PromotionValueBadge({
     return (
       <Badge variant="gold">
         <BadgePercent
-          aria-hidden="true"
+          aria-hidden={true}
           className="mr-1 size-3.5"
         />
         {percentage.toLocaleString("en-IN", {
@@ -38,7 +38,7 @@ export function PromotionValueBadge({
     return (
       <Badge variant="gold">
         <IndianRupee
-          aria-hidden="true"
+          aria-hidden={true}
           className="mr-1 size-3.5"
         />
         {formatCurrency(
@@ -53,7 +53,7 @@ export function PromotionValueBadge({
     return (
       <Badge variant="success">
         <Truck
-          aria-hidden="true"
+          aria-hidden={true}
           className="mr-1 size-3.5"
         />
         Free Shipping
@@ -64,7 +64,7 @@ export function PromotionValueBadge({
   return (
     <Badge variant="gold">
       <Gift
-        aria-hidden="true"
+        aria-hidden={true}
         className="mr-1 size-3.5"
       />
       Buy {value.buyQuantity ?? 0}, Get{" "}

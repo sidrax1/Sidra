@@ -41,7 +41,7 @@ export function WishlistHeader({
          className="gap-2 px-4 py-2"
        >
          <Heart
-          aria-hidden="true"
+          aria-hidden={true}
 
            className="size-4 fill-current"
          />

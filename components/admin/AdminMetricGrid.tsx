@@ -41,7 +41,7 @@ export function AdminMetricGrid({
         percentageChange={metric.percentageChange}
         icon={
           Icon ? (
-            <Icon aria-hidden="true" className="size-5" />
+            <Icon aria-hidden={true} className="size-5" />
           ) : undefined
         }
        />

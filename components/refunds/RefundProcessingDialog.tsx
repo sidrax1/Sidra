@@ -126,7 +126,7 @@ export function RefundProcessingDialog({
             }
             icon={
               <ShieldCheck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             }
@@ -168,7 +168,7 @@ export function RefundProcessingDialog({
           >
             <div className="relative">
               <CreditCard
-                aria-hidden="true"
+                aria-hidden={true}
                 className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-muted"
               />
 
@@ -225,7 +225,7 @@ export function RefundProcessingDialog({
             }}
           >
             <LoaderCircle
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
 

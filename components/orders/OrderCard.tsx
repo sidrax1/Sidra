@@ -54,7 +54,7 @@ export function OrderCard({
           ) : (
             <div className="flex size-full items-center justify-center">
               <Package
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-7 text-muted"
               />
             </div>
@@ -91,7 +91,7 @@ export function OrderCard({
           <div className="mt-4 flex flex-wrap gap-x-6 gap-y-3 text-xs text-muted">
             <span className="inline-flex items-center gap-2">
               <Store
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-gold-600)]"
               />
               {order.studioName}
@@ -99,7 +99,7 @@ export function OrderCard({
 
             <span className="inline-flex items-center gap-2">
               <CalendarDays
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-gold-600)]"
               />
               Placed {formatDate(order.placedAt)}
@@ -117,7 +117,7 @@ export function OrderCard({
             <Link href={detailsHref}>
               View Order
               <ArrowUpRight
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
             </Link>

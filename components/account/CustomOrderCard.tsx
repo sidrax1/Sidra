@@ -27,7 +27,7 @@ export function CustomOrderCard({
 border-[color:rgb(200_169_106_/_0.28)] bg-[color:rgb(200_169_106_/_0.08)]
 text-[var(--color-gold-600)]">
          <Gem
-           aria-hidden="true"
+           aria-hidden={true}
            className="size-5"
          />
        </span>
@@ -66,7 +66,7 @@ text-[var(--color-gold-600)]">
     {customOrder.requiredBy ? (
       <span className="inline-flex items-center gap-2">
         <CalendarDays
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-3.5"
         />
         Required by{" "}
@@ -91,7 +91,7 @@ text-[var(--color-gold-600)]">
       >
         View Request
         <ArrowRight
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-4"
         />
       </Link>

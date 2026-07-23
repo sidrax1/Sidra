@@ -21,7 +21,7 @@ export function AdminEmptyState({
       title={title}
       description={description}
       action={action}
-      icon={<Icon aria-hidden="true" className="size-6" />}
+      icon={<Icon aria-hidden={true} className="size-6" />}
     />
   );
 }

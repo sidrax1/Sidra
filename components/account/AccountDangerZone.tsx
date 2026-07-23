@@ -47,7 +47,7 @@ export function AccountDangerZone({
         description="You will receive a separate confirmation step before any irreversible account action is executed."
         icon={
           <ShieldAlert
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         }
@@ -66,7 +66,7 @@ export function AccountDangerZone({
           }
         >
           <Trash2
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
           Request Account Deletion

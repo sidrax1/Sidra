@@ -47,7 +47,7 @@ export function MediaUploadPanel({
 border-[color:rgb(200_169_106_/_0.28)] bg-[color:rgb(200_169_106_/_0.08)]
 text-[var(--color-gold-600)]">
        <UploadCloud
-        aria-hidden="true"
+        aria-hidden={true}
         className="size-5"
        />
       </span>
@@ -136,7 +136,7 @@ text-[var(--color-gold-600)]">
         });
       }}
      >
-      <ImagePlus aria-hidden="true" />
+      <ImagePlus aria-hidden={true} />
       Upload Asset
      </Button>
     </div>

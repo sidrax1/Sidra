@@ -69,7 +69,7 @@ export function PromotionDeleteDialog({
           }
           icon={
             <ShieldAlert
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           }
@@ -112,7 +112,7 @@ export function PromotionDeleteDialog({
             }}
           >
             <Trash2
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Delete Promotion

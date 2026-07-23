@@ -154,7 +154,7 @@ gap-3 sm:left-auto sm:w-[420px]"
          )}
        >
          <Icon
-           aria-hidden="true"
+           aria-hidden={true}
            className="mt-0.5 size-5 shrink-0"
          />
 
@@ -172,7 +172,7 @@ gap-3 sm:left-auto sm:w-[420px]"
 
              <IconButton
               label="Dismiss notification"
-              icon={<X aria-hidden="true" />}
+              icon={<X aria-hidden={true} />}
               appearance="ghost"
               size="sm"
               onClick={() =>

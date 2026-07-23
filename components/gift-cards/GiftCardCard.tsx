@@ -56,7 +56,7 @@ export function GiftCardCard({
         ) : (
           <div className="flex size-full items-center justify-center">
             <Gift
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-14 text-[var(--color-gold-500)]"
             />
           </div>
@@ -89,7 +89,7 @@ export function GiftCardCard({
 
           <Badge variant="neutral">
             <Mail
-              aria-hidden="true"
+              aria-hidden={true}
               className="mr-1 size-3.5"
             />
             {giftCard.deliveryStatus}
@@ -129,7 +129,7 @@ export function GiftCardCard({
         <div className="grid gap-2 border-t border-border pt-4 text-xs text-muted">
           <p className="inline-flex items-center gap-2">
             <WalletCards
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             For {giftCard.recipientName}
@@ -137,7 +137,7 @@ export function GiftCardCard({
 
           <p className="inline-flex items-center gap-2">
             <CalendarDays
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             Expires {formatDate(giftCard.expiresAt)}

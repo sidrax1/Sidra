@@ -216,12 +216,12 @@ export function WarrantyClaimDecisionDialog({
               assessmentRequired ||
               !approved ? (
                 <ShieldAlert
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-5"
                 />
               ) : (
                 <CheckCircle2
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-5"
                 />
               )
@@ -445,12 +445,12 @@ export function WarrantyClaimDecisionDialog({
           >
             {approved ? (
               <Gavel
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
             ) : (
               <XCircle
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
             )}

@@ -48,7 +48,7 @@ dark:bg-[color:rgb(17_17_17_/_0.9)] md:px-8">
         aria-label="Return to content pages"
         onClick={onBack}
       >
-        <ArrowLeft aria-hidden="true" />
+        <ArrowLeft aria-hidden={true} />
       </Button>
 
       <div className="min-w-0">
@@ -74,7 +74,7 @@ dark:bg-[color:rgb(17_17_17_/_0.9)] md:px-8">
        disabled={saving || publishing}
        onClick={onPreview}
       >
-       <Eye aria-hidden="true" />
+       <Eye aria-hidden={true} />
        Preview
       </Button>
 
@@ -88,7 +88,7 @@ dark:bg-[color:rgb(17_17_17_/_0.9)] md:px-8">
          void onSave();
        }}
       >
-       <Save aria-hidden="true" />
+       <Save aria-hidden={true} />
        Save Draft
       </Button>
 
@@ -100,7 +100,7 @@ dark:bg-[color:rgb(17_17_17_/_0.9)] md:px-8">
           void onPublish();
         }}
       >
-        <Send aria-hidden="true" />
+        <Send aria-hidden={true} />
         Publish
       </Button>
      </div>

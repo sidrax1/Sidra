@@ -53,7 +53,7 @@ export function PromotionCard({
               {promotion.automatic ? (
                 <Badge variant="success">
                   <Sparkles
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="mr-1 size-3.5"
                   />
                   Automatic
@@ -77,7 +77,7 @@ export function PromotionCard({
                 }}
               >
                 <Copy
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-3.5 text-[var(--color-gold-600)]"
                 />
                 {promotion.code}
@@ -90,7 +90,7 @@ export function PromotionCard({
               <IconButton
                 label="Promotion actions"
                 icon={
-                  <MoreVertical aria-hidden="true" />
+                  <MoreVertical aria-hidden={true} />
                 }
                 appearance="ghost"
                 disabled={disabled}
@@ -156,7 +156,7 @@ export function PromotionCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
             <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-muted">
               <CalendarDays
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
               />
               Active Window
@@ -176,7 +176,7 @@ export function PromotionCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
             <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-muted">
               <UsersRound
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
               />
               Usage

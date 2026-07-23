@@ -37,14 +37,14 @@ export function EmptyState({
       )}
     >
       <div
-        aria-hidden="true"
+        aria-hidden={true}
         className="pointer-events-none absolute inset-x-0 top-0 mx-auto h-px w-2/3
 bg-gradient-to-r from-transparent via-[var(--color-gold-500)] to-transparent opacity-60"
       />
 
     <div className="mx-auto flex max-w-xl flex-col items-center">
       <div
-       aria-hidden="true"
+       aria-hidden={true}
        className="mb-6 flex size-14 items-center justify-center rounded-full border
 border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.1)]
 text-[var(--color-gold-600)] shadow-[var(--shadow-gold-glow)]"

@@ -197,7 +197,7 @@ export function ServicePartnerFilters({
           placeholder="Search partner, city, capability or number"
           leadingIcon={
             <Search
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           }
@@ -317,7 +317,7 @@ export function ServicePartnerFilters({
             }
           >
             <X
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Reset

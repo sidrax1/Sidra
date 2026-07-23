@@ -43,7 +43,7 @@ export function WarrantyOwnershipCard({
         <div className="flex items-center gap-3">
           <span className="flex size-10 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.07)] text-[var(--color-gold-600)]">
             <UserRound
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           </span>
@@ -62,7 +62,7 @@ export function WarrantyOwnershipCard({
           }
         >
           <ShieldCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="mr-1 size-3.5"
           />
           Verified Owner
@@ -94,7 +94,7 @@ export function WarrantyOwnershipCard({
                 className="inline-flex w-fit items-center gap-2 transition-colors hover:text-foreground"
               >
                 <Mail
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4 text-[var(--color-gold-600)]"
                 />
                 {
@@ -110,7 +110,7 @@ export function WarrantyOwnershipCard({
                   className="inline-flex w-fit items-center gap-2 transition-colors hover:text-foreground"
                 >
                   <Phone
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-4 text-[var(--color-gold-600)]"
                   />
                   {

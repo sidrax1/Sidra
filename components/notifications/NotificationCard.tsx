@@ -78,7 +78,7 @@ shadow-[var(--shadow-gold-glow)]"
     <span className="flex size-11 shrink-0 items-center justify-center rounded-full border
 border-border bg-background text-[var(--color-gold-600)]">
       <Bell
-        aria-hidden="true"
+        aria-hidden={true}
         className="size-5"
       />
     </span>
@@ -103,7 +103,7 @@ border-border bg-background text-[var(--color-gold-600)]">
    <IconButton
      label="Mark notification as read"
      icon={
-       <Check aria-hidden="true" />
+       <Check aria-hidden={true} />
      }
      appearance="ghost"
      size="sm"
@@ -120,7 +120,7 @@ border-border bg-background text-[var(--color-gold-600)]">
   <IconButton
    label="Delete notification"
    icon={
-     <Trash2 aria-hidden="true" />
+     <Trash2 aria-hidden={true} />
    }
    appearance="ghost"
    size="sm"

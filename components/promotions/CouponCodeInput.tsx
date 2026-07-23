@@ -46,7 +46,7 @@ export function CouponCodeInput({
       >
         <div className="flex items-start gap-3">
           <BadgeCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="mt-0.5 size-5 shrink-0 text-[var(--color-success)]"
           />
 
@@ -73,7 +73,7 @@ export function CouponCodeInput({
             }}
           >
             <X
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Remove
@@ -91,7 +91,7 @@ export function CouponCodeInput({
     <div className={cn("grid gap-3", className)}>
       <div className="flex items-center gap-2 text-sm font-medium text-foreground">
         <BadgePercent
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-4 text-[var(--color-gold-600)]"
         />
         Promotion Code

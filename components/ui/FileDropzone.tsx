@@ -150,13 +150,13 @@ text-[var(--color-gold-600)] shadow-[var(--shadow-gold-glow)]">
        type.startsWith("image/")
       )?(
        <ImagePlus
-         aria-hidden="true"
+         aria-hidden={true}
          className="size-7"
        />
       ):(
 
          <FileUp
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-7"
          />
        )}

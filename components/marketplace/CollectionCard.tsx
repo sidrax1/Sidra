@@ -50,7 +50,7 @@ group-hover:scale-[1.055]"
 
     <div
 
-    aria-hidden="true"
+    aria-hidden={true}
     className="absolute inset-0 opacity-0 transition-opacity duration-[var(--duration-slow)]
 group-hover:opacity-100"
     style={{
@@ -95,7 +95,7 @@ duration-[var(--duration-base)] group-hover:-translate-y-1 group-hover:translate
 group-hover:bg-white/20">
        <ArrowUpRight
 
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5"
          />
        </span>

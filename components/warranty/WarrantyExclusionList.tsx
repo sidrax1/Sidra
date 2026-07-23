@@ -42,7 +42,7 @@ export function WarrantyExclusionList({
       <header className="flex items-start gap-4 border-b border-border bg-[color:rgb(145_59_59_/_0.05)] p-6">
         <span className="flex size-11 shrink-0 items-center justify-center rounded-full border border-[color:rgb(145_59_59_/_0.28)] bg-[color:rgb(145_59_59_/_0.07)] text-[var(--color-error)]">
           <ShieldAlert
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -76,7 +76,7 @@ export function WarrantyExclusionList({
               <div className="flex items-start gap-4">
                 <span className="flex size-9 shrink-0 items-center justify-center rounded-full border border-[color:rgb(145_59_59_/_0.25)] bg-[color:rgb(145_59_59_/_0.06)] text-[var(--color-error)]">
                   <XCircle
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-4"
                   />
                 </span>

@@ -117,7 +117,7 @@ export function LoyaltyRedeemDialog({
               <div className="flex items-start gap-4">
                 <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-card text-[var(--color-gold-600)]">
                   <Gift
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-5"
                   />
                 </span>
@@ -131,7 +131,7 @@ export function LoyaltyRedeemDialog({
                     {reward.featured ? (
                       <Badge variant="gold">
                         <Sparkles
-                          aria-hidden="true"
+                          aria-hidden={true}
                           className="mr-1 size-3.5"
                         />
                         Featured
@@ -232,7 +232,7 @@ export function LoyaltyRedeemDialog({
               }
               icon={
                 <ShieldCheck
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-5"
                 />
               }
@@ -299,7 +299,7 @@ export function LoyaltyRedeemDialog({
             }}
           >
             <Gift
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Confirm Redemption

@@ -84,7 +84,7 @@ export function AccountDeletionDialog({
             description="Orders, invoices and legally required financial records may remain retained for the applicable compliance period."
             icon={
               <ShieldAlert
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             }
@@ -156,7 +156,7 @@ export function AccountDeletionDialog({
             }}
           >
             <Trash2
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Submit Deletion Request

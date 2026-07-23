@@ -144,7 +144,7 @@ export function ReturnTrackingDialog({
             description="Verify the carrier name, tracking number and public tracking link before publishing."
             icon={
               <PackageSearch
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             }
@@ -175,7 +175,7 @@ export function ReturnTrackingDialog({
           >
             <div className="relative">
               <Truck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-muted"
               />
 
@@ -228,7 +228,7 @@ export function ReturnTrackingDialog({
           >
             <div className="relative">
               <ExternalLink
-                aria-hidden="true"
+                aria-hidden={true}
                 className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-muted"
               />
 
@@ -287,7 +287,7 @@ export function ReturnTrackingDialog({
             }}
           >
             <PackageSearch
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Update Tracking

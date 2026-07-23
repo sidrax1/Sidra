@@ -123,7 +123,7 @@ export function ServicePartnerDocumentSummary({
               )}
             >
               <Icon
-                aria-hidden="true"
+                aria-hidden={true}
                 className={cn(
                   "size-5",
                   metric.tone ===

@@ -245,7 +245,7 @@ export function ReturnFilters({
           placeholder="Search return, order, product or customer"
           leadingIcon={
             <Search
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           }
@@ -336,7 +336,7 @@ export function ReturnFilters({
             }
           >
             <X
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Reset

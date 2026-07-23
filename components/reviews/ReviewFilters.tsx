@@ -178,7 +178,7 @@ export function ReviewFilters({
           placeholder="Search review, customer or product"
           leadingIcon={
             <Search
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           }
@@ -260,7 +260,7 @@ export function ReviewFilters({
             }
           >
             <X
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Reset

@@ -90,7 +90,7 @@ export function AddressCard({
       <div className="flex items-start gap-4">
         <span className="flex size-11 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.08)] text-[var(--color-gold-600)]">
           <TypeIcon
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -140,7 +140,7 @@ export function AddressCard({
 
           <p className="mt-3 inline-flex items-center gap-2 text-xs text-muted">
             <Phone
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5"
             />
             {address.mobile}
@@ -152,7 +152,7 @@ export function AddressCard({
             <IconButton
               label="Address actions"
               icon={
-                <MoreVertical aria-hidden="true" />
+                <MoreVertical aria-hidden={true} />
               }
               appearance="ghost"
               size="sm"
@@ -168,7 +168,7 @@ export function AddressCard({
                 }
               >
                 <Edit3
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 Edit address
@@ -185,7 +185,7 @@ export function AddressCard({
                 }}
               >
                 <Home
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 Set as default
@@ -200,7 +200,7 @@ export function AddressCard({
                 }
               >
                 <Trash2
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 Delete address

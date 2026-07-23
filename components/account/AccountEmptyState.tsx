@@ -22,7 +22,7 @@ export function AccountEmptyState({
     <EmptyState
       icon={
         <Gem
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-7"
         />
       }

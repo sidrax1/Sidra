@@ -110,7 +110,7 @@ export function ServicePartnerAssignmentProgress({
                   >
                     {completed ? (
                       <CheckCircle2
-                        aria-hidden="true"
+                        aria-hidden={true}
                         className={cn(
                           "size-5",
                           current
@@ -120,7 +120,7 @@ export function ServicePartnerAssignmentProgress({
                       />
                     ) : (
                       <Circle
-                        aria-hidden="true"
+                        aria-hidden={true}
                         className="size-5 text-muted"
                       />
                     )}

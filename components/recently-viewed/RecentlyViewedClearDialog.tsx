@@ -62,7 +62,7 @@ export function RecentlyViewedClearDialog({
           description="This does not affect your wishlist, orders or followed Studios."
           icon={
             <History
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           }
@@ -89,7 +89,7 @@ export function RecentlyViewedClearDialog({
             }}
           >
             <Trash2
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Clear History

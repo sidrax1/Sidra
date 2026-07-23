@@ -129,7 +129,7 @@ export function ServicePartnerApplicationReviewChecklist({
           }
         >
           <BadgeCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="mr-1 size-3.5"
           />
           {completedChecks}/{checks.length} Complete
@@ -160,7 +160,7 @@ export function ServicePartnerApplicationReviewChecklist({
                   )}
                 >
                   <Icon
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-4"
                   />
                 </span>

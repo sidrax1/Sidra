@@ -150,7 +150,7 @@ export function ServicePartnerCard({
               label="Service partner actions"
               icon={
                 <MoreVertical
-                  aria-hidden="true"
+                  aria-hidden={true}
                 />
               }
               appearance="ghost"
@@ -222,7 +222,7 @@ export function ServicePartnerCard({
             ) : (
               <div className="flex size-full items-center justify-center bg-[color:rgb(200_169_106_/_0.08)]">
                 <ShieldCheck
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-9 text-[var(--color-gold-600)]"
                 />
               </div>
@@ -297,7 +297,7 @@ export function ServicePartnerCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
             <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
               <Star
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-gold-600)]"
               />
               Customer Rating
@@ -320,7 +320,7 @@ export function ServicePartnerCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
             <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
               <BadgeCheck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-success)]"
               />
               Quality Score
@@ -339,7 +339,7 @@ export function ServicePartnerCard({
           <div className="flex items-center justify-between gap-4 text-xs">
             <span className="inline-flex items-center gap-2 text-muted">
               <UsersRound
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
               />
               Assignment Capacity
@@ -378,7 +378,7 @@ export function ServicePartnerCard({
         <div className="flex flex-wrap gap-x-5 gap-y-3 text-xs text-muted">
           <span className="inline-flex items-center gap-2">
             <MapPin
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             {
@@ -394,7 +394,7 @@ export function ServicePartnerCard({
 
           <span className="inline-flex items-center gap-2">
             <Clock3
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             Avg.{" "}
@@ -417,7 +417,7 @@ export function ServicePartnerCard({
           >
             View Partner
             <ArrowUpRight
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           </Button>

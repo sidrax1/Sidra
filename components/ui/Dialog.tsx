@@ -129,7 +129,7 @@ export const DialogContent = forwardRef<
      {...props}
    >
      <div
-       aria-hidden="true"
+       aria-hidden={true}
        className="pointer-events-none absolute inset-x-0 top-0 mx-auto h-px w-2/3
 bg-gradient-to-r from-transparent via-[var(--color-gold-500)] to-transparent opacity-70"
      />
@@ -143,7 +143,7 @@ bg-gradient-to-r from-transparent via-[var(--color-gold-500)] to-transparent opa
          <IconButton
           label={closeLabel}
           icon={
-            <X aria-hidden="true" />
+            <X aria-hidden={true} />
           }
           appearance="ghost"
           size="sm"

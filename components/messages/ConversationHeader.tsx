@@ -76,7 +76,7 @@ p-5">
    <IconButton
      label="Start voice call"
      icon={
-       <Phone aria-hidden="true" />
+       <Phone aria-hidden={true} />
      }
      appearance="ghost"
      onClick={onVoiceCall}
@@ -87,7 +87,7 @@ p-5">
    <IconButton
      label="Start video call"
      icon={
-       <Video aria-hidden="true" />
+       <Video aria-hidden={true} />
      }
      appearance="ghost"
      onClick={onVideoCall}
@@ -98,7 +98,7 @@ p-5">
   <IconButton
    label="Conversation options"
    icon={
-     <MoreHorizontal aria-hidden="true" />
+     <MoreHorizontal aria-hidden={true} />
    }
    appearance="ghost"
    onClick={onMore}

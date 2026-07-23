@@ -92,7 +92,7 @@ export function ServicePartnerAssignmentMetrics({
         )}
       >
         <Clock3
-          aria-hidden="true"
+          aria-hidden={true}
           className={cn(
             "size-5",
             responseOverdue
@@ -128,7 +128,7 @@ export function ServicePartnerAssignmentMetrics({
         )}
       >
         <CalendarClock
-          aria-hidden="true"
+          aria-hidden={true}
           className={cn(
             "size-5",
             completionOverdue
@@ -159,7 +159,7 @@ export function ServicePartnerAssignmentMetrics({
 
       <article className="rounded-[var(--radius-lg)] border border-border bg-card p-5 shadow-[var(--shadow-card)]">
         <Gauge
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5 text-[var(--color-gold-600)]"
         />
 
@@ -177,7 +177,7 @@ export function ServicePartnerAssignmentMetrics({
 
       <article className="rounded-[var(--radius-lg)] border border-border bg-card p-5 shadow-[var(--shadow-card)]">
         <BadgeIndianRupee
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5 text-[var(--color-gold-600)]"
         />
 
@@ -197,7 +197,7 @@ export function ServicePartnerAssignmentMetrics({
 
       <article className="rounded-[var(--radius-lg)] border border-[color:rgb(62_107_82_/_0.3)] bg-[color:rgb(62_107_82_/_0.05)] p-5 shadow-[var(--shadow-card)]">
         <UserRoundCheck
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5 text-[var(--color-success)]"
         />
 
@@ -217,7 +217,7 @@ export function ServicePartnerAssignmentMetrics({
 
       <article className="rounded-[var(--radius-lg)] border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.05)] p-5 shadow-[var(--shadow-card)]">
         <ShieldCheck
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5 text-[var(--color-gold-600)]"
         />
 

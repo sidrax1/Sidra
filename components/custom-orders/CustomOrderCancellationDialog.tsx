@@ -142,7 +142,7 @@ export function CustomOrderCancellationDialog({
             description="Cancellation may affect payment settlement, studio capacity and collector communication."
             icon={
               <ShieldAlert
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             }
@@ -245,7 +245,7 @@ export function CustomOrderCancellationDialog({
               });
             }}
           >
-            <XCircle aria-hidden="true" />
+            <XCircle aria-hidden={true} />
             Confirm Cancellation
           </Button>
         </DialogFooter>

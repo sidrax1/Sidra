@@ -62,7 +62,7 @@ export function PromotionRedemptionList({
                 <td className="px-5 py-4">
                   <span className="inline-flex items-center gap-2 text-sm font-medium text-foreground">
                     <UserRound
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-4 text-[var(--color-gold-600)]"
                     />
                     {redemption.customerId}
@@ -72,7 +72,7 @@ export function PromotionRedemptionList({
                 <td className="px-5 py-4">
                   <span className="inline-flex items-center gap-2 font-mono text-xs text-muted">
                     <ShoppingBag
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-4"
                     />
                     {redemption.orderId}
@@ -82,7 +82,7 @@ export function PromotionRedemptionList({
                 <td className="px-5 py-4">
                   <span className="inline-flex items-center gap-2 font-mono text-xs text-foreground">
                     <BadgePercent
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-4 text-[var(--color-gold-600)]"
                     />
                     {redemption.code ?? "AUTOMATIC"}
@@ -99,7 +99,7 @@ export function PromotionRedemptionList({
                 <td className="px-5 py-4">
                   <span className="inline-flex items-center gap-2 text-xs text-muted">
                     <CalendarDays
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-4"
                     />
                     {formatDateTime(redemption.redeemedAt)}

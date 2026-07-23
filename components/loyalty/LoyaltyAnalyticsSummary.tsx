@@ -125,7 +125,7 @@ export function LoyaltyAnalyticsSummary({
             >
               <span className="flex size-11 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.07)] text-[var(--color-gold-600)]">
                 <Icon
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-5"
                 />
               </span>

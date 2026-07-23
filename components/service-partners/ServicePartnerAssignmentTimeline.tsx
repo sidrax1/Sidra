@@ -183,7 +183,7 @@ export function ServicePartnerAssignmentTimeline({
               >
                 {!finalEntry ? (
                   <span
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className={cn(
                       "absolute left-5 top-10 h-[calc(100%-1rem)] w-px",
                       entry.complete
@@ -205,12 +205,12 @@ export function ServicePartnerAssignmentTimeline({
                 >
                   {entry.complete ? (
                     <Icon
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-4"
                     />
                   ) : (
                     <Circle
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-4"
                     />
                   )}

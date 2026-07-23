@@ -47,7 +47,7 @@ export function ReviewSummary({
       <div className="flex flex-col items-center justify-center rounded-[var(--radius-lg)] border border-[color:rgb(200_169_106_/_0.28)] bg-[color:rgb(200_169_106_/_0.06)] p-7 text-center">
         <span className="flex size-14 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.35)] bg-card text-[var(--color-gold-600)] shadow-[var(--shadow-gold-glow)]">
           <Star
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-6 fill-current"
           />
         </span>
@@ -103,7 +103,7 @@ export function ReviewSummary({
                   {ratingValue}
 
                   <Star
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-3.5 fill-[var(--color-gold-500)] text-[var(--color-gold-500)]"
                   />
                 </span>

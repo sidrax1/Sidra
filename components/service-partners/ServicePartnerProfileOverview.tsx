@@ -42,7 +42,7 @@ export function ServicePartnerProfileOverview({
       <header className="flex items-center justify-between gap-4 border-b border-border bg-[color:rgb(200_169_106_/_0.05)] p-5">
         <div className="flex items-center gap-3">
           <Building2
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5 text-[var(--color-gold-600)]"
           />
 
@@ -55,7 +55,7 @@ export function ServicePartnerProfileOverview({
           .status === "verified" ? (
           <Badge variant="success">
             <BadgeCheck
-              aria-hidden="true"
+              aria-hidden={true}
               className="mr-1 size-3.5"
             />
             Verified
@@ -81,7 +81,7 @@ export function ServicePartnerProfileOverview({
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           <article className="rounded-[var(--radius-lg)] border border-border bg-background p-5">
             <MapPin
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5 text-[var(--color-gold-600)]"
             />
 
@@ -104,7 +104,7 @@ export function ServicePartnerProfileOverview({
 
           <article className="rounded-[var(--radius-lg)] border border-border bg-background p-5">
             <Wrench
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5 text-[var(--color-gold-600)]"
             />
 
@@ -121,7 +121,7 @@ export function ServicePartnerProfileOverview({
 
           <article className="rounded-[var(--radius-lg)] border border-border bg-background p-5">
             <Star
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5 text-[var(--color-gold-600)]"
             />
 
@@ -143,7 +143,7 @@ export function ServicePartnerProfileOverview({
 
           <article className="rounded-[var(--radius-lg)] border border-border bg-background p-5">
             <ShieldCheck
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5 text-[var(--color-success)]"
             />
 

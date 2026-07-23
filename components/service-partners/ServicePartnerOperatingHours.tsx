@@ -53,7 +53,7 @@ export function ServicePartnerOperatingHours({
     >
       <header className="flex items-center gap-3 border-b border-border bg-[color:rgb(200_169_106_/_0.05)] p-5">
         <Clock3
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5 text-[var(--color-gold-600)]"
         />
 
@@ -72,12 +72,12 @@ export function ServicePartnerOperatingHours({
               <div className="inline-flex items-center gap-3">
                 {schedule.open ? (
                   <Sun
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-4 text-[var(--color-gold-600)]"
                   />
                 ) : (
                   <Moon
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-4 text-muted"
                   />
                 )}

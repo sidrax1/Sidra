@@ -59,7 +59,7 @@ export function ReviewDeleteDialog({
           description="Helpful votes, media associations and the public review record will be removed through the secure review service."
           icon={
             <ShieldAlert
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           }
@@ -102,7 +102,7 @@ export function ReviewDeleteDialog({
             }}
           >
             <Trash2
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Delete Review

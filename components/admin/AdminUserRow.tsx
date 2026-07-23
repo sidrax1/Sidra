@@ -70,7 +70,7 @@ md:grid-cols-[auto_minmax(0,1fr)_auto] md:items-center">
     <DropdownMenuTrigger>
      <IconButton
       label={`Actions for ${user.displayName}`}
-      icon={<MoreHorizontal aria-hidden="true" />}
+      icon={<MoreHorizontal aria-hidden={true} />}
       appearance="ghost"
       disabled={loading}
      />
@@ -78,12 +78,12 @@ md:grid-cols-[auto_minmax(0,1fr)_auto] md:items-center">
 
     <DropdownMenuContent>
      <DropdownMenuItem onSelect={() => onView(user)}>
-      <Eye aria-hidden="true" className="size-4" />
+      <Eye aria-hidden={true} className="size-4" />
       View Account
      </DropdownMenuItem>
 
      <DropdownMenuItem onSelect={() => onChangeRole(user)}>
-      <UserRoundCog aria-hidden="true" className="size-4" />
+      <UserRoundCog aria-hidden={true} className="size-4" />
       Change Role
 
       </DropdownMenuItem>
@@ -97,9 +97,9 @@ md:grid-cols-[auto_minmax(0,1fr)_auto] md:items-center">
        }}
       >
        {user.status === "suspended" ? (
-         <ShieldCheck aria-hidden="true" className="size-4" />
+         <ShieldCheck aria-hidden={true} className="size-4" />
        ):(
-         <Ban aria-hidden="true" className="size-4" />
+         <Ban aria-hidden={true} className="size-4" />
        )}
 
          {user.status === "suspended"

@@ -89,7 +89,7 @@ export function ConversationCard({
       </span>
 
     <MessageCircle
-     aria-hidden="true"
+     aria-hidden={true}
      className="mt-1 size-4 text-[var(--color-gold-600)]"
     />
    </button>

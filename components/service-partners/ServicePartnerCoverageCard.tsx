@@ -37,7 +37,7 @@ export function ServicePartnerCoverageCard({
       <div className="flex items-start justify-between gap-4">
         <span className="flex size-11 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.07)] text-[var(--color-gold-600)]">
           <MapPin
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -46,7 +46,7 @@ export function ServicePartnerCoverageCard({
           {area.pickupAvailable ? (
             <Badge variant="success">
               <Truck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mr-1 size-3.5"
               />
               Pickup
@@ -56,7 +56,7 @@ export function ServicePartnerCoverageCard({
           {area.onSiteServiceAvailable ? (
             <Badge variant="gold">
               <ShieldCheck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mr-1 size-3.5"
               />
               On-site
@@ -88,7 +88,7 @@ export function ServicePartnerCoverageCard({
           <div className="flex items-center justify-between gap-4">
             <dt className="inline-flex items-center gap-2 text-sm text-muted">
               <Navigation
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 text-[var(--color-gold-600)]"
               />
               Service Radius
@@ -107,7 +107,7 @@ export function ServicePartnerCoverageCard({
           <div className="flex items-start justify-between gap-4">
             <dt className="inline-flex items-center gap-2 text-sm text-muted">
               <PackageCheck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mt-0.5 size-4 text-[var(--color-gold-600)]"
               />
               Postal Codes

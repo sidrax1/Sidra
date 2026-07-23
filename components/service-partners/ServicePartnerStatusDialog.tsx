@@ -195,12 +195,12 @@ export function ServicePartnerStatusDialog({
             icon={
               destructive ? (
                 <ShieldAlert
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-5"
                 />
               ) : (
                 <Icon
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-5"
                 />
               )
@@ -312,7 +312,7 @@ export function ServicePartnerStatusDialog({
             }}
           >
             <Icon
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Set{" "}

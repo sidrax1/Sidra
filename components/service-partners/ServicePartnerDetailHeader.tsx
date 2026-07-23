@@ -100,7 +100,7 @@ export function ServicePartnerDetailHeader({
                   ) : (
                     <div className="flex size-full items-center justify-center">
                       <ShieldCheck
-                        aria-hidden="true"
+                        aria-hidden={true}
                         className="size-12 text-[var(--color-gold-500)]"
                       />
                     </div>
@@ -168,7 +168,7 @@ export function ServicePartnerDetailHeader({
               <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/60">
                 <span className="inline-flex items-center gap-2">
                   <MapPin
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-4"
                   />
                   {
@@ -184,7 +184,7 @@ export function ServicePartnerDetailHeader({
 
                 <span className="inline-flex items-center gap-2">
                   <Wrench
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-4"
                   />
                   {
@@ -195,7 +195,7 @@ export function ServicePartnerDetailHeader({
 
                 <span className="inline-flex items-center gap-2">
                   <UsersRound
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-4"
                   />
                   {
@@ -212,7 +212,7 @@ export function ServicePartnerDetailHeader({
                 <div>
                   <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-white/50">
                     <Star
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-3.5 text-[var(--color-gold-500)]"
                     />
                     Customer Rating
@@ -259,7 +259,7 @@ export function ServicePartnerDetailHeader({
                 <div className="border-t border-white/10 pt-5">
                   <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-white/50">
                     <Clock3
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-3.5"
                     />
                     Average Completion

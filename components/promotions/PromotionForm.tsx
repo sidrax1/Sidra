@@ -165,7 +165,7 @@ export function PromotionForm({
       <header className="flex items-start gap-4">
         <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.08)] text-[var(--color-gold-600)]">
           <Sparkles
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -299,12 +299,12 @@ export function PromotionForm({
           <div className="flex items-center gap-3">
             {promotionType === "buyXGetY" ? (
               <Gift
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5 text-[var(--color-gold-600)]"
               />
             ) : (
               <BadgePercent
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5 text-[var(--color-gold-600)]"
               />
             )}
@@ -633,7 +633,7 @@ export function PromotionForm({
         <div className="rounded-[var(--radius-lg)] border border-border bg-background p-5">
           <div className="flex items-center gap-3">
             <CalendarClock
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5 text-[var(--color-gold-600)]"
             />
 
@@ -719,7 +719,7 @@ export function PromotionForm({
             loadingLabel="Saving Promotion"
           >
             <Save
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Save Promotion

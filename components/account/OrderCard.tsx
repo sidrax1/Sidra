@@ -88,7 +88,7 @@ sm:items-center sm:justify-between">
              ):(
                <div className="flex size-full items-center justify-center">
                 <Package
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-5 text-muted"
                 />
                </div>
@@ -131,7 +131,7 @@ border-card bg-[var(--color-black-900)] text-sm font-semibold text-white">
       >
         View Order
         <ArrowRight
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-4"
         />
       </Link>

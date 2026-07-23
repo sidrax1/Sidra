@@ -160,7 +160,7 @@ export function ReturnCard({
               label="Return actions"
               icon={
                 <MoreVertical
-                  aria-hidden="true"
+                  aria-hidden={true}
                 />
               }
               appearance="ghost"
@@ -262,7 +262,7 @@ export function ReturnCard({
             ) : (
               <div className="flex size-full items-center justify-center">
                 <PackageCheck
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-8 text-[var(--color-gold-600)]"
                 />
               </div>
@@ -325,7 +325,7 @@ export function ReturnCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-card p-4">
             <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
               <IndianRupee
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
               />
               Return Value
@@ -347,7 +347,7 @@ export function ReturnCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-card p-4">
             <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
               <CalendarClock
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
               />
               Response Due
@@ -364,7 +364,7 @@ export function ReturnCard({
         <div className="flex flex-wrap gap-x-5 gap-y-3 text-xs text-muted">
           <span className="inline-flex items-center gap-2">
             <ReceiptText
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             Order #
@@ -375,7 +375,7 @@ export function ReturnCard({
 
           <span className="inline-flex items-center gap-2">
             <Store
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             {
@@ -387,7 +387,7 @@ export function ReturnCard({
             .trackingNumber ? (
             <span className="inline-flex items-center gap-2">
               <Truck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-gold-600)]"
               />
               {
@@ -409,7 +409,7 @@ export function ReturnCard({
           >
             View Return
             <ArrowUpRight
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           </Button>

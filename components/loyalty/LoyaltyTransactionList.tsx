@@ -169,7 +169,7 @@ export function LoyaltyTransactionList({
                   )}
                 >
                   <Icon
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-5"
                   />
                 </span>
@@ -197,7 +197,7 @@ export function LoyaltyTransactionList({
 
                       <time className="mt-2 inline-flex items-center gap-2 text-xs text-muted">
                         <History
-                          aria-hidden="true"
+                          aria-hidden={true}
                           className="size-3.5"
                         />
                         {formatDateTime(

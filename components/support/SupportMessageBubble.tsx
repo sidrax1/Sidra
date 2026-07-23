@@ -76,12 +76,12 @@ export function SupportMessageBubble({
   <span className="inline-flex items-center gap-1.5 text-xs font-semibold">
    {staff ? (
      <Headphones
-      aria-hidden="true"
+      aria-hidden={true}
       className="size-3.5"
      />
    ):(
      <UserRound
-      aria-hidden="true"
+      aria-hidden={true}
       className="size-3.5"
      />
    )}

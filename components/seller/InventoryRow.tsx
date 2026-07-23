@@ -88,7 +88,7 @@ text-[var(--color-gold-600)]">
    <div className="flex flex-wrap items-center gap-2">
     <IconButton
      label="Decrease quantity"
-     icon={<Minus aria-hidden="true" />}
+     icon={<Minus aria-hidden={true} />}
      appearance="ghost"
      size="sm"
      disabled={loading || quantity <= 0}
@@ -114,7 +114,7 @@ text-[var(--color-gold-600)]">
 
       <IconButton
        label="Increase quantity"
-       icon={<Plus aria-hidden="true" />}
+       icon={<Plus aria-hidden={true} />}
        appearance="ghost"
        size="sm"
        disabled={loading}
@@ -131,7 +131,7 @@ text-[var(--color-gold-600)]">
          void onSave();
        }}
      >
-       <Save aria-hidden="true" />
+       <Save aria-hidden={true} />
        Save
      </Button>
     </div>

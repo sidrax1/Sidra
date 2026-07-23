@@ -68,7 +68,7 @@ export function ProductPricingEditor({
 border-[color:rgb(200_169_106_/_0.28)] bg-[color:rgb(200_169_106_/_0.08)]
 text-[var(--color-gold-600)]">
         <BadgeIndianRupee
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5"
         />
        </span>
@@ -172,7 +172,7 @@ bg-background p-5 sm:grid-cols-3">
      </p>
      <p className="mt-2 inline-flex items-center gap-2 font-medium text-foreground">
       <Percent
-        aria-hidden="true"
+        aria-hidden={true}
         className="size-4 text-[var(--color-gold-600)]"
       />
       {discountPercentage}%

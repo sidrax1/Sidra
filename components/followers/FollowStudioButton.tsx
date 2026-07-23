@@ -43,12 +43,12 @@ export function FollowStudioButton({
     >
       {loading ? (
         <LoaderCircle
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-4 animate-spin"
         />
       ) : (
         <Heart
-          aria-hidden="true"
+          aria-hidden={true}
           className={cn(
             "size-4",
             following &&

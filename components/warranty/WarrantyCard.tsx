@@ -132,7 +132,7 @@ export function WarrantyCard({
               label="Warranty actions"
               icon={
                 <MoreVertical
-                  aria-hidden="true"
+                  aria-hidden={true}
                 />
               }
               appearance="ghost"
@@ -226,7 +226,7 @@ export function WarrantyCard({
             ) : (
               <div className="flex size-full items-center justify-center">
                 <ShieldCheck
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-9 text-[var(--color-gold-600)]"
                 />
               </div>
@@ -247,7 +247,7 @@ export function WarrantyCard({
             <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-xs text-muted">
               <span className="inline-flex items-center gap-2">
                 <ReceiptText
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-3.5 text-[var(--color-gold-600)]"
                 />
                 Order #
@@ -259,7 +259,7 @@ export function WarrantyCard({
 
               <span className="inline-flex items-center gap-2">
                 <Store
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-3.5 text-[var(--color-gold-600)]"
                 />
                 {
@@ -334,7 +334,7 @@ export function WarrantyCard({
         <div className="flex flex-wrap gap-x-5 gap-y-3 text-xs text-muted">
           <span className="inline-flex items-center gap-2">
             <ShieldCheck
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-success)]"
             />
             {
@@ -345,7 +345,7 @@ export function WarrantyCard({
 
           <span className="inline-flex items-center gap-2">
             <CalendarDays
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             Issued{" "}
@@ -373,7 +373,7 @@ export function WarrantyCard({
           >
             View Warranty
             <ArrowUpRight
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           </Button>

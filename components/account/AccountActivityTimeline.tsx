@@ -70,7 +70,7 @@ export function AccountActivityTimeline({
       )}
     >
       <div
-        aria-hidden="true"
+        aria-hidden={true}
         className="absolute bottom-6 left-[1.35rem] top-6 hidden w-px bg-border sm:block"
       />
 
@@ -88,7 +88,7 @@ export function AccountActivityTimeline({
             >
               <span className="absolute -left-[3.55rem] top-5 hidden size-11 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-card text-[var(--color-gold-600)] shadow-[var(--shadow-card)] sm:flex">
                 <Icon
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-5"
                 />
               </span>
@@ -96,7 +96,7 @@ export function AccountActivityTimeline({
               <div className="flex items-start gap-4 sm:hidden">
                 <span className="flex size-10 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.07)] text-[var(--color-gold-600)]">
                   <Icon
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-4"
                   />
                 </span>

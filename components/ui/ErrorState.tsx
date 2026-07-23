@@ -48,7 +48,7 @@ export function ErrorState({
     >
       <div className="mx-auto flex max-w-xl flex-col items-center">
         <div
-          aria-hidden="true"
+          aria-hidden={true}
           className="mb-6 flex size-14 items-center justify-center rounded-full border
 border-[color:rgb(140_59_52_/_0.25)] bg-[color:rgb(140_59_52_/_0.08)] text-[var(--color-error)]"
         >
@@ -72,7 +72,7 @@ border-[color:rgb(140_59_52_/_0.25)] bg-[color:rgb(140_59_52_/_0.08)] text-[var(
            onClick={onRetry}
          >
            <RotateCcw
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
            />
 

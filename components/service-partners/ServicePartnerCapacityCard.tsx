@@ -56,7 +56,7 @@ export function ServicePartnerCapacityCard({
       <div className="flex items-start justify-between gap-4">
         <span className="flex size-12 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.07)] text-[var(--color-gold-600)]">
           <Gauge
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -94,7 +94,7 @@ export function ServicePartnerCapacityCard({
           </div>
 
           <UsersRound
-            aria-hidden="true"
+            aria-hidden={true}
             className={cn(
               "size-8",
               nearCapacity
@@ -163,7 +163,7 @@ export function ServicePartnerCapacityCard({
       {!partner.acceptingAssignments ? (
         <div className="mt-5 flex items-start gap-3 rounded-[var(--radius-md)] border border-[color:rgb(173_118_38_/_0.3)] bg-[color:rgb(173_118_38_/_0.06)] p-4">
           <PauseCircle
-            aria-hidden="true"
+            aria-hidden={true}
             className="mt-0.5 size-4 shrink-0 text-[var(--color-warning)]"
           />
 

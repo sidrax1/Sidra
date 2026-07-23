@@ -95,7 +95,7 @@ export function ServicePartnerApplicationActions({
             }
           >
             <Eye
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             View Application
@@ -113,7 +113,7 @@ export function ServicePartnerApplicationActions({
             }
           >
             <CheckCircle2
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Approve Partner
@@ -132,7 +132,7 @@ export function ServicePartnerApplicationActions({
             }
           >
             <FileQuestion
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Request Information
@@ -151,7 +151,7 @@ export function ServicePartnerApplicationActions({
             }
           >
             <XCircle
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Reject Application
@@ -170,7 +170,7 @@ export function ServicePartnerApplicationActions({
             }
           >
             <RotateCcw
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Reopen Review
@@ -182,7 +182,7 @@ export function ServicePartnerApplicationActions({
       !reopenable ? (
         <div className="mt-6 flex items-start gap-3 rounded-[var(--radius-md)] border border-[color:rgb(62_107_82_/_0.28)] bg-[color:rgb(62_107_82_/_0.05)] p-4">
           <ShieldAlert
-            aria-hidden="true"
+            aria-hidden={true}
             className="mt-0.5 size-4 shrink-0 text-[var(--color-success)]"
           />
 

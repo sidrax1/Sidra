@@ -74,7 +74,7 @@ export function ServicePartnerApplicationDocuments({
       <header className="flex items-center justify-between gap-4 border-b border-border bg-[color:rgb(200_169_106_/_0.05)] p-5">
         <div className="flex items-center gap-3">
           <FileCheck2
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5 text-[var(--color-gold-600)]"
           />
 
@@ -111,7 +111,7 @@ export function ServicePartnerApplicationDocuments({
                 <div className="flex items-start justify-between gap-4">
                   <span className="flex size-11 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.07)] text-[var(--color-gold-600)]">
                     <FileText
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-5"
                     />
                   </span>
@@ -155,7 +155,7 @@ export function ServicePartnerApplicationDocuments({
                         rel="noreferrer"
                       >
                         <ExternalLink
-                          aria-hidden="true"
+                          aria-hidden={true}
                           className="size-4"
                         />
                         Open Document

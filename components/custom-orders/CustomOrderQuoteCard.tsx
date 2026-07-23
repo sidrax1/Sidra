@@ -69,7 +69,7 @@ export function CustomOrderQuoteCard({
         <div className="flex items-start gap-4">
           <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.32)] bg-card text-[var(--color-gold-600)] shadow-[var(--shadow-card)]">
             <BadgeIndianRupee
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           </span>
@@ -110,7 +110,7 @@ export function CustomOrderQuoteCard({
 
             <p className="mt-2 inline-flex items-center gap-2 font-medium text-foreground">
               <CalendarClock
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 text-[var(--color-gold-600)]"
               />
               {quote.estimatedProductionDays.toLocaleString(
@@ -190,7 +190,7 @@ export function CustomOrderQuoteCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-5">
             <p className="inline-flex items-center gap-2 text-sm font-medium text-foreground">
               <FileText
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 text-[var(--color-gold-600)]"
               />
               Studio Notes
@@ -205,7 +205,7 @@ export function CustomOrderQuoteCard({
         {quote.terms ? (
           <div className="flex items-start gap-3 text-xs leading-6 text-muted">
             <ShieldCheck
-              aria-hidden="true"
+              aria-hidden={true}
               className="mt-0.5 size-4 shrink-0 text-[var(--color-gold-600)]"
             />
 
@@ -224,7 +224,7 @@ export function CustomOrderQuoteCard({
                   void onDecline(quote);
                 }}
               >
-                <XCircle aria-hidden="true" />
+                <XCircle aria-hidden={true} />
                 Decline
               </Button>
             ) : null}
@@ -252,7 +252,7 @@ export function CustomOrderQuoteCard({
                   void onAccept(quote);
                 }}
               >
-                <CheckCircle2 aria-hidden="true" />
+                <CheckCircle2 aria-hidden={true} />
                 Accept Quote
               </Button>
             ) : null}

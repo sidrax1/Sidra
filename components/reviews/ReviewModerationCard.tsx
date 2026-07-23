@@ -125,7 +125,7 @@ export function ReviewModerationCard({
               label="Moderation actions"
               icon={
                 <MoreVertical
-                  aria-hidden="true"
+                  aria-hidden={true}
                 />
               }
               appearance="ghost"
@@ -145,7 +145,7 @@ export function ReviewModerationCard({
                 }
               >
                 <Eye
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="mr-2 size-4"
                 />
                 Publish review
@@ -161,7 +161,7 @@ export function ReviewModerationCard({
                 }
               >
                 <EyeOff
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="mr-2 size-4"
                 />
                 Hide review
@@ -177,7 +177,7 @@ export function ReviewModerationCard({
                 }
               >
                 <ShieldCheck
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="mr-2 size-4"
                 />
                 Open moderation
@@ -194,7 +194,7 @@ export function ReviewModerationCard({
                 }
               >
                 <Flag
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="mr-2 size-4"
                 />
                 Reject review
@@ -211,7 +211,7 @@ export function ReviewModerationCard({
                 }
               >
                 <Trash2
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="mr-2 size-4"
                 />
                 Delete review
@@ -236,7 +236,7 @@ export function ReviewModerationCard({
           {review.verifiedPurchase ? (
             <Badge variant="success">
               <ShieldCheck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mr-1 size-3.5"
               />
               Verified Purchase
@@ -251,7 +251,7 @@ export function ReviewModerationCard({
           0 ? (
             <Badge variant="error">
               <Flag
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mr-1 size-3.5"
               />
               {review.reportCount.toLocaleString(

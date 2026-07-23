@@ -84,7 +84,7 @@ export function ServicePartnerCapabilityGrid({
                 <div className="flex items-center justify-between gap-4">
                   <dt className="inline-flex items-center gap-2 text-sm text-muted">
                     <Clock3
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-4 text-[var(--color-gold-600)]"
                     />
                     Turnaround
@@ -108,7 +108,7 @@ export function ServicePartnerCapabilityGrid({
                 <div className="flex items-center justify-between gap-4">
                   <dt className="inline-flex items-center gap-2 text-sm text-muted">
                     <BadgeIndianRupee
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-4 text-[var(--color-gold-600)]"
                     />
                     Base Fee
@@ -131,7 +131,7 @@ export function ServicePartnerCapabilityGrid({
                 <div className="flex items-center justify-between gap-4">
                   <dt className="inline-flex items-center gap-2 text-sm text-muted">
                     <ShieldCheck
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-4 text-[var(--color-gold-600)]"
                     />
                     Inspection Fee

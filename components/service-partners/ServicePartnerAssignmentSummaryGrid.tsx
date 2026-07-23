@@ -64,7 +64,7 @@ export function ServicePartnerAssignmentSummaryGrid({
             className="rounded-[var(--radius-lg)] border border-border bg-card p-5 shadow-[var(--shadow-card)]"
           >
             <Icon
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5 text-[var(--color-gold-600)]"
             />
 
@@ -81,7 +81,7 @@ export function ServicePartnerAssignmentSummaryGrid({
 
       <article className="rounded-[var(--radius-lg)] border border-border bg-card p-5 shadow-[var(--shadow-card)]">
         <BadgeIndianRupee
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5 text-[var(--color-gold-600)]"
         />
 
@@ -101,7 +101,7 @@ export function ServicePartnerAssignmentSummaryGrid({
 
       <article className="rounded-[var(--radius-lg)] border border-[color:rgb(62_107_82_/_0.3)] bg-[color:rgb(62_107_82_/_0.06)] p-5 shadow-[var(--shadow-card)]">
         <ShieldCheck
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5 text-[var(--color-success)]"
         />
 

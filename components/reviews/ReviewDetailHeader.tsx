@@ -25,7 +25,7 @@ export function ReviewDetailHeader({
     <header className="overflow-hidden rounded-[var(--radius-xl)] border border-[color:rgb(200_169_106_/_0.3)] bg-card shadow-[var(--shadow-hover)]">
       <div className="relative overflow-hidden bg-[var(--color-black-900)] px-6 py-9 text-white md:px-10">
         <div
-          aria-hidden="true"
+          aria-hidden={true}
           className="pointer-events-none absolute inset-0"
           style={{
             background:
@@ -42,7 +42,7 @@ export function ReviewDetailHeader({
             {review.verifiedPurchase ? (
               <Badge variant="success">
                 <BadgeCheck
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="mr-1 size-3.5"
                 />
                 Verified Purchase
@@ -52,7 +52,7 @@ export function ReviewDetailHeader({
             {review.reportCount > 0 ? (
               <Badge variant="warning">
                 <Flag
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="mr-1 size-3.5"
                 />
                 {review.reportCount.toLocaleString(
@@ -93,7 +93,7 @@ export function ReviewDetailHeader({
 
         <span className="inline-flex items-center gap-2 text-sm text-muted">
           <Star
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4 fill-[var(--color-gold-500)] text-[var(--color-gold-500)]"
           />
           {review.helpfulCount.toLocaleString(

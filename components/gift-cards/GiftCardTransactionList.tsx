@@ -52,17 +52,17 @@ export function GiftCardTransactionList({
               >
                 {transaction.type === "purchase" ? (
                   <Gift
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-5"
                   />
                 ) : credit ? (
                   <ArrowDownLeft
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-5"
                   />
                 ) : (
                   <ArrowUpRight
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-5"
                   />
                 )}
@@ -77,7 +77,7 @@ export function GiftCardTransactionList({
 
                     <p className="mt-2 inline-flex items-center gap-2 text-xs text-muted">
                       <History
-                        aria-hidden="true"
+                        aria-hidden={true}
                         className="size-3.5"
                       />
                       {formatDateTime(transaction.createdAt)}

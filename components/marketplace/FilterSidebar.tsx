@@ -107,7 +107,7 @@ export function FilterSidebar({
 border-[color:rgb(200_169_106_/_0.28)] bg-[color:rgb(200_169_106_/_0.08)]
 text-[var(--color-gold-600)]">
          <SlidersHorizontal
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-4"
          />
         </span>
@@ -130,7 +130,7 @@ text-[var(--color-gold-600)]">
           onClick={onReset}
          >
           <RotateCcw
-           aria-hidden="true"
+           aria-hidden={true}
            className="size-3.5"
           />
 

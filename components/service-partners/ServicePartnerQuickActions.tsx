@@ -90,7 +90,7 @@ export function ServicePartnerQuickActions({
             }
           >
             <Wrench
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Create Assignment
@@ -108,7 +108,7 @@ export function ServicePartnerQuickActions({
             }
           >
             <PauseCircle
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Availability
@@ -124,7 +124,7 @@ export function ServicePartnerQuickActions({
             }
           >
             <Edit3
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Edit Profile
@@ -140,7 +140,7 @@ export function ServicePartnerQuickActions({
             }
           >
             <UserRoundCog
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Change Status
@@ -156,7 +156,7 @@ export function ServicePartnerQuickActions({
             }
           >
             <FileCheck2
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Documents
@@ -174,7 +174,7 @@ export function ServicePartnerQuickActions({
             }
           >
             <CalendarClock
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Site Inspection
@@ -185,7 +185,7 @@ export function ServicePartnerQuickActions({
       {!canAssign ? (
         <div className="mt-5 flex items-start gap-3 rounded-[var(--radius-md)] border border-[color:rgb(173_118_38_/_0.3)] bg-[color:rgb(173_118_38_/_0.06)] p-4">
           <ShieldAlert
-            aria-hidden="true"
+            aria-hidden={true}
             className="mt-0.5 size-4 shrink-0 text-[var(--color-warning)]"
           />
 

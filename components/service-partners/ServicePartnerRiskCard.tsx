@@ -86,7 +86,7 @@ export function ServicePartnerRiskCard({
       <header className="flex items-center justify-between gap-4 border-b border-border bg-[color:rgb(200_169_106_/_0.05)] p-5">
         <div className="flex items-center gap-3">
           <ShieldAlert
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5 text-[var(--color-gold-600)]"
           />
 
@@ -161,7 +161,7 @@ export function ServicePartnerRiskCard({
                 className="flex items-start gap-3 rounded-[var(--radius-md)] border border-[color:rgb(145_59_59_/_0.28)] bg-[color:rgb(145_59_59_/_0.05)] p-4"
               >
                 <AlertTriangle
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="mt-0.5 size-4 shrink-0 text-[var(--color-error)]"
                 />
 
@@ -174,7 +174,7 @@ export function ServicePartnerRiskCard({
         ) : (
           <div className="flex items-start gap-3 rounded-[var(--radius-md)] border border-[color:rgb(62_107_82_/_0.28)] bg-[color:rgb(62_107_82_/_0.05)] p-4">
             <BadgeCheck
-              aria-hidden="true"
+              aria-hidden={true}
               className="mt-0.5 size-4 shrink-0 text-[var(--color-success)]"
             />
 
@@ -188,7 +188,7 @@ export function ServicePartnerRiskCard({
 
         <div className="flex items-center gap-2 border-t border-border pt-5 text-xs text-muted">
           <ShieldCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4 text-[var(--color-gold-600)]"
           />
           Risk signals should be

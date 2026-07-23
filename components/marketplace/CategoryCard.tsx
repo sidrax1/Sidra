@@ -55,7 +55,7 @@ tracking-[-0.035em] text-foreground">
 text-foreground">
        Discover
        <ArrowRight
-        aria-hidden="true"
+        aria-hidden={true}
         className="size-4 transition-transform duration-[var(--duration-base)]
 group-hover:translate-x-1"
        />

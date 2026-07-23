@@ -39,7 +39,7 @@ border-[color:rgb(200_169_106_/_0.28)] bg-[color:rgb(200_169_106_/_0.08)]
 text-[var(--color-gold-600)]">
         <MessageSquareWarning
 
-   aria-hidden="true"
+   aria-hidden={true}
    className="size-5"
   />
  </span>
@@ -63,12 +63,12 @@ text-[var(--color-gold-600)]">
 
   <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-xs text-muted">
    <span className="inline-flex items-center gap-2">
-    <Mail aria-hidden="true" className="size-3.5" />
+    <Mail aria-hidden={true} className="size-3.5" />
     {ticket.requesterEmail}
    </span>
 
    <span className="inline-flex items-center gap-2">
-    <Clock3 aria-hidden="true" className="size-3.5" />
+    <Clock3 aria-hidden={true} className="size-3.5" />
     {formatDateTime(ticket.createdAt)}
    </span>
 
@@ -84,7 +84,7 @@ text-[var(--color-gold-600)]">
 >
  Open Ticket
 
-      <ArrowRight aria-hidden="true" className="size-4" />
+      <ArrowRight aria-hidden={true} className="size-4" />
      </Button>
     </div>
    </Card>

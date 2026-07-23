@@ -72,7 +72,7 @@ export function ServicePartnerServiceAreaSummary({
     >
       <header className="flex items-center gap-3 border-b border-border bg-[color:rgb(200_169_106_/_0.05)] p-5">
         <MapPin
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5 text-[var(--color-gold-600)]"
         />
 
@@ -105,7 +105,7 @@ export function ServicePartnerServiceAreaSummary({
         <article className="rounded-[var(--radius-lg)] border border-border bg-background p-5">
           <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
             <Truck
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5"
             />
             Pickup Areas
@@ -119,7 +119,7 @@ export function ServicePartnerServiceAreaSummary({
         <article className="rounded-[var(--radius-lg)] border border-border bg-background p-5">
           <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
             <ShieldCheck
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5"
             />
             On-site Areas
@@ -135,7 +135,7 @@ export function ServicePartnerServiceAreaSummary({
         <div className="flex flex-wrap items-center gap-3">
           <Badge variant="gold">
             <Navigation
-              aria-hidden="true"
+              aria-hidden={true}
               className="mr-1 size-3.5"
             />
             Up to{" "}

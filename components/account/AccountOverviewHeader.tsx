@@ -51,7 +51,7 @@ export function AccountOverviewHeader({
       )}
     >
       <div
-        aria-hidden="true"
+        aria-hidden={true}
         className="pointer-events-none absolute inset-0"
         style={{
           background:
@@ -87,7 +87,7 @@ export function AccountOverviewHeader({
 
               <span className="inline-flex items-center gap-2">
                 <CalendarDays
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 Member since{" "}
@@ -100,7 +100,7 @@ export function AccountOverviewHeader({
         <div className="flex flex-wrap gap-2 lg:justify-end">
           <Badge variant="gold">
             <Crown
-              aria-hidden="true"
+              aria-hidden={true}
               className="mr-1 size-3.5"
             />
             Collector
@@ -109,7 +109,7 @@ export function AccountOverviewHeader({
           {verified ? (
             <Badge variant="success">
               <BadgeCheck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mr-1 size-3.5"
               />
               Verified Account

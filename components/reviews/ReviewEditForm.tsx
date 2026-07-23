@@ -94,7 +94,7 @@ export function ReviewEditForm({
                 )}
               >
                 <Star
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className={cn(
                     "size-5",
                     rating >= value &&
@@ -175,7 +175,7 @@ export function ReviewEditForm({
           }}
         >
           <Save
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
           Save Review

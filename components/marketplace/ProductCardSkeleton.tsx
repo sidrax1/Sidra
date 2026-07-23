@@ -12,7 +12,7 @@ export function ProductCardSkeleton({
 }: ProductCardSkeletonProps): React.JSX.Element {
   return (
    <Card
-     aria-hidden="true"
+     aria-hidden={true}
      className={cn(
        "overflow-hidden",
        className

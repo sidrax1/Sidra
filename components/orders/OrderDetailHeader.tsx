@@ -31,7 +31,7 @@ export function OrderDetailHeader({
     >
       <div className="relative overflow-hidden bg-[var(--color-black-900)] px-6 py-9 text-white md:px-10 md:py-11">
         <div
-          aria-hidden="true"
+          aria-hidden={true}
           className="pointer-events-none absolute inset-0"
           style={{
             background:
@@ -57,7 +57,7 @@ export function OrderDetailHeader({
             <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/60">
               <span className="inline-flex items-center gap-2">
                 <Store
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 {order.studioName}
@@ -65,7 +65,7 @@ export function OrderDetailHeader({
 
               <span className="inline-flex items-center gap-2">
                 <CalendarDays
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 {formatDateTime(order.placedAt)}
@@ -73,7 +73,7 @@ export function OrderDetailHeader({
 
               <span className="inline-flex items-center gap-2">
                 <PackageCheck
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 {order.itemCount.toLocaleString("en-IN")}{" "}

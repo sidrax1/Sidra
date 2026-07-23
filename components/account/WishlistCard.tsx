@@ -56,7 +56,7 @@ export function WishlistCard({
 
       >
        <ShoppingBag
-        aria-hidden="true"
+        aria-hidden={true}
         className="size-4"
        />
        Add to Bag
@@ -72,7 +72,7 @@ export function WishlistCard({
        className="text-[var(--color-error)]"
      >
        <Trash2
-         aria-hidden="true"
+         aria-hidden={true}
          className="size-4"
        />
        Remove

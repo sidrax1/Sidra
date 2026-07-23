@@ -42,7 +42,7 @@ export function ReviewHelpfulButton({
       }}
     >
       <ThumbsUp
-        aria-hidden="true"
+        aria-hidden={true}
         className={cn(
           "size-4",
           helpful &&

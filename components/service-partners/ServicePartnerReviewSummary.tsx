@@ -182,7 +182,7 @@ export function ServicePartnerReviewSummary({
                     )}
                   >
                     <Icon
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-4"
                     />
                   </span>
@@ -251,7 +251,7 @@ export function ServicePartnerReviewSummary({
         {application.reviewerNote ? (
           <div className="mt-5 flex items-start gap-3 rounded-[var(--radius-md)] border border-border bg-background p-4">
             <ShieldAlert
-              aria-hidden="true"
+              aria-hidden={true}
               className="mt-0.5 size-4 shrink-0 text-[var(--color-gold-600)]"
             />
 

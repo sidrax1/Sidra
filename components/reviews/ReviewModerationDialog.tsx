@@ -247,7 +247,7 @@ export function ReviewModerationDialog({
                 description="Review reported content and supporting evidence before publishing a decision."
                 icon={
                   <Flag
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-5"
                   />
                 }
@@ -401,7 +401,7 @@ export function ReviewModerationDialog({
             }}
           >
             <StatusIcon
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Publish Decision

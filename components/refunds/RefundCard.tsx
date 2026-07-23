@@ -106,7 +106,7 @@ export function RefundCard({
                 label="Refund actions"
                 icon={
                   <MoreVertical
-                    aria-hidden="true"
+                    aria-hidden={true}
                   />
                 }
                 appearance="ghost"
@@ -187,7 +187,7 @@ export function RefundCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-card p-4">
             <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
               <ReceiptText
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
               />
               Order
@@ -201,7 +201,7 @@ export function RefundCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-card p-4">
             <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
               <CreditCard
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
               />
               Payment
@@ -216,7 +216,7 @@ export function RefundCard({
         <div className="flex flex-wrap gap-x-5 gap-y-3 text-xs text-muted">
           <span className="inline-flex items-center gap-2">
             <CalendarDays
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             Created{" "}
@@ -228,7 +228,7 @@ export function RefundCard({
           {refund.processedAt ? (
             <span className="inline-flex items-center gap-2">
               <ShieldCheck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-success)]"
               />
               Processed{" "}
@@ -255,7 +255,7 @@ export function RefundCard({
           >
             View Refund
             <ArrowUpRight
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           </Button>

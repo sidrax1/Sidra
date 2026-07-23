@@ -22,12 +22,12 @@ export function ReviewEmptyState({
       icon={
         filtered ? (
           <MessageSquareText
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-7"
           />
         ) : (
           <Star
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-7"
           />
         )

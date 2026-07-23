@@ -80,7 +80,7 @@ export function VariantEditor({
         disabled={disabled || variants.length >= 100}
         onClick={addVariant}
        >
-        <Plus aria-hidden="true" />
+        <Plus aria-hidden={true} />
         Add Variant
        </Button>
       </header>
@@ -113,7 +113,7 @@ px-6 py-12 text-center">
 
          <IconButton
           label={`Remove variant ${index + 1}`}
-          icon={<Trash2 aria-hidden="true" />}
+          icon={<Trash2 aria-hidden={true} />}
           appearance="ghost"
           size="sm"
           disabled={disabled}

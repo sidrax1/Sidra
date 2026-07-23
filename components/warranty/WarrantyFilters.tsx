@@ -145,7 +145,7 @@ export function WarrantyFilters({
           placeholder="Search warranty, product, order or owner"
           leadingIcon={
             <Search
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           }
@@ -205,7 +205,7 @@ export function WarrantyFilters({
             }
           >
             <X
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Reset

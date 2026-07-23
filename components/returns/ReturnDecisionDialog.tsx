@@ -177,12 +177,12 @@ export function ReturnDecisionDialog({
             icon={
               approved ? (
                 <CheckCircle2
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-5"
                 />
               ) : (
                 <ShieldAlert
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-5"
                 />
               )
@@ -350,12 +350,12 @@ export function ReturnDecisionDialog({
           >
             {approved ? (
               <Gavel
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
             ) : (
               <XCircle
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
             )}

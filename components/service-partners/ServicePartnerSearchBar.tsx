@@ -43,12 +43,12 @@ export function ServicePartnerSearchBar({
         leadingIcon={
           value.trim().length > 0 ? (
             <Search
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           ) : (
             <Building2
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           )

@@ -50,12 +50,12 @@ export function OrderShipmentCard({
           <span className="flex size-11 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-card text-[var(--color-gold-600)]">
             {delivered ? (
               <PackageCheck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             ) : (
               <Truck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             )}
@@ -124,7 +124,7 @@ export function OrderShipmentCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
             <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-muted">
               <CalendarClock
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
               />
               Estimated Delivery
@@ -173,7 +173,7 @@ export function OrderShipmentCard({
               >
                 Track Shipment
                 <ExternalLink
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
               </Link>

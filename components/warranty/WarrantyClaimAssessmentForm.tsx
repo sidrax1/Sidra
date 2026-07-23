@@ -189,7 +189,7 @@ export function WarrantyClaimAssessmentForm({
       <header className="flex items-start gap-4">
         <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.08)] text-[var(--color-gold-600)]">
           <ClipboardCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -216,7 +216,7 @@ export function WarrantyClaimAssessmentForm({
         description="Coverage values must follow the warranty terms and fully account for the estimated service cost."
         icon={
           <ShieldAlert
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         }
@@ -282,7 +282,7 @@ export function WarrantyClaimAssessmentForm({
           <span>
             <span className="inline-flex items-center gap-2 text-sm font-medium text-foreground">
               <ShieldCheck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 text-[var(--color-success)]"
               />
               Claim is covered
@@ -547,7 +547,7 @@ export function WarrantyClaimAssessmentForm({
           >
             <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-muted">
               <BadgeIndianRupee
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
               />
               Unallocated
@@ -586,7 +586,7 @@ export function WarrantyClaimAssessmentForm({
           }}
         >
           <ClipboardCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
           Save Assessment

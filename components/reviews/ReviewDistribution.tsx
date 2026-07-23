@@ -77,7 +77,7 @@ export function ReviewDistribution({
                 <span className="inline-flex items-center gap-1 text-sm font-medium text-foreground">
                   {item.rating}
                   <Star
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-3.5 fill-current text-[var(--color-gold-600)]"
                   />
                 </span>

@@ -78,7 +78,7 @@ export function CheckoutStepIndicator({
              >
                {completed ? (
                  <Check
-                   aria-hidden="true"
+                   aria-hidden={true}
                    className="size-4"
                  />
                ):(
@@ -104,7 +104,7 @@ export function CheckoutStepIndicator({
             1?(
 
              <span
-               aria-hidden="true"
+               aria-hidden={true}
                className={cn(
                  "mx-5 h-px w-16",
                  completed

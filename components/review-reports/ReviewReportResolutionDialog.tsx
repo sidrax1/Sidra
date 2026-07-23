@@ -138,7 +138,7 @@ export function ReviewReportResolutionDialog({
             description="Verify the report evidence, review content and marketplace policy before confirming."
             icon={
               <Gavel
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             }
@@ -277,7 +277,7 @@ export function ReviewReportResolutionDialog({
 
           <p className="inline-flex items-start gap-3 border-t border-border pt-5 text-xs leading-6 text-muted">
             <ShieldCheck
-              aria-hidden="true"
+              aria-hidden={true}
               className="mt-0.5 size-4 shrink-0 text-[var(--color-success)]"
             />
             Review changes, notifications and report resolution are
@@ -319,7 +319,7 @@ export function ReviewReportResolutionDialog({
             }}
           >
             <Gavel
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Confirm Resolution

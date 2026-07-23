@@ -62,20 +62,20 @@ export function SiteHeader({
      <div className="flex items-center gap-1">
       <IconButton
        label="Your account"
-       icon={<UserRound aria-hidden="true" />}
+       icon={<UserRound aria-hidden={true} />}
        appearance="ghost"
       />
 
       <IconButton
        label="Your cart"
-       icon={<ShoppingBag aria-hidden="true" />}
+       icon={<ShoppingBag aria-hidden={true} />}
        appearance="ghost"
       />
 
       <IconButton
        label="Open menu"
 
-       icon={<Menu aria-hidden="true" />}
+       icon={<Menu aria-hidden={true} />}
        appearance="ghost"
        className="lg:hidden"
        onClick={onMenuOpen}

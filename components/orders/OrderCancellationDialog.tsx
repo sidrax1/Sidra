@@ -174,7 +174,7 @@ export function OrderCancellationDialog({
             }
             icon={
               <ShieldAlert
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             }
@@ -257,7 +257,7 @@ export function OrderCancellationDialog({
             }}
           >
             <XCircle
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Request Cancellation

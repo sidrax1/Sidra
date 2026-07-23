@@ -23,7 +23,7 @@ export function AccountErrorState({
     <ErrorState
       icon={
         <ShieldAlert
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-7"
         />
       }
@@ -40,7 +40,7 @@ export function AccountErrorState({
             }}
           >
             <RefreshCw
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Try Again

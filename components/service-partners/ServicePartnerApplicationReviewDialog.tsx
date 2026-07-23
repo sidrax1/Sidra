@@ -208,7 +208,7 @@ export function ServicePartnerApplicationReviewDialog({
             }
             icon={
               <AlertIcon
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             }
@@ -390,18 +390,18 @@ export function ServicePartnerApplicationReviewDialog({
             {decision ===
             "approve" ? (
               <Gavel
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
             ) : decision ===
               "requestInformation" ? (
               <FileQuestion
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
             ) : (
               <XCircle
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
             )}

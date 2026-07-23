@@ -38,7 +38,7 @@ export function ServicePartnerAssignmentPartnerCard({
     >
       <header className="flex items-center gap-3 border-b border-border bg-[color:rgb(200_169_106_/_0.05)] p-5">
         <Building2
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5 text-[var(--color-gold-600)]"
         />
 
@@ -63,7 +63,7 @@ export function ServicePartnerAssignmentPartnerCard({
             ) : (
               <div className="flex size-full items-center justify-center">
                 <ShieldCheck
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-8 text-[var(--color-gold-600)]"
                 />
               </div>
@@ -99,7 +99,7 @@ export function ServicePartnerAssignmentPartnerCard({
             <article className="rounded-[var(--radius-md)] border border-border bg-background p-4">
               <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
                 <Star
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-3.5 text-[var(--color-gold-600)]"
                 />
                 Customer Rating
@@ -120,7 +120,7 @@ export function ServicePartnerAssignmentPartnerCard({
             <article className="rounded-[var(--radius-md)] border border-border bg-background p-4">
               <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
                 <BadgeCheck
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-3.5 text-[var(--color-success)]"
                 />
                 Quality Score
@@ -141,7 +141,7 @@ export function ServicePartnerAssignmentPartnerCard({
           {partner ? (
             <span className="inline-flex items-center gap-2">
               <MapPin
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-gold-600)]"
               />
               {

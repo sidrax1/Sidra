@@ -54,7 +54,7 @@ export function SecurityOverview({
 border-[color:rgb(62_107_82_/_0.28)] bg-[color:rgb(62_107_82_/_0.08)]
 text-[var(--color-success)]">
        <ShieldCheck
-        aria-hidden="true"
+        aria-hidden={true}
         className="size-5"
        />
       </span>
@@ -79,7 +79,7 @@ text-[var(--color-success)]">
        <div className="flex items-center justify-between gap-4">
 
          <item.icon
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5 text-[var(--color-gold-600)]"
          />
 

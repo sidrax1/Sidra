@@ -334,7 +334,7 @@ export function ServicePartnerApplicationForm({
       <header className="flex items-start gap-4">
         <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.08)] text-[var(--color-gold-600)]">
           <Building2
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -363,7 +363,7 @@ export function ServicePartnerApplicationForm({
         description="Business identity, address, banking and service-capability documents are reviewed before activation."
         icon={
           <ShieldCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         }
@@ -386,7 +386,7 @@ export function ServicePartnerApplicationForm({
         <section className="grid gap-6 rounded-[var(--radius-xl)] border border-border bg-background p-6">
           <div className="flex items-center gap-3">
             <Building2
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5 text-[var(--color-gold-600)]"
             />
 
@@ -483,7 +483,7 @@ export function ServicePartnerApplicationForm({
         <section className="grid gap-6 rounded-[var(--radius-xl)] border border-border bg-card p-6">
           <div className="flex items-center gap-3">
             <Wrench
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5 text-[var(--color-gold-600)]"
             />
 
@@ -609,7 +609,7 @@ export function ServicePartnerApplicationForm({
         <section className="grid gap-6 rounded-[var(--radius-xl)] border border-border bg-background p-6">
           <div className="flex items-center gap-3">
             <MapPin
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5 text-[var(--color-gold-600)]"
             />
 
@@ -978,7 +978,7 @@ export function ServicePartnerApplicationForm({
         <section className="grid gap-6 rounded-[var(--radius-xl)] border border-border bg-background p-6">
           <div className="flex items-center gap-3">
             <MapPin
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5 text-[var(--color-gold-600)]"
             />
 
@@ -1092,7 +1092,7 @@ export function ServicePartnerApplicationForm({
         <section className="grid gap-6 rounded-[var(--radius-xl)] border border-border bg-card p-6">
           <div className="flex items-center gap-3">
             <FileCheck2
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5 text-[var(--color-gold-600)]"
             />
 
@@ -1166,7 +1166,7 @@ export function ServicePartnerApplicationForm({
             className="shrink-0"
           >
             <ShieldCheck
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Submit Application

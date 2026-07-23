@@ -54,7 +54,7 @@ export function SessionCard({
       <span className="flex size-11 shrink-0 items-center justify-center rounded-full border
 border-border bg-background text-[var(--color-gold-600)]">
        <DeviceIcon
-        aria-hidden="true"
+        aria-hidden={true}
         className="size-5"
        />
       </span>
@@ -79,7 +79,7 @@ border-border bg-background text-[var(--color-gold-600)]">
        {session.location ? (
          <p className="mt-3 inline-flex items-center gap-2 text-xs text-muted">
            <MapPin
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-3.5"
            />
            {session.location}
@@ -109,7 +109,7 @@ border-border bg-background text-[var(--color-gold-600)]">
          className="text-[var(--color-error)]"
        >
          <LogOut
-           aria-hidden="true"
+           aria-hidden={true}
            className="size-4"
          />
          Revoke

@@ -36,7 +36,7 @@ const defaultActions: readonly AccountQuickAction[] =
       href: "/account/orders",
       icon: (
         <PackageSearch
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5"
         />
       ),
@@ -49,7 +49,7 @@ const defaultActions: readonly AccountQuickAction[] =
       href: "/account/wishlist",
       icon: (
         <Heart
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5"
         />
       ),
@@ -62,7 +62,7 @@ const defaultActions: readonly AccountQuickAction[] =
       href: "/account/saved-studios",
       icon: (
         <Store
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5"
         />
       ),
@@ -75,7 +75,7 @@ const defaultActions: readonly AccountQuickAction[] =
       href: "/account/custom-orders",
       icon: (
         <Gem
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5"
         />
       ),
@@ -88,7 +88,7 @@ const defaultActions: readonly AccountQuickAction[] =
       href: "/account/addresses",
       icon: (
         <MapPin
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5"
         />
       ),
@@ -124,7 +124,7 @@ export function AccountQuickActions({
             </span>
 
             <ArrowUpRight
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4 text-muted transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--color-gold-600)]"
             />
           </div>

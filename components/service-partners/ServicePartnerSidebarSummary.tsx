@@ -99,7 +99,7 @@ export function ServicePartnerSidebarSummary({
           <div className="flex items-start justify-between gap-5">
             <dt className="inline-flex items-center gap-2 text-sm text-muted">
               <MapPin
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mt-0.5 size-4 text-[var(--color-gold-600)]"
               />
               Location
@@ -121,7 +121,7 @@ export function ServicePartnerSidebarSummary({
           <div className="flex items-start justify-between gap-5">
             <dt className="inline-flex items-center gap-2 text-sm text-muted">
               <Wrench
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mt-0.5 size-4 text-[var(--color-gold-600)]"
               />
               Capabilities
@@ -137,7 +137,7 @@ export function ServicePartnerSidebarSummary({
           <div className="flex items-start justify-between gap-5">
             <dt className="inline-flex items-center gap-2 text-sm text-muted">
               <Star
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mt-0.5 size-4 text-[var(--color-gold-600)]"
               />
               Rating
@@ -158,7 +158,7 @@ export function ServicePartnerSidebarSummary({
           <div className="flex items-start justify-between gap-5">
             <dt className="inline-flex items-center gap-2 text-sm text-muted">
               <BadgeCheck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mt-0.5 size-4 text-[var(--color-success)]"
               />
               Quality Score
@@ -176,7 +176,7 @@ export function ServicePartnerSidebarSummary({
           <div className="flex items-start justify-between gap-5">
             <dt className="inline-flex items-center gap-2 text-sm text-muted">
               <Gauge
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mt-0.5 size-4 text-[var(--color-gold-600)]"
               />
               Available Capacity
@@ -191,7 +191,7 @@ export function ServicePartnerSidebarSummary({
             <div className="flex items-start justify-between gap-5">
               <dt className="inline-flex items-center gap-2 text-sm text-muted">
                 <CalendarClock
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="mt-0.5 size-4 text-[var(--color-gold-600)]"
                 />
                 Activated
@@ -246,7 +246,7 @@ export function ServicePartnerSidebarSummary({
               }
             >
               <ShieldCheck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mr-1 size-3.5"
               />
               {verificationExpired

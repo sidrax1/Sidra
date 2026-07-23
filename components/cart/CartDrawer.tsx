@@ -160,7 +160,7 @@ export function CartDrawer({
             onClick={onCheckout}
            >
             <ShoppingBag
-              aria-hidden="true"
+              aria-hidden={true}
             />
             Checkout
            </Button>

@@ -98,7 +98,7 @@ export function PromotionFilters({
         placeholder="Search promotion or coupon code"
         leadingIcon={
           <Search
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
         }
@@ -176,7 +176,7 @@ export function PromotionFilters({
             }
           >
             <X
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Reset

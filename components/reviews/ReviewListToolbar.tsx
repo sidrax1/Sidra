@@ -34,7 +34,7 @@ export function ReviewListToolbar({
     >
       <p className="inline-flex items-center gap-2 text-sm text-muted">
         <MessageSquareText
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-4 text-[var(--color-gold-600)]"
         />
 

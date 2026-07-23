@@ -61,7 +61,7 @@ export function StudioFollowerCard({
         {follower.email ? (
           <p className="mt-2 inline-flex items-center gap-2 truncate text-xs text-muted">
             <Mail
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5"
             />
             {follower.email}
@@ -88,7 +88,7 @@ export function StudioFollowerCard({
       </div>
 
       <UserRound
-        aria-hidden="true"
+        aria-hidden={true}
         className="size-4 shrink-0 text-[var(--color-gold-600)]"
       />
     </>

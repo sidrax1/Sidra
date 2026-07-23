@@ -138,7 +138,7 @@ export function ReviewMediaGallery({
 
               <span className="absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition-[background-color,opacity] group-hover:bg-black/35 group-hover:opacity-100">
                 <Expand
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-5 text-white"
                 />
               </span>
@@ -159,7 +159,7 @@ export function ReviewMediaGallery({
               label="Close image viewer"
               icon={
                 <X
-                  aria-hidden="true"
+                  aria-hidden={true}
                 />
               }
               appearance="ghost"
@@ -179,7 +179,7 @@ export function ReviewMediaGallery({
                   label="Previous image"
                   icon={
                     <ChevronLeft
-                      aria-hidden="true"
+                      aria-hidden={true}
                     />
                   }
                   appearance="ghost"
@@ -202,7 +202,7 @@ export function ReviewMediaGallery({
                   label="Next image"
                   icon={
                     <ChevronRight
-                      aria-hidden="true"
+                      aria-hidden={true}
                     />
                   }
                   appearance="ghost"

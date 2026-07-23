@@ -43,7 +43,7 @@ export function SellerMetricGrid({
           Icon ? (
 
            <Icon
-             aria-hidden="true"
+             aria-hidden={true}
              className="size-5"
            />
          ) : undefined

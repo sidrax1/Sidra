@@ -75,7 +75,7 @@ export function OrderStatusBadge({
   return (
     <Badge variant={variant}>
       <Icon
-        aria-hidden="true"
+        aria-hidden={true}
         className="mr-1 size-3.5"
       />
       {labels[status]}

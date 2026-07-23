@@ -65,7 +65,7 @@ border-border bg-card shadow-[var(--shadow-modal)]">
   }}
  >
   <CheckCheck
-    aria-hidden="true"
+    aria-hidden={true}
     className="size-4"
   />
   Mark All Read

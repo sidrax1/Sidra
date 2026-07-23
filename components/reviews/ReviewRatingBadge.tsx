@@ -25,7 +25,7 @@ export function ReviewRatingBadge({
   return (
     <Badge variant={variant}>
       <Star
-        aria-hidden="true"
+        aria-hidden={true}
         className="mr-1 size-3.5 fill-current"
       />
       {rating.toFixed(1)}

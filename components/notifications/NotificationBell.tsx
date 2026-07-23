@@ -41,7 +41,7 @@ export function NotificationBell({
          : ""
      }`}
      icon={
-       <Bell aria-hidden="true" />
+       <Bell aria-hidden={true} />
      }
      appearance={
        open

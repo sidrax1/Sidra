@@ -72,7 +72,7 @@ export function CustomOrderCard({
     >
       <div className="grid gap-6 p-6 lg:grid-cols-[auto_minmax(0,1fr)_auto] lg:items-start">
         <span className="flex size-14 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.32)] bg-[color:rgb(200_169_106_/_0.08)] text-[var(--color-gold-600)] shadow-[var(--shadow-card)]">
-          <Gem aria-hidden="true" className="size-6" />
+          <Gem aria-hidden={true} className="size-6" />
         </span>
 
         <div className="min-w-0">
@@ -80,7 +80,7 @@ export function CustomOrderCard({
             <CustomOrderStatusBadge status={customOrder.status} />
 
             <Badge variant="neutral">
-              <Package aria-hidden="true" className="mr-1 size-3.5" />
+              <Package aria-hidden={true} className="mr-1 size-3.5" />
               {customOrder.quantity.toLocaleString("en-IN")}{" "}
               {customOrder.quantity === 1 ? "piece" : "pieces"}
             </Badge>
@@ -97,7 +97,7 @@ export function CustomOrderCard({
           <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-xs text-muted">
             <span className="inline-flex items-center gap-2">
               <CalendarDays
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-gold-600)]"
               />
               Submitted {formatDate(customOrder.createdAt)}
@@ -106,7 +106,7 @@ export function CustomOrderCard({
             {customOrder.requiredBy ? (
               <span className="inline-flex items-center gap-2">
                 <CalendarDays
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-3.5 text-[var(--color-gold-600)]"
                 />
                 Required by {formatDate(customOrder.requiredBy)}
@@ -116,7 +116,7 @@ export function CustomOrderCard({
             {attachmentCount > 0 ? (
               <span className="inline-flex items-center gap-2">
                 <ImageIcon
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-3.5 text-[var(--color-gold-600)]"
                 />
                 {attachmentCount.toLocaleString("en-IN")} reference{" "}
@@ -140,13 +140,13 @@ export function CustomOrderCard({
             onClick={() => onView(customOrder)}
           >
             View Request
-            <ArrowUpRight aria-hidden="true" className="size-4" />
+            <ArrowUpRight aria-hidden={true} className="size-4" />
           </Button>
         ) : (
           <Button asChild variant="outline" className="shrink-0">
             <Link href={detailsHref}>
               View Request
-              <ArrowUpRight aria-hidden="true" className="size-4" />
+              <ArrowUpRight aria-hidden={true} className="size-4" />
             </Link>
           </Button>
         )}

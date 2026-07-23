@@ -97,7 +97,7 @@ group-hover:scale-105">
         )}
       >
         <ChangeIcon
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-3.5"
         />
 

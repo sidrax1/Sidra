@@ -126,13 +126,13 @@ export function DataTable<T>({
                {active ? (
                 sortDirection === "asc" ? (
                  <ChevronUp
-                   aria-hidden="true"
+                   aria-hidden={true}
 
                 className="size-3.5"
                />
              ):(
                <ChevronDown
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
                />
              )

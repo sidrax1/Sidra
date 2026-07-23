@@ -60,7 +60,7 @@ export function ServicePartnerDocumentCard({
       <div className="flex items-start justify-between gap-4">
         <span className="flex size-11 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.07)] text-[var(--color-gold-600)]">
           <FileText
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -153,7 +153,7 @@ export function ServicePartnerDocumentCard({
             rel="noreferrer"
           >
             <ExternalLink
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Open
@@ -174,7 +174,7 @@ export function ServicePartnerDocumentCard({
             }
           >
             <Download
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Download

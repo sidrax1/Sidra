@@ -37,7 +37,7 @@ export function ServicePartnerSettlementCard({
       <header className="flex items-center justify-between gap-4 border-b border-border bg-[color:rgb(200_169_106_/_0.05)] p-5">
         <div className="flex items-center gap-3">
           <BadgeIndianRupee
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5 text-[var(--color-gold-600)]"
           />
 
@@ -105,7 +105,7 @@ export function ServicePartnerSettlementCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
             <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
               <CalendarClock
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
               />
               Settlement Cycle
@@ -152,7 +152,7 @@ export function ServicePartnerSettlementCard({
             <div className="flex items-center justify-between gap-4">
               <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.13em] text-muted">
                 <Building2
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-3.5 text-[var(--color-gold-600)]"
                 />
                 Settlement Bank

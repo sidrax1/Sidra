@@ -194,7 +194,7 @@ export function CreateWarrantyClaimForm({
       <header className="flex items-start gap-4">
         <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.08)] text-[var(--color-gold-600)]">
           <Wrench
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -241,12 +241,12 @@ export function CreateWarrantyClaimForm({
         icon={
           eligible ? (
             <ShieldCheck
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           ) : (
             <FileWarning
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           )
@@ -273,7 +273,7 @@ export function CreateWarrantyClaimForm({
           ) : (
             <div className="flex size-full items-center justify-center">
               <ShieldCheck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-9 text-[var(--color-gold-600)]"
               />
             </div>
@@ -308,7 +308,7 @@ export function CreateWarrantyClaimForm({
           <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted">
             <span className="inline-flex items-center gap-2">
               <CalendarDays
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4 text-[var(--color-gold-600)]"
               />
               Expires{" "}
@@ -511,7 +511,7 @@ export function CreateWarrantyClaimForm({
             loadingLabel="Submitting Claim"
           >
             <Wrench
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Submit Warranty Claim

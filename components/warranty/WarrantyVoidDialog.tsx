@@ -102,7 +102,7 @@ export function WarrantyVoidDialog({
             description="A voided warranty cannot create new claims. The reason is recorded in the permanent audit trail."
             icon={
               <TriangleAlert
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             }
@@ -113,7 +113,7 @@ export function WarrantyVoidDialog({
               <div className="flex items-start gap-4">
                 <span className="flex size-11 shrink-0 items-center justify-center rounded-full border border-[color:rgb(145_59_59_/_0.3)] bg-[color:rgb(145_59_59_/_0.07)] text-[var(--color-error)]">
                   <ShieldAlert
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-5"
                   />
                 </span>
@@ -202,7 +202,7 @@ export function WarrantyVoidDialog({
               }}
             >
               <Ban
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
               Void Warranty

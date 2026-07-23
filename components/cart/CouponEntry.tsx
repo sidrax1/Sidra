@@ -56,7 +56,7 @@ export function CouponEntry({
         >
          <div className="flex min-w-0 items-center gap-3">
            <CheckCircle2
-             aria-hidden="true"
+             aria-hidden={true}
              className="size-5 shrink-0 text-[var(--color-success)]"
            />
 
@@ -83,7 +83,7 @@ text-[var(--color-success)]">
         }}
        >
         <X
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-3.5"
         />
         Remove
@@ -126,7 +126,7 @@ return (
     <div className="flex gap-3">
      <div className="relative min-w-0 flex-1">
       <Tag
-        aria-hidden="true"
+        aria-hidden={true}
         className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2
 text-muted"
       />

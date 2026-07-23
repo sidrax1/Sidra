@@ -65,7 +65,7 @@ md:grid-cols-[auto_minmax(0,1fr)_auto] md:items-center">
        {studio.verified ? (
          <span className="inline-flex items-center gap-1.5 text-xs font-medium
 text-[var(--color-success)]">
-           <ShieldCheck aria-hidden="true" className="size-3.5" />
+           <ShieldCheck aria-hidden={true} className="size-3.5" />
            Verified
          </span>
        ) : null}
@@ -86,7 +86,7 @@ text-[var(--color-success)]">
  <DropdownMenuTrigger>
   <IconButton
    label={`Actions for ${studio.name}`}
-   icon={<MoreHorizontal aria-hidden="true" />}
+   icon={<MoreHorizontal aria-hidden={true} />}
    appearance="ghost"
    disabled={loading}
   />
@@ -94,7 +94,7 @@ text-[var(--color-success)]">
 
  <DropdownMenuContent>
   <DropdownMenuItem onSelect={() => onView(studio)}>
-   <Eye aria-hidden="true" className="size-4" />
+   <Eye aria-hidden={true} className="size-4" />
    View Studio
   </DropdownMenuItem>
 
@@ -104,7 +104,7 @@ text-[var(--color-success)]">
         void onVerify(studio);
       }}
     >
-      <ShieldCheck aria-hidden="true" className="size-4" />
+      <ShieldCheck aria-hidden={true} className="size-4" />
       Verify Studio
     </DropdownMenuItem>
   ) : null}
@@ -119,9 +119,9 @@ text-[var(--color-success)]">
   >
 
        {status === "suspended" ? (
-         <Store aria-hidden="true" className="size-4" />
+         <Store aria-hidden={true} className="size-4" />
        ):(
-         <Ban aria-hidden="true" className="size-4" />
+         <Ban aria-hidden={true} className="size-4" />
        )}
 
          {status === "suspended"

@@ -57,7 +57,7 @@ export function AnalyticsPeriodSelector({
      )}
    >
      <CalendarRange
-       aria-hidden="true"
+       aria-hidden={true}
        className="size-4 text-muted"
      />
 

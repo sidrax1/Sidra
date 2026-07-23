@@ -55,7 +55,7 @@ bg-[var(--color-gray-100)]">
  ):(
    <div className="flex size-full items-center justify-center">
     <PackageCheck
-     aria-hidden="true"
+     aria-hidden={true}
      className="size-6 text-muted"
     />
    </div>
@@ -72,7 +72,7 @@ bg-[var(--color-gray-100)]">
  </div>
 
  <p className="mt-2 inline-flex items-center gap-2 text-sm text-muted">
-  <Store aria-hidden="true" className="size-4" />
+  <Store aria-hidden={true} className="size-4" />
   {studioName}
  </p>
 
@@ -97,7 +97,7 @@ bg-[var(--color-gray-100)]">
 >
  Review Product
 
-     <ArrowRight aria-hidden="true" className="size-4" />
+     <ArrowRight aria-hidden={true} className="size-4" />
     </Button>
    </Card>
  );

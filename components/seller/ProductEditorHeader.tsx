@@ -48,7 +48,7 @@ dark:bg-[color:rgb(17_17_17_/_0.9)] md:px-8">
           onClick={onBack}
          >
 
-  <ArrowLeft aria-hidden="true" />
+  <ArrowLeft aria-hidden={true} />
  </Button>
 
  <div className="min-w-0">
@@ -76,7 +76,7 @@ dark:bg-[color:rgb(17_17_17_/_0.9)] md:px-8">
   disabled={saving || submitting}
   onClick={onPreview}
  >
-  <Eye aria-hidden="true" />
+  <Eye aria-hidden={true} />
   Preview
  </Button>
 
@@ -89,7 +89,7 @@ dark:bg-[color:rgb(17_17_17_/_0.9)] md:px-8">
     void onSave();
   }}
  >
-  <Save aria-hidden="true" />
+  <Save aria-hidden={true} />
   Save Draft
  </Button>
 
@@ -101,7 +101,7 @@ dark:bg-[color:rgb(17_17_17_/_0.9)] md:px-8">
           void onSubmitForReview();
         }}
       >
-        <Send aria-hidden="true" />
+        <Send aria-hidden={true} />
         Submit for Review
       </Button>
      </div>

@@ -50,7 +50,7 @@ export function AccountProfilePhotoUploader({
         ) : (
           <div className="flex size-full flex-col items-center justify-center gap-3 text-center">
             <Camera
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-7 text-[var(--color-gold-600)]"
             />
 
@@ -116,7 +116,7 @@ export function AccountProfilePhotoUploader({
               }}
             >
               <Trash2
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
               Remove Photograph

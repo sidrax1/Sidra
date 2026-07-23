@@ -189,7 +189,7 @@ export function ServicePartnerApplicationFilters({
           placeholder="Search business, applicant, city or application number"
           leadingIcon={
             <Search
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           }
@@ -268,7 +268,7 @@ export function ServicePartnerApplicationFilters({
             }
           >
             <X
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Reset

@@ -68,7 +68,7 @@ export function OrderDeliveryConfirmationPanel({
       <header className="flex items-start gap-4">
         <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[color:rgb(62_107_82_/_0.3)] bg-[color:rgb(62_107_82_/_0.08)] text-[var(--color-success)]">
           <PackageCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -105,7 +105,7 @@ export function OrderDeliveryConfirmationPanel({
 
           <span className="flex min-w-0 flex-1 items-start gap-3">
             <CheckCircle2
-              aria-hidden="true"
+              aria-hidden={true}
               className="mt-0.5 size-5 shrink-0 text-[var(--color-success)]"
             />
 
@@ -138,7 +138,7 @@ export function OrderDeliveryConfirmationPanel({
 
           <span className="flex min-w-0 flex-1 items-start gap-3">
             <ShieldCheck
-              aria-hidden="true"
+              aria-hidden={true}
               className="mt-0.5 size-5 shrink-0 text-[var(--color-success)]"
             />
 
@@ -183,7 +183,7 @@ export function OrderDeliveryConfirmationPanel({
         description="The Studio will be notified and the protected order timeline will be updated."
         icon={
           <CheckCircle2
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         }
@@ -207,7 +207,7 @@ export function OrderDeliveryConfirmationPanel({
           }}
         >
           <CheckCircle2
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
           Confirm Delivery

@@ -44,7 +44,7 @@ export const Label = forwardRef<
 
    {required ? (
      <span
-       aria-hidden="true"
+       aria-hidden={true}
        className="text-[var(--color-error)]"
      >
        *

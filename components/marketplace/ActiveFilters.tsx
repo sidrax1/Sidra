@@ -78,7 +78,7 @@ export function ActiveFilters({
      className="ml-1"
     >
      <X
-       aria-hidden="true"
+       aria-hidden={true}
        className="size-3.5"
      />
      Clear all

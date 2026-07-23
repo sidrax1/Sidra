@@ -29,7 +29,7 @@ export function RecentlyViewedSection({
         <div>
           <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--color-gold-600)]">
             <Clock3
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Your Recent Journey

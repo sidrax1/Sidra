@@ -31,9 +31,9 @@ export function CopyButton({
     label={copied ? "Copied" : label}
     icon={
       copied ? (
-        <Check aria-hidden="true" />
+        <Check aria-hidden={true} />
       ):(
-        <Copy aria-hidden="true" />
+        <Copy aria-hidden={true} />
       )
     }
     appearance="ghost"

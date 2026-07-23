@@ -86,7 +86,7 @@ export function AccountRecentOrderCard({
         ) : (
           <div className="flex size-full items-center justify-center">
             <PackageCheck
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-6 text-muted"
             />
           </div>
@@ -110,7 +110,7 @@ export function AccountRecentOrderCard({
 
         <p className="mt-2 inline-flex items-center gap-2 text-xs text-muted">
           <Store
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-3.5 text-[var(--color-gold-600)]"
           />
           {order.studioName}
@@ -128,7 +128,7 @@ export function AccountRecentOrderCard({
         />
 
         <ArrowUpRight
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-4 text-muted transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--color-gold-600)]"
         />
       </div>

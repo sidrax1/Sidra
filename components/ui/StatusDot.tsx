@@ -39,7 +39,7 @@ bg-[var(--color-success)] opacity-50" />
           "relative inline-flex size-2.5 rounded-full",
           statusClasses[status]
         )}
-        aria-hidden="true"
+        aria-hidden={true}
        />
       </span>
 

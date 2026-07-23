@@ -61,7 +61,7 @@ export function CustomOrderDetailsHeader({
     >
       <div className="relative overflow-hidden bg-[var(--color-black-900)] px-6 py-9 text-white md:px-10 md:py-12">
         <div
-          aria-hidden="true"
+          aria-hidden={true}
           className="pointer-events-none absolute inset-0"
           style={{
             background:
@@ -72,7 +72,7 @@ export function CustomOrderDetailsHeader({
         <div className="relative z-10 flex flex-col gap-7 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex min-w-0 items-start gap-5">
             <span className="flex size-14 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.42)] bg-[color:rgb(200_169_106_/_0.12)] text-[var(--color-gold-500)] shadow-[var(--shadow-gold-glow)]">
-              <Gem aria-hidden="true" className="size-6" />
+              <Gem aria-hidden={true} className="size-6" />
             </span>
 
             <div className="min-w-0">
@@ -122,7 +122,7 @@ export function CustomOrderDetailsHeader({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
             <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-muted">
               <Package
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-gold-600)]"
               />
               Quantity
@@ -137,7 +137,7 @@ export function CustomOrderDetailsHeader({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
             <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-muted">
               <CalendarDays
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-gold-600)]"
               />
               Submitted
@@ -151,7 +151,7 @@ export function CustomOrderDetailsHeader({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
             <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-muted">
               <CalendarDays
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-gold-600)]"
               />
               Required By
@@ -167,7 +167,7 @@ export function CustomOrderDetailsHeader({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
             <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-muted">
               <ImageIcon
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5 text-[var(--color-gold-600)]"
               />
               References

@@ -84,7 +84,7 @@ sm:items-center sm:justify-between">
        <span className="flex size-10 shrink-0 cursor-grab items-center justify-center
 rounded-full border border-border bg-background text-muted">
           <GripVertical
-           aria-hidden="true"
+           aria-hidden={true}
            className="size-4"
           />
        </span>
@@ -115,7 +115,7 @@ rounded-full border border-border bg-background text-muted">
 
  <IconButton
   label="Move section up"
-  icon={<ChevronUp aria-hidden="true" />}
+  icon={<ChevronUp aria-hidden={true} />}
   appearance="ghost"
   size="sm"
   disabled={disabled || index === 0}
@@ -124,7 +124,7 @@ rounded-full border border-border bg-background text-muted">
 
  <IconButton
   label="Move section down"
-  icon={<ChevronDown aria-hidden="true" />}
+  icon={<ChevronDown aria-hidden={true} />}
   appearance="ghost"
   size="sm"
   disabled={
@@ -136,7 +136,7 @@ rounded-full border border-border bg-background text-muted">
 
  <IconButton
   label="Duplicate section"
-  icon={<Copy aria-hidden="true" />}
+  icon={<Copy aria-hidden={true} />}
   appearance="ghost"
   size="sm"
   disabled={disabled}
@@ -145,7 +145,7 @@ rounded-full border border-border bg-background text-muted">
 
   <IconButton
    label="Delete section"
-   icon={<Trash2 aria-hidden="true" />}
+   icon={<Trash2 aria-hidden={true} />}
    appearance="ghost"
    size="sm"
    disabled={disabled}

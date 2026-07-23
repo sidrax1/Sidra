@@ -67,7 +67,7 @@ export function FollowerFilters({
         placeholder="Search collectors"
         leadingIcon={
           <Search
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
         }
@@ -135,7 +135,7 @@ export function FollowerFilters({
             }
           >
             <X
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Reset

@@ -65,7 +65,7 @@ export function ServicePartnerTypeBadge({
   return (
     <Badge variant="neutral">
       <Icon
-        aria-hidden="true"
+        aria-hidden={true}
         className="mr-1 size-3.5 text-[var(--color-gold-600)]"
       />
 

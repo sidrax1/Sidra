@@ -44,7 +44,7 @@ export function RecentlyViewedItemCard({
           <IconButton
             label={`Remove ${item.productTitle} from recently viewed`}
             icon={
-              <X aria-hidden="true" />
+              <X aria-hidden={true} />
             }
             appearance="glass"
             size="sm"
@@ -94,14 +94,14 @@ export function RecentlyViewedItemCard({
             />
 
             <ArrowUpRight
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4 text-[var(--color-gold-600)]"
             />
           </div>
 
           <p className="inline-flex items-center gap-2 text-xs text-muted">
             <Clock3
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5"
             />
             Viewed{" "}

@@ -41,7 +41,7 @@ export function AccountProfileCard({
               {profile.emailVerified ? (
                 <Badge variant="success">
                   <BadgeCheck
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="mr-1 size-3.5"
                   />
                   Verified
@@ -61,7 +61,7 @@ export function AccountProfileCard({
 
         <Badge variant="gold">
           <ShieldCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="mr-1 size-3.5"
           />
           Protected Account
@@ -72,7 +72,7 @@ export function AccountProfileCard({
         <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
           <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-muted">
             <Mail
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             Email
@@ -86,7 +86,7 @@ export function AccountProfileCard({
         <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
           <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-muted">
             <Phone
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             Mobile
@@ -101,7 +101,7 @@ export function AccountProfileCard({
         <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
           <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-muted">
             <UserRound
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             Member Since

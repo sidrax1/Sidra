@@ -98,7 +98,7 @@ export function DisputeMessageThread({
                 {staff ? (
                   <span className="inline-flex items-center gap-1 text-[10px] uppercase tracking-[0.12em]">
                     <ShieldCheck
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-3"
                     />
                     {message.senderRole}
@@ -108,7 +108,7 @@ export function DisputeMessageThread({
                 {message.internal ? (
                   <span className="inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--color-error)]">
                     <LockKeyhole
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-3"
                     />
                     Internal

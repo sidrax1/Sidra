@@ -24,7 +24,7 @@ export function ServicePartnerAssignmentEmptyState({
     <EmptyState
       icon={
         <ClipboardCheck
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-10"
         />
       }

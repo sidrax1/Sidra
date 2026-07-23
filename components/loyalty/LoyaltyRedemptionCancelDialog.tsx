@@ -95,7 +95,7 @@ export function LoyaltyRedemptionCancelDialog({
             }
             icon={
               <ShieldAlert
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             }
@@ -171,7 +171,7 @@ export function LoyaltyRedemptionCancelDialog({
             }}
           >
             <XCircle
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Cancel Redemption

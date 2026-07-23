@@ -50,7 +50,7 @@ export function ProductReviewCard({
               {review.verifiedPurchase ? (
                 <Badge variant="success">
                   <BadgeCheck
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="mr-1 size-3.5"
                   />
                   Verified Purchase
@@ -105,7 +105,7 @@ export function ProductReviewCard({
 
                 <span className="absolute bottom-2 right-2 flex size-8 items-center justify-center rounded-full border border-white/20 bg-black/45 text-white backdrop-blur-md">
                   <ImageIcon
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-3.5"
                   />
                 </span>
@@ -118,7 +118,7 @@ export function ProductReviewCard({
       <footer className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-border pt-4 text-xs text-muted">
         <span className="inline-flex items-center gap-2">
           <ThumbsUp
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-3.5"
           />
 

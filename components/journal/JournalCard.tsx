@@ -58,7 +58,7 @@ to-transparent opacity-60" />
 rounded-full border border-white/20 bg-black/30 text-white backdrop-blur-xl transition-transform
 duration-[var(--duration-base)] group-hover:-translate-y-1 group-hover:translate-x-1">
        <ArrowUpRight
-         aria-hidden="true"
+         aria-hidden={true}
          className="size-4"
        />
       </span>
@@ -80,7 +80,7 @@ duration-[var(--duration-base)] group-hover:-translate-y-1 group-hover:translate
 
        <span className="inline-flex items-center gap-1.5 text-xs text-muted">
         <Clock3
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-3.5"
         />
         {article.readingTimeMinutes} min read

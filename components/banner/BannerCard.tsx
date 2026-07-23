@@ -89,7 +89,7 @@ text-white">
          <IconButton
           label={`Actions for ${banner.title}`}
           icon={
-            <MoreHorizontal aria-hidden="true" />
+            <MoreHorizontal aria-hidden={true} />
           }
           appearance="glass"
           disabled={loading}
@@ -103,7 +103,7 @@ text-white">
          }
         >
          <Edit3
-           aria-hidden="true"
+           aria-hidden={true}
 
   className="size-4"
  />
@@ -119,12 +119,12 @@ text-white">
 >
  {banner.active ? (
    <EyeOff
-     aria-hidden="true"
+     aria-hidden={true}
      className="size-4"
    />
  ):(
    <Eye
-     aria-hidden="true"
+     aria-hidden={true}
      className="size-4"
    />
  )}
@@ -144,7 +144,7 @@ text-white">
  }}
 >
  <Trash2
-   aria-hidden="true"
+   aria-hidden={true}
    className="size-4"
  />
  Delete Banner

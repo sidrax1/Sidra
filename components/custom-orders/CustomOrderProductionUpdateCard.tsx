@@ -92,7 +92,7 @@ export function CustomOrderProductionUpdateCard({
         <div className="flex items-start gap-4">
           <span className="flex size-11 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-card text-[var(--color-gold-600)] shadow-[var(--shadow-card)]">
             <StageIcon
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           </span>
@@ -110,7 +110,7 @@ export function CustomOrderProductionUpdateCard({
               ) : (
                 <Badge variant="neutral">
                   <EyeOff
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="mr-1 size-3.5"
                   />
                   Internal
@@ -166,7 +166,7 @@ export function CustomOrderProductionUpdateCard({
                   ) : (
                     <div className="flex size-full flex-col items-center justify-center gap-3 p-5 text-center">
                       <FileText
-                        aria-hidden="true"
+                        aria-hidden={true}
                         className="size-8 text-[var(--color-gold-600)]"
                       />
 

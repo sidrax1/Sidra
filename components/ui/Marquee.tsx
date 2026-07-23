@@ -45,7 +45,7 @@ export function Marquee({
      </div>
 
      <div
-      aria-hidden="true"
+      aria-hidden={true}
       className={cn(
         "flex min-w-full shrink-0 animate-[sidra-marquee_linear_infinite] items-centerjustify-around gap-10 pr-10",
         reverse &&

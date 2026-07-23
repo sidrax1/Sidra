@@ -57,7 +57,7 @@ export function ReviewActionMenu({
         <IconButton
           label="Review actions"
           icon={
-            <MoreHorizontal aria-hidden="true" />
+            <MoreHorizontal aria-hidden={true} />
           }
           appearance="ghost"
           disabled={disabled}
@@ -76,7 +76,7 @@ export function ReviewActionMenu({
             }
           >
             <Edit3
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Edit review
@@ -91,7 +91,7 @@ export function ReviewActionMenu({
             }
           >
             <Flag
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Report review
@@ -107,7 +107,7 @@ export function ReviewActionMenu({
             }
           >
             <Trash2
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Delete review

@@ -42,17 +42,17 @@ export function SellerApplicationCard({
 
  <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-xs text-muted">
   <span className="inline-flex items-center gap-2">
-   <MapPin aria-hidden="true" className="size-3.5" />
+   <MapPin aria-hidden={true} className="size-3.5" />
    {application.city}, {application.state}
   </span>
 
   <span className="inline-flex items-center gap-2">
-   <CalendarDays aria-hidden="true" className="size-3.5" />
+   <CalendarDays aria-hidden={true} className="size-3.5" />
    Submitted {formatDate(application.createdAt)}
   </span>
 
   <span className="inline-flex items-center gap-2">
-   <PackageOpen aria-hidden="true" className="size-3.5" />
+   <PackageOpen aria-hidden={true} className="size-3.5" />
    {application.expectedMonthlyCapacity.toLocaleString("en-IN")}{" "}
    pieces/month
   </span>
@@ -64,7 +64,7 @@ export function SellerApplicationCard({
       rel="noreferrer"
       className="inline-flex items-center gap-2 hover:text-foreground"
     >
-      <Instagram aria-hidden="true" className="size-3.5" />
+      <Instagram aria-hidden={true} className="size-3.5" />
       Portfolio
     </a>
   ) : null}
@@ -82,7 +82,7 @@ export function SellerApplicationCard({
 
      >
       Review Application
-      <ArrowRight aria-hidden="true" className="size-4" />
+      <ArrowRight aria-hidden={true} className="size-4" />
      </Button>
     </div>
    </Card>

@@ -127,7 +127,7 @@ export function ReviewReportDialog({
             description="False or abusive reporting may be recorded against the reporting account."
             icon={
               <ShieldAlert
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             }
@@ -209,7 +209,7 @@ export function ReviewReportDialog({
             }}
           >
             <Flag
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Submit Report

@@ -50,7 +50,7 @@ export function Breadcrumbs({
 
          {!isLast ? (
            <ChevronRight
-             aria-hidden="true"
+             aria-hidden={true}
              className="size-3.5"
            />
          ) : null}

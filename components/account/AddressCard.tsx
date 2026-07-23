@@ -49,7 +49,7 @@ export function AddressCard({
 border-[color:rgb(200_169_106_/_0.28)] bg-[color:rgb(200_169_106_/_0.08)]
 text-[var(--color-gold-600)]">
           <MapPin
-           aria-hidden="true"
+           aria-hidden={true}
            className="size-5"
           />
         </span>
@@ -118,7 +118,7 @@ text-[var(--color-gold-600)]">
      }
    >
      <Edit3
-       aria-hidden="true"
+       aria-hidden={true}
        className="size-4"
      />
      Edit
@@ -136,7 +136,7 @@ text-[var(--color-gold-600)]">
      }
    >
      <CheckCircle2
-       aria-hidden="true"
+       aria-hidden={true}
        className="size-4"
      />
      Set Default
@@ -155,7 +155,7 @@ text-[var(--color-gold-600)]">
          className="text-[var(--color-error)]"
        >
          <Trash2
-           aria-hidden="true"
+           aria-hidden={true}
            className="size-4"
          />
          Delete

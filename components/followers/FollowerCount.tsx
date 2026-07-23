@@ -23,7 +23,7 @@ export function FollowerCount({
       )}
     >
       <UsersRound
-        aria-hidden="true"
+        aria-hidden={true}
         className="size-4 text-[var(--color-gold-600)]"
       />
 

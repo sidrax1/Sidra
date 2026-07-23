@@ -219,7 +219,7 @@ export function DropdownMenuSubIndicator({
     <span className="ml-auto inline-flex items-center gap-2 text-muted">
      <span className="text-xs">{label}</span>
      <ChevronRight
-      aria-hidden="true"
+      aria-hidden={true}
       className="size-3.5"
 
     />

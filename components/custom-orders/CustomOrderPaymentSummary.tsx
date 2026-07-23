@@ -59,7 +59,7 @@ export function CustomOrderPaymentSummary({
         <div className="flex items-start gap-4">
           <span className="flex size-11 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.08)] text-[var(--color-gold-600)]">
             <CreditCard
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           </span>
@@ -198,12 +198,12 @@ export function CustomOrderPaymentSummary({
         <div className="flex items-start gap-3 border-t border-border pt-5 text-xs leading-6 text-muted">
           {payment.status === "paid" ? (
             <ShieldCheck
-              aria-hidden="true"
+              aria-hidden={true}
               className="mt-0.5 size-4 shrink-0 text-[var(--color-success)]"
             />
           ) : (
             <LockKeyhole
-              aria-hidden="true"
+              aria-hidden={true}
               className="mt-0.5 size-4 shrink-0 text-[var(--color-gold-600)]"
             />
           )}

@@ -132,7 +132,7 @@ export function AccountSidebar(): React.JSX.Element {
                   )}
                 >
                   <Icon
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-4 shrink-0"
                   />
 

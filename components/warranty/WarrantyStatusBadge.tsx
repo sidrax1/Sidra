@@ -68,12 +68,12 @@ export function WarrantyStatusBadge({
       {status ===
       "claimInProgress" ? (
         <RefreshCcw
-          aria-hidden="true"
+          aria-hidden={true}
           className="mr-1 size-3.5 animate-spin"
         />
       ) : (
         <Icon
-          aria-hidden="true"
+          aria-hidden={true}
           className="mr-1 size-3.5"
         />
       )}

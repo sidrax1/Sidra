@@ -24,7 +24,7 @@ export function ServicePartnerEmptyState({
     <EmptyState
       icon={
         <Building2
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-10"
         />
       }

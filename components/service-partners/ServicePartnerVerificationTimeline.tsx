@@ -149,7 +149,7 @@ export function ServicePartnerVerificationTimeline({
             >
               {!last ? (
                 <span
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className={cn(
                     "absolute left-5 top-10 h-[calc(100%-1rem)] w-px",
                     step.complete
@@ -172,12 +172,12 @@ export function ServicePartnerVerificationTimeline({
                 {step.complete ||
                 step.current ? (
                   <Icon
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-4"
                   />
                 ) : (
                   <Circle
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-4"
                   />
                 )}
@@ -192,7 +192,7 @@ export function ServicePartnerVerificationTimeline({
                   {step.timestamp ? (
                     <time className="inline-flex items-center gap-2 text-xs text-muted">
                       <CalendarClock
-                        aria-hidden="true"
+                        aria-hidden={true}
                         className="size-3.5"
                       />
                       {formatDateTime(

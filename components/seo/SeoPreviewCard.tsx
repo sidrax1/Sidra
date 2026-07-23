@@ -35,7 +35,7 @@ export function SeoPreviewCard({
       <span className="flex size-9 items-center justify-center rounded-full
 bg-[var(--color-gray-100)] dark:bg-[var(--color-charcoal-800)]">
         <Globe2
-         aria-hidden="true"
+         aria-hidden={true}
          className="size-4"
         />
       </span>

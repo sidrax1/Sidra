@@ -42,22 +42,22 @@ export function AdminOrderCard({
 
       <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-xs text-muted">
        <span className="inline-flex items-center gap-2">
-        <UserRound aria-hidden="true" className="size-3.5" />
+        <UserRound aria-hidden={true} className="size-3.5" />
         {customerName}
        </span>
 
        <span className="inline-flex items-center gap-2">
-        <Store aria-hidden="true" className="size-3.5" />
+        <Store aria-hidden={true} className="size-3.5" />
         {studioNames.join(", ")}
        </span>
 
        <span className="inline-flex items-center gap-2">
-        <Package aria-hidden="true" className="size-3.5" />
+        <Package aria-hidden={true} className="size-3.5" />
         {order.items.length.toLocaleString("en-IN")} items
        </span>
 
        <span className="inline-flex items-center gap-2">
-        <CreditCard aria-hidden="true" className="size-3.5" />
+        <CreditCard aria-hidden={true} className="size-3.5" />
         {order.payment.status}
        </span>
 
@@ -73,7 +73,7 @@ export function AdminOrderCard({
         onClick={() => onView(order)}
       >
         View Order
-        <ArrowRight aria-hidden="true" className="size-4" />
+        <ArrowRight aria-hidden={true} className="size-4" />
       </Button>
      </div>
     </div>

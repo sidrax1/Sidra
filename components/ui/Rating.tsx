@@ -29,7 +29,7 @@ export function Rating({
     )}
     aria-label={`${safeValue.toFixed(1)} out of 5 stars`}
   >
-    <span className="inline-flex items-center gap-0.5" aria-hidden="true">
+    <span className="inline-flex items-center gap-0.5" aria-hidden={true}>
       {Array.from({ length: 5 }, (_, index) => {
         const filled = index + 1 <= Math.round(safeValue);
 

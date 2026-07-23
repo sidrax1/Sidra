@@ -84,7 +84,7 @@ export function ServicePartnerAssignmentDetailHeader({
     >
       <div className="relative overflow-hidden bg-[var(--color-black-900)] px-6 py-10 text-white md:px-10">
         <div
-          aria-hidden="true"
+          aria-hidden={true}
           className="pointer-events-none absolute inset-0"
           style={{
             background:
@@ -154,7 +154,7 @@ export function ServicePartnerAssignmentDetailHeader({
             <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/60">
               <span className="inline-flex items-center gap-2">
                 <Wrench
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 {
@@ -164,7 +164,7 @@ export function ServicePartnerAssignmentDetailHeader({
 
               <span className="inline-flex items-center gap-2">
                 <Store
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 Studio{" "}
@@ -175,7 +175,7 @@ export function ServicePartnerAssignmentDetailHeader({
 
               <span className="inline-flex items-center gap-2">
                 <UserRound
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 Customer{" "}
@@ -250,7 +250,7 @@ export function ServicePartnerAssignmentDetailHeader({
         >
           <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
             <Clock3
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5"
             />
             Response Due
@@ -280,7 +280,7 @@ export function ServicePartnerAssignmentDetailHeader({
         >
           <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
             <CalendarClock
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5"
             />
             Completion Due
@@ -305,7 +305,7 @@ export function ServicePartnerAssignmentDetailHeader({
         <article className="rounded-[var(--radius-lg)] border border-border bg-background p-5">
           <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
             <CalendarClock
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5"
             />
             Service Schedule
@@ -323,7 +323,7 @@ export function ServicePartnerAssignmentDetailHeader({
         <article className="rounded-[var(--radius-lg)] border border-border bg-background p-5">
           <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.13em] text-muted">
             <BadgeIndianRupee
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5"
             />
             Estimated Cost
@@ -344,7 +344,7 @@ export function ServicePartnerAssignmentDetailHeader({
         completionOverdue) ? (
         <footer className="flex items-start gap-3 border-t border-[color:rgb(145_59_59_/_0.25)] bg-[color:rgb(145_59_59_/_0.06)] px-6 py-4">
           <ShieldAlert
-            aria-hidden="true"
+            aria-hidden={true}
             className="mt-0.5 size-5 shrink-0 text-[var(--color-error)]"
           />
 

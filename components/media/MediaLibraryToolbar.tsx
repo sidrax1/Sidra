@@ -115,7 +115,7 @@ export function MediaLibraryToolbar({
 <div className="flex items-center rounded-full border border-border bg-background p-1">
  <IconButton
   label="Grid view"
-  icon={<Grid2X2 aria-hidden="true" />}
+  icon={<Grid2X2 aria-hidden={true} />}
   size="sm"
   appearance={
     view === "grid"
@@ -130,7 +130,7 @@ export function MediaLibraryToolbar({
 
  <IconButton
   label="List view"
-  icon={<List aria-hidden="true" />}
+  icon={<List aria-hidden={true} />}
   size="sm"
   appearance={
 
@@ -153,7 +153,7 @@ export function MediaLibraryToolbar({
        }}
       >
        <RefreshCw
-         aria-hidden="true"
+         aria-hidden={true}
          className={cn(
            "size-4",
            loading && "animate-spin"
@@ -166,7 +166,7 @@ export function MediaLibraryToolbar({
      disabled={loading}
      onClick={onUpload}
     >
-     <Upload aria-hidden="true" />
+     <Upload aria-hidden={true} />
      Upload
     </Button>
    </div>

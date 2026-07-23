@@ -118,7 +118,7 @@ export function RefundFilters({
           placeholder="Search refund, order or payment"
           leadingIcon={
             <Search
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           }
@@ -213,7 +213,7 @@ export function RefundFilters({
             }
           >
             <X
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Reset

@@ -157,7 +157,7 @@ export function LoyaltyRewardCard({
         ) : (
           <div className="flex size-full items-center justify-center">
             <RewardIcon
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-14 text-[var(--color-gold-500)]"
             />
           </div>
@@ -168,7 +168,7 @@ export function LoyaltyRewardCard({
         <div className="absolute left-4 top-4 flex flex-wrap gap-2">
           <Badge variant="gold">
             <RewardIcon
-              aria-hidden="true"
+              aria-hidden={true}
               className="mr-1 size-3.5"
             />
             {
@@ -181,7 +181,7 @@ export function LoyaltyRewardCard({
           {reward.featured ? (
             <Badge variant="success">
               <Sparkles
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mr-1 size-3.5"
               />
               Featured
@@ -292,7 +292,7 @@ export function LoyaltyRewardCard({
           <div className="flex items-center justify-between gap-4">
             <span className="inline-flex items-center gap-2 text-muted">
               <CalendarDays
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
               />
               Validity
@@ -324,7 +324,7 @@ export function LoyaltyRewardCard({
         {insufficientPoints ? (
           <p className="inline-flex items-center gap-2 text-xs text-muted">
             <LockKeyhole
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5"
             />
             {(
@@ -356,12 +356,12 @@ export function LoyaltyRewardCard({
         >
           {unavailable ? (
             <LockKeyhole
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           ) : (
             <Gift
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           )}

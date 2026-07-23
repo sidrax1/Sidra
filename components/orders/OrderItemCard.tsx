@@ -50,7 +50,7 @@ export function OrderItemCard({
           ) : (
             <div className="flex size-full items-center justify-center">
               <Package
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-7 text-muted"
               />
             </div>
@@ -79,7 +79,7 @@ export function OrderItemCard({
 
           <p className="mt-2 inline-flex items-center gap-2 text-xs text-muted">
             <Store
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             {item.product.studioName}
@@ -90,7 +90,7 @@ export function OrderItemCard({
             <dl className="mt-5 grid gap-2 rounded-[var(--radius-md)] border border-border bg-background p-4 text-xs">
               <div className="mb-1 inline-flex items-center gap-2 font-medium text-foreground">
                 <Layers3
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-3.5 text-[var(--color-gold-600)]"
                 />
                 Personalisation
@@ -134,7 +134,7 @@ export function OrderItemCard({
             >
               View Product
               <ArrowUpRight
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
             </Link>

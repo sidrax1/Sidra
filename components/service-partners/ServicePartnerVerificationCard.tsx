@@ -43,7 +43,7 @@ export function ServicePartnerVerificationCard({
       <header className="flex items-center justify-between gap-4 border-b border-border bg-[color:rgb(200_169_106_/_0.05)] p-5">
         <div className="flex items-center gap-3">
           <ShieldCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5 text-[var(--color-gold-600)]"
           />
 
@@ -94,7 +94,7 @@ export function ServicePartnerVerificationCard({
             <div className="flex items-start justify-between gap-5">
               <dt className="inline-flex items-center gap-2 text-sm text-muted">
                 <CalendarClock
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="mt-0.5 size-4 text-[var(--color-gold-600)]"
                 />
                 Submitted
@@ -154,7 +154,7 @@ export function ServicePartnerVerificationCard({
         {verification.failureReason ? (
           <div className="flex items-start gap-3 rounded-[var(--radius-md)] border border-[color:rgb(145_59_59_/_0.3)] bg-[color:rgb(145_59_59_/_0.06)] p-4">
             <ShieldAlert
-              aria-hidden="true"
+              aria-hidden={true}
               className="mt-0.5 size-4 shrink-0 text-[var(--color-error)]"
             />
 

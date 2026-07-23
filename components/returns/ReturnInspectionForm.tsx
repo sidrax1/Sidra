@@ -275,7 +275,7 @@ export function ReturnInspectionForm({
       <header className="flex items-start gap-4">
         <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.08)] text-[var(--color-gold-600)]">
           <ClipboardCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -302,7 +302,7 @@ export function ReturnInspectionForm({
         description="All accepted and rejected quantities must reconcile with the returned quantity before submission."
         icon={
           <ShieldCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         }
@@ -441,7 +441,7 @@ export function ReturnInspectionForm({
             }
           >
             <Plus
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Add Finding
@@ -526,7 +526,7 @@ export function ReturnInspectionForm({
                     label={`Remove finding ${index + 1}`}
                     icon={
                       <Trash2
-                        aria-hidden="true"
+                        aria-hidden={true}
                       />
                     }
                     appearance="ghost"
@@ -827,7 +827,7 @@ export function ReturnInspectionForm({
           }}
         >
           <ClipboardCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
           Complete Inspection

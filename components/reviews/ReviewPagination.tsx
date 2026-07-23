@@ -68,7 +68,7 @@ export function ReviewPagination({
           }
         >
           <ChevronLeft
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
           Previous
@@ -89,7 +89,7 @@ export function ReviewPagination({
         >
           Next
           <ChevronRight
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
         </Button>

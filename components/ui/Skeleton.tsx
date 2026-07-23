@@ -26,7 +26,7 @@ export function Skeleton({
 }: SkeletonProps): React.JSX.Element {
   return (
     <div
-     aria-hidden="true"
+     aria-hidden={true}
      className={cn(
        "relative overflow-hidden bg-[var(--color-gray-100)]",
        "before:absolute before:inset-0",

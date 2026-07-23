@@ -69,7 +69,7 @@ export function ReviewSubmissionForm({
       <header className="flex items-start gap-4">
         <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.08)] text-[var(--color-gold-600)]">
           <Star
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5 fill-current"
           />
         </span>
@@ -124,7 +124,7 @@ export function ReviewSubmissionForm({
                 )}
               >
                 <Star
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className={cn(
                     "size-5",
                     rating >= value &&
@@ -201,7 +201,7 @@ export function ReviewSubmissionForm({
         <div className="rounded-[var(--radius-md)] border border-border bg-background p-4">
           <p className="inline-flex items-center gap-2 text-sm font-medium text-foreground">
             <ImagePlus
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4 text-[var(--color-gold-600)]"
             />
 
@@ -219,7 +219,7 @@ export function ReviewSubmissionForm({
 
       <div className="flex items-start gap-3 border-t border-border pt-5 text-xs leading-6 text-muted">
         <ShieldCheck
-          aria-hidden="true"
+          aria-hidden={true}
           className="mt-0.5 size-4 shrink-0 text-[var(--color-success)]"
         />
 

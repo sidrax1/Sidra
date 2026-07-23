@@ -36,7 +36,7 @@ export function ProfileCard({
         {user.emailVerified ? (
          <Badge variant="success">
           <ShieldCheck
-           aria-hidden="true"
+           aria-hidden={true}
            className="mr-1 size-3.5"
           />
           Verified
@@ -48,7 +48,7 @@ export function ProfileCard({
       <div className="mt-4 flex flex-wrap gap-x-6 gap-y-3 text-sm text-muted">
        <span className="inline-flex items-center gap-2">
         <Mail
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-4 text-[var(--color-gold-600)]"
         />
         {user.email}
@@ -57,7 +57,7 @@ export function ProfileCard({
        {user.phoneNumber ? (
          <span className="inline-flex items-center gap-2">
            <Phone
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4 text-[var(--color-gold-600)]"
            />
            {user.phoneNumber}

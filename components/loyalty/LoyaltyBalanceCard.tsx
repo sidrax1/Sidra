@@ -56,7 +56,7 @@ export function LoyaltyBalanceCard({
     >
       <div className="relative overflow-hidden bg-[var(--color-black-900)] px-6 py-8 text-white md:px-9 md:py-10">
         <div
-          aria-hidden="true"
+          aria-hidden={true}
           className="pointer-events-none absolute inset-0"
           style={{
             background:
@@ -81,7 +81,7 @@ export function LoyaltyBalanceCard({
                 }
               >
                 <ShieldCheck
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="mr-1 size-3.5"
                 />
                 {restricted
@@ -110,7 +110,7 @@ export function LoyaltyBalanceCard({
             0 ? (
               <p className="mt-5 inline-flex items-center gap-2 text-sm text-white/65">
                 <Sparkles
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4 text-[var(--color-gold-500)]"
                 />
                 {account.pendingPoints.toLocaleString(
@@ -128,7 +128,7 @@ export function LoyaltyBalanceCard({
               </span>
 
               <Crown
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5 text-[var(--color-gold-500)]"
               />
             </div>
@@ -163,7 +163,7 @@ export function LoyaltyBalanceCard({
 
               <div className="flex items-center gap-2 text-sm text-muted">
                 <Gem
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4 text-[var(--color-gold-600)]"
                 />
 
@@ -208,7 +208,7 @@ export function LoyaltyBalanceCard({
           <section className="rounded-[var(--radius-lg)] border border-[color:rgb(200_169_106_/_0.32)] bg-[color:rgb(200_169_106_/_0.06)] p-5">
             <div className="flex items-start gap-4">
               <Crown
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mt-0.5 size-6 shrink-0 text-[var(--color-gold-600)]"
               />
 
@@ -254,7 +254,7 @@ export function LoyaltyBalanceCard({
           <div className="rounded-[var(--radius-md)] border border-border bg-card p-4">
             <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-muted">
               <CalendarClock
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
               />
               Next Expiration

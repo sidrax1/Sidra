@@ -127,7 +127,7 @@ export function NotificationPreferencesForm({
       <header className="flex items-start gap-4">
         <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.08)] text-[var(--color-gold-600)]">
           <BellRing
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -264,14 +264,14 @@ export function NotificationPreferencesForm({
 
         <div className="flex items-start gap-3 rounded-[var(--radius-md)] border border-[color:rgb(62_107_82_/_0.25)] bg-[color:rgb(62_107_82_/_0.06)] p-4">
           <ShieldCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="mt-0.5 size-4 shrink-0 text-[var(--color-success)]"
           />
 
           <div>
             <p className="inline-flex items-center gap-2 text-sm font-medium text-foreground">
               <Mail
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-4"
               />
               Transactional email remains enabled
@@ -292,7 +292,7 @@ export function NotificationPreferencesForm({
             loadingLabel="Saving Preferences"
           >
             <Save
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Save Preferences

@@ -118,18 +118,18 @@ export function CustomOrderDecisionPanel({
             >
               {option.value === "accept" ? (
                 <CheckCircle2
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-6 text-[var(--color-success)]"
                 />
               ) : option.value ===
                 "requestClarification" ? (
                 <MessageSquareText
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-6 text-[var(--color-gold-600)]"
                 />
               ) : (
                 <XCircle
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-6 text-[var(--color-error)]"
                 />
               )}
@@ -182,7 +182,7 @@ export function CustomOrderDecisionPanel({
           description="The rejection reason will be added to the permanent audit trail and shared with the collector."
           icon={
             <ShieldAlert
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           }

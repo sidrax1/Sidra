@@ -34,7 +34,7 @@ export function ServicePartnerApplicationCapabilities({
     >
       <header className="flex items-center gap-3 border-b border-border bg-[color:rgb(200_169_106_/_0.05)] p-5">
         <ShieldCheck
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5 text-[var(--color-gold-600)]"
         />
 
@@ -60,7 +60,7 @@ export function ServicePartnerApplicationCapabilities({
         <div className="border-t border-border pt-5">
           <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-muted">
             <MapPin
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             Requested Coverage

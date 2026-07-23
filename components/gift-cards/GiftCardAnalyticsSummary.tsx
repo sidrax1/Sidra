@@ -77,7 +77,7 @@ export function GiftCardAnalyticsSummary({
               className="rounded-[var(--radius-lg)] border border-border bg-card p-5 shadow-[var(--shadow-card)]"
             >
               <Icon
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5 text-[var(--color-gold-600)]"
               />
 

@@ -174,7 +174,7 @@ text-foreground">
 bg-[color:rgb(200_169_106_/_0.07)] p-4">
         <div className="flex items-start gap-3">
          <Truck
-           aria-hidden="true"
+           aria-hidden={true}
            className="mt-0.5 size-5 shrink-0 text-[var(--color-gold-600)]"
          />
 
@@ -205,7 +205,7 @@ bg-[color:rgb(200_169_106_/_0.07)] p-4">
     >
      <LockKeyhole
 
-        aria-hidden="true"
+        aria-hidden={true}
        />
        Secure Checkout
       </Button>
@@ -213,7 +213,7 @@ bg-[color:rgb(200_169_106_/_0.07)] p-4">
       <div className="grid gap-3 border-t border-border pt-5 text-xs leading-5 text-muted">
        <div className="flex items-start gap-3">
         <ShieldCheck
-          aria-hidden="true"
+          aria-hidden={true}
           className="mt-0.5 size-4 shrink-0 text-[var(--color-gold-600)]"
         />
 
@@ -225,7 +225,7 @@ bg-[color:rgb(200_169_106_/_0.07)] p-4">
 
        <div className="flex items-start gap-3">
         <Truck
-         aria-hidden="true"
+         aria-hidden={true}
          className="mt-0.5 size-4 shrink-0 text-[var(--color-gold-600)]"
         />
 

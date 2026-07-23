@@ -104,7 +104,7 @@ export function ServicePartnerAssignmentActions({
           }
         >
           <Eye
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
           View Details
@@ -122,7 +122,7 @@ export function ServicePartnerAssignmentActions({
           }}
         >
           <UserRoundCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
           Accept Assignment
@@ -141,7 +141,7 @@ export function ServicePartnerAssignmentActions({
           }
         >
           <XCircle
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
           Decline
@@ -160,7 +160,7 @@ export function ServicePartnerAssignmentActions({
           }
         >
           <CalendarClock
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
           Schedule
@@ -178,7 +178,7 @@ export function ServicePartnerAssignmentActions({
           }}
         >
           <CirclePlay
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
           Start Service
@@ -196,7 +196,7 @@ export function ServicePartnerAssignmentActions({
           }
         >
           <CheckCircle2
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
           Complete
@@ -216,7 +216,7 @@ export function ServicePartnerAssignmentActions({
           }
         >
           <Ban
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
           Cancel

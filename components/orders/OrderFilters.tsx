@@ -94,7 +94,7 @@ export function OrderFilters({
           placeholder="Search order number, product or Studio"
           leadingIcon={
             <Search
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           }
@@ -147,7 +147,7 @@ export function OrderFilters({
             onClick={() => onChange(defaultValues)}
           >
             <X
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Reset
@@ -159,7 +159,7 @@ export function OrderFilters({
         <label className="grid gap-2 text-sm font-medium text-foreground">
           <span className="inline-flex items-center gap-2">
             <CalendarRange
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4 text-[var(--color-gold-600)]"
             />
             From

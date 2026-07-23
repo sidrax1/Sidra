@@ -66,7 +66,7 @@ shadow-[var(--shadow-gold-glow)]"
     <span className="flex size-11 shrink-0 items-center justify-center rounded-full border
 border-border bg-background text-[var(--color-gold-600)]">
       <Bell
-        aria-hidden="true"
+        aria-hidden={true}
         className="size-5"
       />
     </span>
@@ -98,7 +98,7 @@ border-border bg-background text-[var(--color-gold-600)]">
         }}
       >
         <Check
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-4"
         />
         Mark Read

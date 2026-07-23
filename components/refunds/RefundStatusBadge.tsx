@@ -61,12 +61,12 @@ export function RefundStatusBadge({
     <Badge variant={variant}>
       {status === "processing" ? (
         <RefreshCcw
-          aria-hidden="true"
+          aria-hidden={true}
           className="mr-1 size-3.5 animate-spin"
         />
       ) : (
         <Icon
-          aria-hidden="true"
+          aria-hidden={true}
           className="mr-1 size-3.5"
         />
       )}

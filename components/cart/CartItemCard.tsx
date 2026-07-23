@@ -178,7 +178,7 @@ tracking-[-0.025em] text-foreground transition-colors hover:text-[var(--color-go
     <IconButton
       label={`Move ${product.title} to wishlist`}
       icon={
-        <Heart aria-hidden="true" />
+        <Heart aria-hidden={true} />
       }
       appearance="ghost"
       disabled={loading}
@@ -193,7 +193,7 @@ tracking-[-0.025em] text-foreground transition-colors hover:text-[var(--color-go
   <IconButton
    label={`Remove ${product.title} from cart`}
    icon={
-     <Trash2 aria-hidden="true" />
+     <Trash2 aria-hidden={true} />
    }
    appearance="ghost"
    disabled={loading}

@@ -69,7 +69,7 @@ export function CmsSeoEditor({
 border-[color:rgb(200_169_106_/_0.28)] bg-[color:rgb(200_169_106_/_0.08)]
 text-[var(--color-gold-600)]">
         <SearchCheck
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5"
         />
        </span>
@@ -148,7 +148,7 @@ text-[var(--color-gold-600)]">
     >
      <div className="relative">
       <Share2
-       aria-hidden="true"
+       aria-hidden={true}
        className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2
 text-muted"
       />

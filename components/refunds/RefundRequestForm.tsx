@@ -95,7 +95,7 @@ export function RefundRequestForm({
       <header className="flex items-start gap-4">
         <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.08)] text-[var(--color-gold-600)]">
           <RefreshCcw
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         </span>
@@ -123,7 +123,7 @@ export function RefundRequestForm({
         description="The requested amount cannot exceed the remaining refundable value of the order."
         icon={
           <ShieldCheck
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-5"
           />
         }
@@ -140,7 +140,7 @@ export function RefundRequestForm({
           <div className="rounded-[var(--radius-md)] border border-border bg-background p-5">
             <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-muted">
               <ReceiptText
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-3.5"
               />
               Order ID
@@ -189,7 +189,7 @@ export function RefundRequestForm({
         >
           <div className="relative">
             <BadgeIndianRupee
-              aria-hidden="true"
+              aria-hidden={true}
               className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-muted"
             />
 
@@ -244,7 +244,7 @@ export function RefundRequestForm({
             loadingLabel="Submitting Refund"
           >
             <RefreshCcw
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Submit Refund Request

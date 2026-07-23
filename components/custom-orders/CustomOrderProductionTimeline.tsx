@@ -34,7 +34,7 @@ export function CustomOrderProductionTimeline({
       className="relative grid gap-5"
     >
       <div
-        aria-hidden="true"
+        aria-hidden={true}
         className="absolute bottom-8 left-[1.35rem] top-8 hidden w-px bg-border sm:block"
       />
 
@@ -44,7 +44,7 @@ export function CustomOrderProductionTimeline({
           className="relative sm:pl-14"
         >
           <span
-            aria-hidden="true"
+            aria-hidden={true}
             className="absolute left-[1.03rem] top-8 hidden size-3 rounded-full border-2 border-background bg-[var(--color-gold-500)] shadow-[var(--shadow-gold-glow)] sm:block"
           />
 

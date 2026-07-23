@@ -55,7 +55,7 @@ lg:block">
 
           )}
          >
-          <item.icon aria-hidden="true" className="size-4" />
+          <item.icon aria-hidden={true} className="size-4" />
           {item.label}
          </Link>
        );

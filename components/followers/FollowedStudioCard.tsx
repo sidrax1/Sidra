@@ -80,7 +80,7 @@ export function FollowedStudioCard({
             studio.state ? (
               <p className="mt-1 inline-flex items-center gap-1.5 text-xs text-white/70">
                 <MapPin
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-3.5"
                 />
                 {[studio.city, studio.state]
@@ -102,7 +102,7 @@ export function FollowedStudioCard({
         <div className="flex flex-wrap items-center justify-between gap-3 border-t border-border pt-4">
           <span className="inline-flex items-center gap-2 text-xs text-muted">
             <Heart
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 fill-[var(--color-gold-500)] text-[var(--color-gold-500)]"
             />
             {studio.followerCount.toLocaleString(
@@ -139,7 +139,7 @@ export function FollowedStudioCard({
               >
                 Enter Studio
                 <ArrowUpRight
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
               </Link>

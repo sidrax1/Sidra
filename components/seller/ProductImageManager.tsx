@@ -54,7 +54,7 @@ export function ProductImageManager({
         disabled={disabled || images.length >= maximumImages}
         onClick={onAddImages}
        >
-        <ImagePlus aria-hidden="true" />
+        <ImagePlus aria-hidden={true} />
         Add Images
        </Button>
       </header>
@@ -109,7 +109,7 @@ export function ProductImageManager({
 border border-white/20 bg-black/55 text-white backdrop-blur-md">
            <GripVertical
 
-           aria-hidden="true"
+           aria-hidden={true}
            className="size-4"
           />
          </span>
@@ -119,7 +119,7 @@ border border-white/20 bg-black/55 text-white backdrop-blur-md">
 border-[color:rgb(200_169_106_/_0.45)] bg-black/60 px-3 py-1.5 text-xs font-medium text-white
 backdrop-blur-md">
               <Star
-               aria-hidden="true"
+               aria-hidden={true}
                className="size-3.5 fill-[var(--color-gold-500)] text-[var(--color-gold-500)]"
               />
               Primary
@@ -132,7 +132,7 @@ group-hover:opacity-100">
          {index !== 0 ? (
            <IconButton
              label="Set as primary image"
-             icon={<Star aria-hidden="true" />}
+             icon={<Star aria-hidden={true} />}
              appearance="glass"
              size="sm"
              disabled={disabled}
@@ -142,7 +142,7 @@ group-hover:opacity-100">
 
           <IconButton
             label="Remove image"
-            icon={<Trash2 aria-hidden="true" />}
+            icon={<Trash2 aria-hidden={true} />}
             appearance="glass"
             size="sm"
             disabled={disabled}
@@ -167,7 +167,7 @@ hover:bg-[color:rgb(200_169_106_/_0.05)] disabled:pointer-events-none disabled:o
 border-[color:rgb(200_169_106_/_0.28)] bg-[color:rgb(200_169_106_/_0.08)]
 text-[var(--color-gold-600)]">
            <ImagePlus
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-6"
            />
          </span>

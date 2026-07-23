@@ -36,7 +36,7 @@ export function ServicePartnerApplicationContactCard({
     >
       <header className="flex items-center gap-3 border-b border-border bg-[color:rgb(200_169_106_/_0.05)] p-5">
         <UserRound
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-5 text-[var(--color-gold-600)]"
         />
 
@@ -68,14 +68,14 @@ export function ServicePartnerApplicationContactCard({
             className="flex items-center gap-3 rounded-[var(--radius-md)] border border-border bg-background p-4 text-sm hover:border-[color:rgb(200_169_106_/_0.4)]"
           >
             <Mail
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4 text-[var(--color-gold-600)]"
             />
             <span className="min-w-0 flex-1 break-all">
               {contact.email}
             </span>
             <ExternalLink
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-muted"
             />
           </a>
@@ -85,7 +85,7 @@ export function ServicePartnerApplicationContactCard({
             className="flex items-center gap-3 rounded-[var(--radius-md)] border border-border bg-background p-4 text-sm hover:border-[color:rgb(200_169_106_/_0.4)]"
           >
             <Phone
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4 text-[var(--color-gold-600)]"
             />
             {
@@ -97,7 +97,7 @@ export function ServicePartnerApplicationContactCard({
         <address className="rounded-[var(--radius-md)] border border-border bg-background p-4 not-italic">
           <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.13em] text-muted">
             <MapPin
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             Registered Address

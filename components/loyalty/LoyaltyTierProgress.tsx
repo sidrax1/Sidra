@@ -102,7 +102,7 @@ export function LoyaltyTierProgress({
                 orderedTiers.length -
                   1 ? (
                   <div
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className={cn(
                       "absolute bottom-0 left-[1.35rem] top-11 w-px",
                       achieved
@@ -125,12 +125,12 @@ export function LoyaltyTierProgress({
                   {achieved &&
                   !current ? (
                     <Check
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-5"
                     />
                   ) : (
                     <Icon
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-5"
                     />
                   )}
@@ -175,7 +175,7 @@ export function LoyaltyTierProgress({
                           )}{" "}
                           points remaining
                           <ChevronRight
-                            aria-hidden="true"
+                            aria-hidden={true}
                             className="size-4"
                           />
                         </span>
@@ -228,7 +228,7 @@ export function LoyaltyTierProgress({
                             className="flex items-start gap-3 text-sm"
                           >
                             <Check
-                              aria-hidden="true"
+                              aria-hidden={true}
                               className="mt-0.5 size-4 shrink-0 text-[var(--color-gold-600)]"
                             />
 

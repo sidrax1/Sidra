@@ -47,7 +47,7 @@ export function OrderAddressCard({
         <div className="flex items-start gap-4">
           <span className="flex size-11 shrink-0 items-center justify-center rounded-full border border-[color:rgb(200_169_106_/_0.3)] bg-[color:rgb(200_169_106_/_0.08)] text-[var(--color-gold-600)]">
             <Icon
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-5"
             />
           </span>
@@ -96,7 +96,7 @@ export function OrderAddressCard({
         <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-xs text-muted">
           <span className="inline-flex items-center gap-2">
             <Phone
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             {address.mobile}
@@ -104,7 +104,7 @@ export function OrderAddressCard({
 
           <span className="inline-flex items-center gap-2">
             <MapPin
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             {address.postalCode}

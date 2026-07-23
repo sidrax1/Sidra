@@ -60,7 +60,7 @@ export function CampaignCard({
 
      <span className="inline-flex items-center gap-2 text-xs text-muted">
       <CalendarRange
-        aria-hidden="true"
+        aria-hidden={true}
         className="size-3.5"
       />
       {formatDate(
@@ -94,7 +94,7 @@ text-foreground">
       Review Campaign
 
        <ArrowRight
-        aria-hidden="true"
+        aria-hidden={true}
         className="size-4"
        />
       </Button>
@@ -113,12 +113,12 @@ text-foreground">
         {campaign.status ===
         "active" ? (
           <Pause
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
         ):(
           <Play
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
         )}

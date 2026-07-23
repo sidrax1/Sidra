@@ -272,7 +272,7 @@ export function ServicePartnerAssignmentFilters({
           placeholder="Search assignment, partner, source or customer"
           leadingIcon={
             <Search
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           }
@@ -385,7 +385,7 @@ export function ServicePartnerAssignmentFilters({
             }
           >
             <X
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Reset

@@ -114,7 +114,7 @@ export function WarrantyClaimCompletionDialog({
             description="Confirm that repair, replacement, refund or store-credit obligations have been completed."
             icon={
               <ShieldCheck
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             }
@@ -221,7 +221,7 @@ export function WarrantyClaimCompletionDialog({
             }}
           >
             <CheckCircle2
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Complete Claim

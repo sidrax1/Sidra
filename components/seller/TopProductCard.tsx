@@ -62,7 +62,7 @@ rounded-full bg-black/70 text-xs font-semibold text-white backdrop-blur-md">
       <div className="mt-4 grid grid-cols-2 gap-4 text-sm">
        <div>
         <p className="inline-flex items-center gap-2 text-muted">
-          <Eye aria-hidden="true" className="size-4" />
+          <Eye aria-hidden={true} className="size-4" />
           Views
         </p>
         <p className="mt-1 font-medium text-foreground">
@@ -72,7 +72,7 @@ rounded-full bg-black/70 text-xs font-semibold text-white backdrop-blur-md">
 
        <div>
         <p className="inline-flex items-center gap-2 text-muted">
-         <ShoppingBag aria-hidden="true" className="size-4" />
+         <ShoppingBag aria-hidden={true} className="size-4" />
          Orders
         </p>
         <p className="mt-1 font-medium text-foreground">
@@ -83,7 +83,7 @@ rounded-full bg-black/70 text-xs font-semibold text-white backdrop-blur-md">
        <div>
         <p className="inline-flex items-center gap-2 text-muted">
 
-         <TrendingUp aria-hidden="true" className="size-4" />
+         <TrendingUp aria-hidden={true} className="size-4" />
          Conversion
         </p>
         <p className="mt-1 font-medium text-foreground">

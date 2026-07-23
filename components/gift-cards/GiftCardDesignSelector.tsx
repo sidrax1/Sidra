@@ -59,7 +59,7 @@ export function GiftCardDesignSelector({
                 {selected ? (
                   <span className="absolute right-3 top-3 flex size-8 items-center justify-center rounded-full bg-[var(--color-gold-500)] text-[var(--color-black-900)] shadow-[var(--shadow-gold-glow)]">
                     <CheckCircle2
-                      aria-hidden="true"
+                      aria-hidden={true}
                       className="size-4"
                     />
                   </span>

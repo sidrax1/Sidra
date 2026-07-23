@@ -50,7 +50,7 @@ export const SearchInput = forwardRef<
  return (
   <div className="relative">
     <Search
-     aria-hidden="true"
+     aria-hidden={true}
      className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-muted"
     />
 
@@ -71,7 +71,7 @@ export const SearchInput = forwardRef<
      {hasValue && onClear ? (
        <IconButton
          label="Clear search"
-         icon={<X aria-hidden="true" />}
+         icon={<X aria-hidden={true} />}
          appearance="ghost"
          size="sm"
          onClick={onClear}

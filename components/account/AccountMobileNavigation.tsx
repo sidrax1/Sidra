@@ -30,7 +30,7 @@ export function AccountMobileNavigation(): React.JSX.Element {
         }
       >
         <Menu
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-4"
         />
         Account Menu

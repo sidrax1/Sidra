@@ -73,7 +73,7 @@ export function SortControl({
      )}
    >
      <ArrowDownAZ
-       aria-hidden="true"
+       aria-hidden={true}
        className="hidden size-4 text-muted sm:block"
      />
 

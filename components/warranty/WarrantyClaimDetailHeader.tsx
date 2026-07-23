@@ -59,7 +59,7 @@ export function WarrantyClaimDetailHeader({
     >
       <div className="relative overflow-hidden bg-[var(--color-black-900)] px-6 py-10 text-white md:px-10">
         <div
-          aria-hidden="true"
+          aria-hidden={true}
           className="pointer-events-none absolute inset-0"
           style={{
             background: urgent
@@ -91,7 +91,7 @@ export function WarrantyClaimDetailHeader({
                   }
                 >
                   <ShieldCheck
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="mr-1 size-3.5"
                   />
                   {claim.assessment
@@ -121,7 +121,7 @@ export function WarrantyClaimDetailHeader({
             <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/60">
               <span className="inline-flex items-center gap-2">
                 <ReceiptText
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 Warranty #
@@ -130,7 +130,7 @@ export function WarrantyClaimDetailHeader({
 
               <span className="inline-flex items-center gap-2">
                 <Store
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 {
@@ -141,7 +141,7 @@ export function WarrantyClaimDetailHeader({
 
               <span className="inline-flex items-center gap-2">
                 <UserRound
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 Customer{" "}
@@ -150,7 +150,7 @@ export function WarrantyClaimDetailHeader({
 
               <span className="inline-flex items-center gap-2">
                 <CalendarClock
-                  aria-hidden="true"
+                  aria-hidden={true}
                   className="size-4"
                 />
                 Due{" "}
@@ -181,7 +181,7 @@ export function WarrantyClaimDetailHeader({
               ) : (
                 <div className="flex size-full items-center justify-center">
                   <Wrench
-                    aria-hidden="true"
+                    aria-hidden={true}
                     className="size-11 text-[var(--color-gold-500)]"
                   />
                 </div>

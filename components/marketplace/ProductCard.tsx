@@ -114,7 +114,7 @@ bg-[linear-gradient(135deg,var(--color-ivory-50),var(--color-gold-100))]">
 
      <div
 
-       aria-hidden="true"
+       aria-hidden={true}
        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20
 via-transparent to-transparent opacity-0 transition-opacity duration-[var(--duration-slow)]
 group-hover:opacity-100"
@@ -143,7 +143,7 @@ group-hover:opacity-100"
        }
        icon={
          <Heart
-           aria-hidden="true"
+           aria-hidden={true}
            className={cn(
              wished &&
               "fill-current"
@@ -187,7 +187,7 @@ group-hover:opacity-100">
          )}
        >
          <ShoppingBag
-           aria-hidden="true"
+           aria-hidden={true}
            className="size-4"
          />
 

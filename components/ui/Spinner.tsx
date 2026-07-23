@@ -29,7 +29,7 @@ export function Spinner({
      )}
     >
      <LoaderCircle
-       aria-hidden="true"
+       aria-hidden={true}
        className={cn(
          "animate-spin text-[var(--color-gold-500)]",
          sizeClasses[size]

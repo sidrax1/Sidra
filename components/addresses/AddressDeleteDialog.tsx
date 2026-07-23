@@ -62,7 +62,7 @@ export function AddressDeleteDialog({
             description="Choose another default address after deletion before your next checkout."
             icon={
               <ShieldAlert
-                aria-hidden="true"
+                aria-hidden={true}
                 className="size-5"
               />
             }
@@ -72,7 +72,7 @@ export function AddressDeleteDialog({
         {address ? (
           <div className="flex items-start gap-4 rounded-[var(--radius-md)] border border-border bg-background p-5">
             <MapPin
-              aria-hidden="true"
+              aria-hidden={true}
               className="mt-0.5 size-5 shrink-0 text-[var(--color-gold-600)]"
             />
 
@@ -116,7 +116,7 @@ export function AddressDeleteDialog({
             }}
           >
             <Trash2
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Delete Address

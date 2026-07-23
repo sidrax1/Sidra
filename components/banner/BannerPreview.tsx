@@ -76,7 +76,7 @@ leading-[0.92] tracking-[-0.055em]">
           href={banner.buttonUrl}
          >
           {banner.buttonLabel}
-          <ArrowRight aria-hidden="true" />
+          <ArrowRight aria-hidden={true} />
          </Link>
        </Button>
      ) : null}

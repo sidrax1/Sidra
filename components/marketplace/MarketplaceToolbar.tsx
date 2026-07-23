@@ -77,7 +77,7 @@ export function MarketplaceToolbar({
             label="Open filters"
             icon={
               <SlidersHorizontal
-               aria-hidden="true"
+               aria-hidden={true}
               />
             }
             appearance="ghost"
@@ -116,7 +116,7 @@ shadow-[var(--shadow-card)] sm:flex">
        label="Grid view"
        icon={
          <Grid2X2
-           aria-hidden="true"
+           aria-hidden={true}
          />
        }
        size="sm"
@@ -137,7 +137,7 @@ shadow-[var(--shadow-card)] sm:flex">
         label="List view"
         icon={
           <List
-           aria-hidden="true"
+           aria-hidden={true}
           />
         }
         size="sm"

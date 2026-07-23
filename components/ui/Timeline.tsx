@@ -48,7 +48,7 @@ export function Timeline({
         {!last ? (
 
          <span
-           aria-hidden="true"
+           aria-hidden={true}
            className="absolute left-[19px] top-10 h-[calc(100%+8px)] w-px bg-border"
          />
        ) : null}
@@ -69,7 +69,7 @@ export function Timeline({
        {item.icon ??
          (item.completed ? (
            <Check
-             aria-hidden="true"
+             aria-hidden={true}
              className="size-4"
            />
          ):(

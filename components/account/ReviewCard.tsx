@@ -35,7 +35,7 @@ export function ReviewCard({
      {review.verifiedPurchase ? (
        <Badge variant="success">
          <BadgeCheck
-          aria-hidden="true"
+          aria-hidden={true}
           className="mr-1 size-3.5"
          />
          Verified Purchase
@@ -78,7 +78,7 @@ border-border pt-4 text-xs text-muted">
 
         <span className="inline-flex items-center gap-2">
           <ThumbsUp
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-3.5"
           />
           {review.helpfulCount.toLocaleString(

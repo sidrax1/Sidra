@@ -159,7 +159,7 @@ export function DrawerContent({
 
       <IconButton
        label="Close drawer"
-       icon={<X aria-hidden="true" />}
+       icon={<X aria-hidden={true} />}
        appearance="ghost"
        onClick={() =>
          context.onOpenChange(false)

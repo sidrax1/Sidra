@@ -54,7 +54,7 @@ export function ConfirmationDialog({
 border-[color:rgb(166_124_46_/_0.28)] bg-[color:rgb(166_124_46_/_0.08)]
 text-[var(--color-warning)]">
           <TriangleAlert
-           aria-hidden="true"
+           aria-hidden={true}
            className="size-5"
           />
          </div>

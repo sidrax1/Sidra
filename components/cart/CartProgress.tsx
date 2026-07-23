@@ -63,12 +63,12 @@ export function CartProgress({
 border-[color:rgb(200_169_106_/_0.3)] bg-card text-[var(--color-gold-600)]">
         {achieved ? (
           <Gift
-           aria-hidden="true"
+           aria-hidden={true}
            className="size-5"
           />
         ):(
           <Truck
-           aria-hidden="true"
+           aria-hidden={true}
            className="size-5"
           />
         )}

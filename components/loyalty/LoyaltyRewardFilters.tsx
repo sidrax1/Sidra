@@ -148,7 +148,7 @@ export function LoyaltyRewardFilters({
         placeholder="Search loyalty rewards"
         leadingIcon={
           <Search
-            aria-hidden="true"
+            aria-hidden={true}
             className="size-4"
           />
         }
@@ -247,7 +247,7 @@ export function LoyaltyRewardFilters({
             }
           >
             <X
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
             Reset

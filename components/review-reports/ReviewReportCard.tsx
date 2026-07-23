@@ -88,7 +88,7 @@ export function ReviewReportCard({
               }
             >
               <ShieldAlert
-                aria-hidden="true"
+                aria-hidden={true}
                 className="mr-1 size-3.5"
               />
               Risk {report.riskScore}
@@ -106,7 +106,7 @@ export function ReviewReportCard({
               label="Report actions"
               icon={
                 <MoreVertical
-                  aria-hidden="true"
+                  aria-hidden={true}
                 />
               }
               appearance="ghost"
@@ -187,7 +187,7 @@ export function ReviewReportCard({
         <div className="flex flex-wrap gap-x-5 gap-y-3 text-xs text-muted">
           <span className="inline-flex items-center gap-2">
             <UserRound
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             {report.reporter.reporterName}
@@ -195,7 +195,7 @@ export function ReviewReportCard({
 
           <span className="inline-flex items-center gap-2">
             <CalendarDays
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             {formatDateTime(report.createdAt)}
@@ -203,7 +203,7 @@ export function ReviewReportCard({
 
           <span className="inline-flex items-center gap-2">
             <Flag
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-3.5 text-[var(--color-gold-600)]"
             />
             {report.reportCountAtSubmission.toLocaleString(
@@ -220,7 +220,7 @@ export function ReviewReportCard({
           >
             Review Report
             <ArrowUpRight
-              aria-hidden="true"
+              aria-hidden={true}
               className="size-4"
             />
           </Button>

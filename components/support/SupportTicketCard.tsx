@@ -63,7 +63,7 @@ text-foreground">
       <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-xs text-muted">
        <span className="inline-flex items-center gap-2">
         <MessageCircle
-          aria-hidden="true"
+          aria-hidden={true}
           className="size-3.5"
         />
         Ticket #{ticket.ticketNumber}
@@ -72,7 +72,7 @@ text-foreground">
 
         <span className="inline-flex items-center gap-2">
          <CalendarClock
-           aria-hidden="true"
+           aria-hidden={true}
            className="size-3.5"
          />
          Updated{" "}
@@ -96,7 +96,7 @@ text-foreground">
      >
       Open Ticket
       <ArrowRight
-        aria-hidden="true"
+        aria-hidden={true}
         className="size-4"
       />
      </Button>
