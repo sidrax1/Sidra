@@ -114,7 +114,7 @@ export function AccountProfileForm({
         className="grid gap-5"
         onSubmit={handleSubmit(
           async (input) => {
-            await onSubmit(input);
+            await onSubmit(accountProfileSchema.parse(input));
             reset(input);
           }
         )}
