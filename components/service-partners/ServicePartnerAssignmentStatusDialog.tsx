@@ -345,7 +345,7 @@ export function ServicePartnerAssignmentStatusDialog({
             variant={
               destructive
                 ? "danger"
-                : "default"
+                : "primary"
             }
             disabled={!valid}
             loading={loading}

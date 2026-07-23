@@ -41,7 +41,7 @@
     ]
   },
   "functions": {
-    "source": "firebase/functions",
+    "source": "functions",
     "runtime": "nodejs22"
   },
   "emulators": {

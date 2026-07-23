@@ -10,6 +10,8 @@ import {
 
 import { ChevronRight } from "lucide-react";
 
+import { Slot } from "@radix-ui/react-slot";
+
 import { useClickOutside } from "@/hooks/useClickOutside";
 import { useEscapeKey } from "@/hooks/useEscapeKey";
 import { cn } from "@/lib/utils";
@@ -63,10 +65,12 @@ export function DropdownMenu({
 
 interface DropdownMenuTriggerProps {
   readonly children: ReactNode;
+  readonly asChild?: boolean;
 }
 
 export function DropdownMenuTrigger({
   children,
+  asChild = false,
 }: DropdownMenuTriggerProps): React.JSX.Element {
   const context = useContext(DropdownMenuContext);
 
@@ -76,15 +80,17 @@ export function DropdownMenuTrigger({
       );
     }
 
+    const Component = asChild ? Slot : "span";
+
     return (
-      <span
+      <Component
        onClick={() =>
          context.setOpen(!context.open)
        }
        aria-expanded={context.open}
       >
        {children}
-      </span>
+      </Component>
     );
 
 }

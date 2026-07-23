@@ -292,7 +292,7 @@ export function ServicePartnerStatusDialog({
             variant={
               destructive
                 ? "danger"
-                : "default"
+                : "primary"
             }
             disabled={!valid}
             loading={loading}
