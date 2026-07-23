@@ -7,13 +7,20 @@ interface SellerOrderStatusBadgeProps {
 
 const labels: Record<Order["status"], string> = {
  pending: "Pending",
+ paymentPending: "Payment Pending",
  confirmed: "Confirmed",
  processing: "In Production",
+ readyToShip: "Ready to Ship",
  shipped: "Shipped",
+ outForDelivery: "Out for Delivery",
  delivered: "Delivered",
  cancelled: "Cancelled",
-
-  refunded: "Refunded",
+ returnRequested: "Return Requested",
+ returnApproved: "Return Approved",
+ returned: "Returned",
+ refundPending: "Refund Pending",
+ refunded: "Refunded",
+ partiallyRefunded: "Partially Refunded",
 };
 
 export function SellerOrderStatusBadge({
@@ -22,9 +29,15 @@ export function SellerOrderStatusBadge({
   const variant =
    status === "delivered"
      ? "success"
-     : status === "cancelled" || status === "refunded"
+     : status === "cancelled" ||
+         status === "refunded" ||
+         status === "returned" ||
+         status === "partiallyRefunded"
        ? "error"
-       : status === "pending"
+       : status === "pending" ||
+           status === "paymentPending" ||
+           status === "returnRequested" ||
+           status === "refundPending"
          ? "warning"
          : "gold";
 

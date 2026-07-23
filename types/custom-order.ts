@@ -1,4 +1,4 @@
-import type { Address, BaseEntity } from "@/types/common";
+import type { PostalAddress, BaseEntity } from "@/types/common";
 
 export type CustomOrderStatus =
  | "submitted"
@@ -46,7 +46,7 @@ export interface CustomOrder extends BaseEntity {
  readonly budgetMinimumPaise?: number;
  readonly budgetMaximumPaise?: number;
  readonly requiredBy?: string;
- readonly shippingAddress?: Address;
+ readonly shippingAddress?: PostalAddress;
  readonly attachments: readonly CustomOrderAttachment[];
  readonly quote?: CustomOrderQuote;
  readonly status: CustomOrderStatus;

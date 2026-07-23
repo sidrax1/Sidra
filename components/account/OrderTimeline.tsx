@@ -20,12 +20,20 @@ const labels: Record<
   string
 >={
   pending: "Order received",
+  paymentPending: "Awaiting payment",
   confirmed: "Order confirmed",
   processing: "Crafting in progress",
+  readyToShip: "Ready to ship",
   shipped: "Dispatched",
+  outForDelivery: "Out for delivery",
   delivered: "Delivered",
   cancelled: "Order cancelled",
+  returnRequested: "Return requested",
+  returnApproved: "Return approved",
+  returned: "Returned",
+  refundPending: "Refund pending",
   refunded: "Payment refunded",
+  partiallyRefunded: "Partially refunded",
 };
 
 export function OrderTimeline({

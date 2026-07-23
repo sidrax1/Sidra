@@ -5,7 +5,7 @@ import { Rating } from "@/components/ui/Rating";
 import { Surface } from "@/components/ui/Surface";
 import { cn } from "@/lib/utils";
 
-export interface ReviewDistribution {
+export interface ReviewDistributionSummary {
   readonly rating:
     | 1
     | 2
@@ -18,7 +18,7 @@ export interface ReviewDistribution {
 interface ReviewSummaryProps {
   readonly averageRating: number;
   readonly reviewCount: number;
-  readonly distribution: readonly ReviewDistribution[];
+  readonly distribution: readonly ReviewDistributionSummary[];
   readonly className?: string;
 }
 

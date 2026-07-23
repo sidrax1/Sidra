@@ -72,7 +72,7 @@ export interface Coordinates {
     longitude: number;
 }
 
-export interface Address {
+export interface PostalAddress {
  fullName: string;
 
     phone: string;

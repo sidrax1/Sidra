@@ -24,6 +24,12 @@ export const slugSchema = z
  .trim()
  .regex(REGEX.SLUG, "Enter a valid slug.");
 
+export const displayNameSchema = z
+ .string()
+ .trim()
+ .min(2, "Name must be at least 2 characters.")
+ .max(80, "Name must be at most 80 characters.");
+
 export const httpUrlSchema = z
  .string()
  .trim()
@@ -69,6 +75,6 @@ export function parseWithSchema<T>(
 export function safeParseWithSchema<T>(
   schema: z.ZodType<T>,
   value: unknown
-): z.SafeParseReturnType<unknown, T> {
+): z.ZodSafeParseResult<T> {
   return schema.safeParse(value);
 }
