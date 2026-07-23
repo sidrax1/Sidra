@@ -9,6 +9,7 @@ import {
 import {
   zodResolver,
 } from "@hookform/resolvers/zod";
+import type { z } from "zod";
 import {
   Save,
   UserRound,
@@ -45,7 +46,7 @@ export function AccountProfileForm({
     handleSubmit,
     register,
     reset,
-  } = useForm<AccountProfileInput>({
+  } = useForm<z.input<typeof accountProfileSchema>>({
     resolver:
       zodResolver(
         accountProfileSchema
