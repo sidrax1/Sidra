@@ -5,6 +5,8 @@ import {
 } from "react";
 import {
   useForm,
+  type Path,
+  type PathValue,
 } from "react-hook-form";
 import {
   zodResolver,
@@ -108,10 +110,13 @@ export function NotificationPreferencesForm({
   const values = watch();
 
   function updatePreference<
-    Key extends keyof AccountNotificationPreferencesInput,
+    Key extends Path<AccountNotificationPreferencesInput>,
   >(
     key: Key,
-    value: AccountNotificationPreferencesInput[Key]
+    value: PathValue<
+      AccountNotificationPreferencesInput,
+      Key
+    >
   ): void {
     setValue(key, value, {
       shouldDirty: true,

@@ -9,7 +9,7 @@ import {
 interface FormFieldProps {
   readonly children: ReactNode;
   readonly className?: string;
-  readonly description?: string;
+  readonly description?: ReactNode;
   readonly error?: string;
   readonly label?: ReactNode;
   readonly labelFor?: string;

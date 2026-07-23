@@ -170,7 +170,7 @@ text-muted"
       </FormField>
 
     <Switch
-     checked={value.noIndex}
+     checked={value.noIndex ?? false}
      disabled={disabled}
      label="Prevent search indexing"
      description="Use this only for private, temporary or duplicate content."

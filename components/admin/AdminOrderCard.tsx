@@ -58,7 +58,7 @@ export function AdminOrderCard({
 
        <span className="inline-flex items-center gap-2">
         <CreditCard aria-hidden={true} className="size-3.5" />
-        {order.payment.status}
+        {order.paymentStatus}
        </span>
 
        <span>{formatDateTime(order.createdAt)}</span>
@@ -66,7 +66,7 @@ export function AdminOrderCard({
      </div>
 
       <div className="flex flex-wrap items-center gap-4">
-       <Price amount={order.grandTotal} size="lg" />
+       <Price amount={order.pricing.totalPaise / 100} size="lg" />
 
       <Button
         variant="outline"

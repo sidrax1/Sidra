@@ -69,3 +69,6 @@ export const addressSchema = z.object({
 
 export type AddressInput =
   z.infer<typeof addressSchema>;
+
+export type AddressFormValues =
+  z.input<typeof addressSchema>;

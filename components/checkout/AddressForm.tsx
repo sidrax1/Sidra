@@ -31,6 +31,7 @@ import {
 import {
   addressSchema,
   type AddressInput,
+  type AddressFormValues,
 } from "@/lib/schemas/address";
 
 interface AddressFormProps {
@@ -44,7 +45,7 @@ interface AddressFormProps {
     readonly onCancel?: () => void;
 }
 
-const defaultValues: AddressInput = {
+const defaultValues: AddressFormValues = {
   fullName: "",
   phone: "",
   email: undefined,
@@ -68,7 +69,7 @@ export function AddressForm({
   submitLabel = "Save Address",
 }: AddressFormProps): React.JSX.Element {
   const resolvedDefaults =
-    useMemo<AddressInput>(
+    useMemo<AddressFormValues>(
       () => ({
         ...defaultValues,
         ...initialValues,
@@ -82,7 +83,7 @@ export function AddressForm({
       },
       handleSubmit,
       register,
-    } = useForm<AddressInput>({
+    } = useForm<AddressFormValues, unknown, AddressInput>({
       resolver:
         zodResolver(
 
