@@ -1,0 +1,48 @@
+export const SERVICE_PARTNER_WALLET_VERSION = 1;
+
+export const SERVICE_PARTNER_WALLET_CURRENCY = "INR";
+
+export const SERVICE_PARTNER_MAX_PAYOUT_PAISE =
+100_000_000;
+
+export const SERVICE_PARTNER_MIN_PAYOUT_PAISE =
+10_000;
+
+export const SERVICE_PARTNER_MAX_RETRY_COUNT = 5;
+
+export const SERVICE_PARTNER_STATEMENT_LIMIT =
+10_000;
+
+export const SERVICE_PARTNER_WALLET_ENTRY_LIMIT =
+20_000;
+
+export const SERVICE_PARTNER_PENDING_RELEASE_BATCH =
+300;
+
+export const SERVICE_PARTNER_RECONCILIATION_BATCH =
+20_000;
+
+export const SERVICE_PARTNER_ANALYTICS_LIMIT =
+5000;
+
+export const SERVICE_PARTNER_PAYOUT_REQUEST_LIMIT =
+
+100;
+
+export const SERVICE_PARTNER_NOTIFICATION_COLLECTION =
+"notifications";
+
+export const SERVICE_PARTNER_WALLET_COLLECTION =
+"servicePartnerWallets";
+
+export const SERVICE_PARTNER_WALLET_ENTRY_COLLECTION =
+"servicePartnerWalletEntries";
+
+export const SERVICE_PARTNER_PAYOUT_COLLECTION =
+"servicePartnerPayoutRequests";
+
+export const SERVICE_PARTNER_PAYOUT_EVENT_COLLECTION =
+"servicePartnerPayoutEvents";
+
+export const SERVICE_PARTNER_RECONCILIATION_COLLECTION =
+"servicePartnerWalletReconciliations";

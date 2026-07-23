@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "SIDRA • Next.js",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run dev"
+    },
+    {
+      "name": "SIDRA • Next.js (Production)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run build && npm run start"
+    },
+    {
+      "name": "SIDRA • Firebase Emulators",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "firebase emulators:start"
+    }
+  ]
+}

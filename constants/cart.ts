@@ -1,0 +1,19 @@
+/**
+ * SIDRA Cart Configuration
+ */
+
+export const CART = {
+ MAX_ITEMS: 100,
+
+ MAX_QUANTITY_PER_ITEM: 10,
+
+ MIN_QUANTITY_PER_ITEM: 1,
+
+ SAVE_FOR_LATER_LIMIT: 50,
+
+ AUTO_EXPIRE_DAYS: 30,
+
+ MERGE_ON_LOGIN: true,
+
+  PRICE_REFRESH_INTERVAL_MINUTES: 10
+} as const;

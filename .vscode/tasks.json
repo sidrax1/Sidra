@@ -1,0 +1,54 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "SIDRA • Development Server",
+      "type": "shell",
+      "command": "npm run dev",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "SIDRA • Production Build",
+      "type": "shell",
+      "command": "npm run build",
+      "group": "build",
+      "problemMatcher": [
+        "$tsc"
+      ]
+    },
+    {
+      "label": "SIDRA • Type Check",
+      "type": "shell",
+      "command": "npm run typecheck",
+      "problemMatcher": [
+        "$tsc"
+      ]
+    },
+    {
+      "label": "SIDRA • ESLint",
+      "type": "shell",
+      "command": "npm run lint",
+      "problemMatcher": []
+    },
+    {
+      "label": "SIDRA • Firebase Emulators",
+      "type": "shell",
+      "command": "firebase emulators:start",
+      "problemMatcher": []
+    },
+    {
+      "label": "SIDRA • Production Check",
+      "dependsOn": [
+        "SIDRA • Type Check",
+        "SIDRA • ESLint",
+        "SIDRA • Production Build"
+      ],
+      "dependsOrder": "sequence",
+      "problemMatcher": []
+    }
+  ]
+}

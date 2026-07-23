@@ -1,0 +1,31 @@
+/**
+ * SIDRA Cache Configuration
+ */
+
+export const CACHE = {
+ HOME_PAGE: 300,
+
+ PRODUCT_PAGE: 300,
+
+ COLLECTION_PAGE: 600,
+
+ CATEGORY_PAGE: 600,
+
+ STUDIO_PAGE: 300,
+
+ SEARCH_RESULTS: 120,
+
+ CMS: 300,
+
+ SETTINGS: 900,
+
+ USER_PROFILE: 120,
+
+ CART: 60,
+
+ WISHLIST: 120,
+
+ ANALYTICS: 900,
+
+  DASHBOARD: 300
+} as const;

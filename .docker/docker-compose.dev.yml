@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+ sidra-dev:
+  container_name: sidra-development
+
+  image: node:22-alpine
+
+  working_dir: /app
+
+  command: npm run dev
+
+  ports:
+   - "3000:3000"
+
+  volumes:
+   - ./:/app
+   - /app/node_modules
+
+  env_file:
+   - .env.local
+
+  environment:
+   NODE_ENV: development
+   CHOKIDAR_USEPOLLING: "true"
+   WATCHPACK_POLLING: "true"
+
+  stdin_open: true
+
+  tty: true
+
+  restart: unless-stopped

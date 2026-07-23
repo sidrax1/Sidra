@@ -1,0 +1,43 @@
+version: "3.9"
+
+services:
+ sidra:
+  container_name: sidra-production
+
+  build:
+   context: ..
+   dockerfile: Dockerfile
+
+  image: sidra:production
+
+  restart: always
+
+  ports:
+   - "3000:3000"
+
+  env_file:
+   - ../.env.production.local
+
+  environment:
+   NODE_ENV: production
+   PORT: 3000
+
+  healthcheck:
+   test: ["CMD", "wget", "--spider", "http://localhost:3000"]
+   interval: 30s
+   timeout: 10s
+   retries: 5
+   start_period: 30s
+
+  logging:
+    driver: json-file
+    options:
+     max-size: "10m"
+     max-file: "5"
+
+  networks:
+   - sidra-network
+
+networks:
+  sidra-network:
+    driver: bridge

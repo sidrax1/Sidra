@@ -1,0 +1,63 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+
+  "editor.rulers": [
+    100
+  ],
+
+  "editor.renderWhitespace": "selection",
+
+  "editor.bracketPairColorization.enabled": true,
+
+  "editor.guides.bracketPairs": "active",
+
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  "eslint.run": "onType",
+
+  "files.eol": "\n",
+
+  "files.trimTrailingWhitespace": true,
+
+  "files.insertFinalNewline": true,
+
+  "files.trimFinalNewlines": true,
+
+  "search.exclude": {
+    "**/.next": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/coverage": true
+  },
+
+  "files.exclude": {
+    "**/.next": true,
+    "**/.turbo": true,
+    "**/node_modules": true
+  },
+
+  "tailwindCSS.experimental.classRegex": [
+    [
+      "cn\\(([^)]*)\\)",
+      "[\"'`]([^\"'`]*)[\"'`]"
+    ]
+  ]
+}

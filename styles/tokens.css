@@ -1,0 +1,142 @@
+/*
+ * SIDRA LUXURY DESIGN TOKENS
+ *
+ * 60% — Black / charcoal foundations
+ * 30% — Ivory surfaces
+ * 10% — Antique gold accents
+ *
+ * No additional accent colour may be introduced without updating
+ * the authoritative Sidra design specification.
+ */
+
+:root {
+  /* Colour foundations */
+  --color-black-950: #0b0b0b;
+  --color-black-900: #111111;
+  --color-charcoal-800: #1c1b19;
+
+ --color-ivory-100: #f7f4ef;
+ --color-ivory-50: #fbfaf7;
+
+ --color-gold-500: #c8a96a;
+ --color-gold-600: #b08d4f;
+ --color-gold-100: #efe3cb;
+
+--color-gray-700: #4a4744;
+--color-gray-500: #8a857e;
+--color-gray-300: #d4cfc7;
+--color-gray-100: #edeae4;
+
+--color-success: #3e6b52;
+--color-error: #8c3b34;
+--color-warning: #a67c2e;
+--color-info: #3c5a6e;
+
+/* Semantic colours */
+--color-background: var(--color-ivory-100);
+--color-foreground: var(--color-black-900);
+--color-primary: var(--color-gold-500);
+--color-secondary: var(--color-ivory-50);
+--color-accent: var(--color-gold-500);
+--color-border: var(--color-gray-300);
+--color-muted: var(--color-gray-500);
+--color-card: var(--color-ivory-50);
+--color-destructive: var(--color-error);
+
+/* Typography */
+--font-display: var(--font-cormorant-garamond), "Cormorant Garamond", serif;
+--font-heading: var(--font-display);
+--font-body: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  sans-serif;
+
+--text-hero-size: clamp(2.5rem, 5vw, 4.5rem);
+--text-hero-line-height: 1.1;
+
+--text-h1-size: clamp(2rem, 3.5vw, 3rem);
+--text-h1-line-height: 1.15;
+
+--text-h2-size: 1.75rem;
+--text-h2-line-height: 1.25;
+
+--text-h3-size: 1.375rem;
+--text-h3-line-height: 1.3;
+
+--text-body-lg-size: 1.125rem;
+--text-body-lg-line-height: 1.6;
+
+--text-body-size: 1rem;
+--text-body-line-height: 1.6;
+
+--text-caption-size: 0.875rem;
+--text-caption-line-height: 1.5;
+
+--text-micro-size: 0.75rem;
+--text-micro-line-height: 1.4;
+--text-micro-letter-spacing: 0.02em;
+
+/* 8px spacing grid */
+--space-1: 4px;
+--space-2: 8px;
+--space-3: 16px;
+--space-4: 24px;
+--space-5: 32px;
+--space-6: 40px;
+--space-7: 48px;
+--space-8: 64px;
+--space-9: 80px;
+--space-10: 96px;
+--space-11: 128px;
+
+/* Radius */
+--radius-sm: 8px;
+--radius-md: 16px;
+--radius-lg: 24px;
+--radius-xl: 28px;
+--radius-full: 999px;
+
+/* Shadows */
+--shadow-card: 0 2px 12px rgb(17 17 17 / 6%);
+--shadow-hover: 0 8px 24px rgb(17 17 17 / 10%);
+--shadow-modal: 0 16px 48px rgb(17 17 17 / 18%);
+--shadow-gold-glow: 0 0 24px rgb(200 169 106 / 25%);
+--shadow-luxury: var(--shadow-card);
+
+/* Motion */
+--ease-luxury: cubic-bezier(0.4, 0, 0.2, 1);
+
+--duration-fast: 150ms;
+--duration-base: 250ms;
+--duration-slow: 400ms;
+--duration-hero: 600ms;
+
+/* Responsive grids */
+
+    --grid-columns-mobile: 4;
+    --grid-columns-tablet: 8;
+    --grid-columns-desktop: 12;
+
+    --grid-gutter-mobile: 16px;
+    --grid-gutter-desktop: 24px;
+
+    /* Layout */
+    --content-max-width: 1440px;
+    --navigation-height: 80px;
+}
+
+.dark {
+  --color-background: var(--color-black-900);
+  --color-foreground: var(--color-ivory-100);
+  --color-secondary: var(--color-charcoal-800);
+  --color-border: var(--color-gray-700);
+  --color-muted: var(--color-gray-300);
+  --color-card: var(--color-charcoal-800);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 300ms;
+    --duration-hero: 300ms;
+  }
+}
