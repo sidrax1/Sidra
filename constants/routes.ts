@@ -74,6 +74,29 @@ export const STUDIO_ADMIN_ROUTES = {
   SETTINGS: "/studio-admin/settings",
 } as const;
 
+export const SELLER_ROUTES = {
+  ROOT: "/seller",
+  OVERVIEW: "/seller/overview",
+  PRODUCTS: "/seller/products",
+  NEW_PRODUCT: "/seller/products/new",
+  EDIT_PRODUCT: (productId: string) =>
+   `/seller/products/${encodeURIComponent(productId)}/edit`,
+  ORDERS: "/seller/orders",
+  ORDER_DETAILS: (orderId: string) =>
+   `/seller/orders/${encodeURIComponent(orderId)}`,
+  INVENTORY: "/seller/inventory",
+  CUSTOM_ORDERS: "/seller/custom-orders",
+  CUSTOM_ORDER_DETAILS: (customOrderId: string) =>
+   `/seller/custom-orders/${encodeURIComponent(customOrderId)}`,
+  CUSTOMERS: "/seller/customers",
+  MESSAGES: "/seller/messages",
+  ANALYTICS: "/seller/analytics",
+  PAYOUTS: "/seller/payouts",
+  STORE_DESIGN: "/seller/store-design",
+  STUDIO: "/seller/studio",
+  SETTINGS: "/seller/settings",
+} as const;
+
 export const ADMIN_ROUTES = {
  ROOT: "/admin",
  OVERVIEW: "/admin/overview",

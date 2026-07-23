@@ -14,7 +14,9 @@ import {
 } from "firebase/firestore";
 import { doc } from "firebase/firestore";
 
-import { db } from "@/firebase/client";
+import { getFirebaseFirestore } from "@/firebase/firestore";
+
+const db = getFirebaseFirestore();
 import { callableFunction } from "@/firebase/functions";
 import type {
   OrderCancellationInput,
