@@ -146,10 +146,7 @@ tracking-[-0.025em] text-foreground transition-colors hover:text-[var(--color-go
       </div>
 
       <Price
-       amount={
-         item.price *
-         item.quantity
-       }
+       amount={item.totalPrice}
        size="md"
        className="shrink-0"
       />

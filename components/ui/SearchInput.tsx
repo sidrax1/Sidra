@@ -4,6 +4,7 @@ import {
  forwardRef,
 
   type InputHTMLAttributes,
+  type ReactNode,
 } from "react";
 
 import {
@@ -29,6 +30,7 @@ interface SearchInputProps
    "type"
   >{
   readonly onClear?: () => void;
+  readonly leadingIcon?: ReactNode;
 }
 
 export const SearchInput = forwardRef<
@@ -39,6 +41,7 @@ export const SearchInput = forwardRef<
    className,
    onClear,
    value,
+   leadingIcon,
    ...props
  },
  forwardedRef
@@ -49,10 +52,11 @@ export const SearchInput = forwardRef<
 
  return (
   <div className="relative">
-    <Search
-     aria-hidden={true}
-     className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-muted"
-    />
+    <span className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-muted [&>svg]:size-4">
+     {leadingIcon ?? (
+       <Search aria-hidden={true} className="size-4" />
+     )}
+    </span>
 
     <Input
      ref={forwardedRef}

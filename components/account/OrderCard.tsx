@@ -60,7 +60,7 @@ sm:items-center sm:justify-between">
     </div>
 
     <Price
-     amount={order.grandTotal}
+     amount={order.pricing.totalPaise}
      size="lg"
     />
    </header>
@@ -70,17 +70,17 @@ sm:items-center sm:justify-between">
       {previewItems.map(
         (item, index) => (
           <div
-            key={`${item.productId}-${index}`}
+            key={`${item.product.productId}-${index}`}
             className={cn(
               "relative size-16 overflow-hidden rounded-md border-2 border-cardbg-[var(--color-gray-100)]",
               index > 0 && "-ml-3"
             )}
           >
 
-             {item.thumbnail ? (
+             {item.product.imageURL ? (
                <Image
-                src={item.thumbnail}
-                alt={item.title}
+                src={item.product.imageURL}
+                alt={item.product.title}
                 fill
                 sizes="64px"
                 className="object-cover"
@@ -114,7 +114,7 @@ border-card bg-[var(--color-black-900)] text-sm font-semibold text-white">
 
       <p className="mt-1 text-xs text-muted">
         Payment{" "}
-        {order.payment.status}
+        {order.paymentStatus}
       </p>
      </div>
     </div>

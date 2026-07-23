@@ -359,7 +359,7 @@ export function ServicePartnerApplicationReviewDialog({
               decision ===
               "reject"
                 ? "danger"
-                : "default"
+                : "primary"
             }
             disabled={!valid}
             loading={loading}

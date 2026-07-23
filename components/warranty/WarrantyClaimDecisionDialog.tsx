@@ -411,7 +411,7 @@ export function WarrantyClaimDecisionDialog({
           <Button
             variant={
               approved
-                ? "default"
+                ? "primary"
                 : "danger"
             }
             disabled={!valid}

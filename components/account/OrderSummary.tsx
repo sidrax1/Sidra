@@ -53,30 +53,30 @@ export function OrderSummary({
     <div className="mt-6 grid gap-4">
      <SummaryRow
       label="Subtotal"
-      value={order.subtotal}
+      value={order.pricing.itemsSubtotalPaise}
      />
 
      <SummaryRow
       label="Discount"
-      value={-order.discount}
+      value={-order.pricing.discountPaise}
      />
 
      <SummaryRow
 
        label="Shipping"
-       value={order.shippingFee}
+       value={order.pricing.shippingPaise}
       />
 
       <SummaryRow
        label="Tax"
-       value={order.tax}
+       value={order.pricing.taxPaise}
       />
 
       <Separator />
 
      <SummaryRow
        label="Total"
-       value={order.grandTotal}
+       value={order.pricing.totalPaise}
        emphasized
      />
     </div>
