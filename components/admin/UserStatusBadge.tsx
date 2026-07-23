@@ -8,7 +8,7 @@ interface UserStatusBadgeProps {
 const labels: Record<User["status"], string> = {
   active: "Active",
   suspended: "Suspended",
-  deleted: "Deleted",
+  blocked: "Blocked",
   pending: "Pending",
 };
 
@@ -20,7 +20,7 @@ export function UserStatusBadge({
      ? "success"
      : status === "suspended"
        ? "warning"
-       : status === "deleted"
+       : status === "blocked"
          ? "error"
          : "neutral";
 

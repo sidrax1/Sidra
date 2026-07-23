@@ -14,26 +14,34 @@ const statusLabels: Record<
   string
 >={
   submitted: "Submitted",
-  reviewing: "Under Review",
+  underReview: "Under Review",
+  awaitingQuote: "Awaiting Quote",
   quoted: "Quote Ready",
-  accepted: "Accepted",
+  quoteAccepted: "Quote Accepted",
+  paymentPending: "Payment Pending",
+  paid: "Paid",
   inProduction: "In Production",
-  completed: "Completed",
+  readyForDispatch: "Ready for Dispatch",
+  shipped: "Shipped",
+  delivered: "Delivered",
+  declined: "Declined",
   cancelled: "Cancelled",
-  rejected: "Rejected",
 };
 
 export function CustomOrderStatusBadge({
   status,
 }: CustomOrderStatusBadgeProps): React.JSX.Element {
   const variant =
-   status === "completed"
+   status === "delivered"
      ? "success"
      : status === "cancelled" ||
-         status === "rejected"
+         status === "declined"
        ? "error"
        : status === "quoted" ||
-           status === "accepted"
+           status === "quoteAccepted" ||
+           status === "paid" ||
+           status === "readyForDispatch" ||
+           status === "shipped"
          ? "gold"
          : "warning";
 

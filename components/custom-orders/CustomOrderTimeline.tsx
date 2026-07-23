@@ -11,11 +11,16 @@ interface CustomOrderTimelineProps {
 
 const sequence: readonly CustomOrderStatus[] = [
   "submitted",
-  "reviewing",
+  "underReview",
+  "awaitingQuote",
   "quoted",
-  "accepted",
+  "quoteAccepted",
+  "paymentPending",
+  "paid",
   "inProduction",
-  "completed",
+  "readyForDispatch",
+  "shipped",
+  "delivered",
 ];
 
 const labels: Record<
@@ -23,13 +28,18 @@ const labels: Record<
   string
 > = {
   submitted: "Request Submitted",
-  reviewing: "Studio Review",
+  underReview: "Studio Review",
+  awaitingQuote: "Awaiting Quote",
   quoted: "Quote Prepared",
-  accepted: "Quote Accepted",
+  quoteAccepted: "Quote Accepted",
+  paymentPending: "Payment Pending",
+  paid: "Payment Received",
   inProduction: "Crafting in Progress",
-  completed: "Commission Completed",
+  readyForDispatch: "Ready for Dispatch",
+  shipped: "Dispatched",
+  delivered: "Commission Delivered",
+  declined: "Request Declined",
   cancelled: "Commission Cancelled",
-  rejected: "Request Declined",
 };
 
 const descriptions: Record<
@@ -38,20 +48,30 @@ const descriptions: Record<
 > = {
   submitted:
     "The private commission request has been securely received.",
-  reviewing:
+  underReview:
     "The studio is reviewing design, material and timeline requirements.",
+  awaitingQuote:
+    "The studio is preparing a formal commercial quotation.",
   quoted:
     "A formal commercial quotation is ready for review.",
-  accepted:
+  quoteAccepted:
     "The quotation has been accepted and payment preparation may begin.",
+  paymentPending:
+    "Awaiting payment to begin the commission.",
+  paid:
+    "Payment has been received and production can begin.",
   inProduction:
     "The personalised piece is currently being crafted.",
-  completed:
-    "The custom commission has been completed.",
+  readyForDispatch:
+    "The commission is complete and ready for dispatch.",
+  shipped:
+    "The commission has been dispatched.",
+  delivered:
+    "The custom commission has been delivered.",
+  declined:
+    "The studio was unable to accept this commission.",
   cancelled:
     "The commission workflow was cancelled.",
-  rejected:
-    "The studio was unable to accept this commission.",
 };
 
 export function CustomOrderTimeline({
@@ -61,7 +81,7 @@ export function CustomOrderTimeline({
     customOrder.status ===
       "cancelled" ||
     customOrder.status ===
-      "rejected";
+      "declined";
 
   if (terminal) {
     return (

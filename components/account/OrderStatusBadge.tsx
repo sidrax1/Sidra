@@ -13,12 +13,20 @@ const labels: Record<
   string
 >={
   pending: "Pending",
+  paymentPending: "Payment Pending",
   confirmed: "Confirmed",
   processing: "In Production",
+  readyToShip: "Ready to Ship",
   shipped: "Shipped",
+  outForDelivery: "Out for Delivery",
   delivered: "Delivered",
   cancelled: "Cancelled",
+  returnRequested: "Return Requested",
+  returnApproved: "Return Approved",
+  returned: "Returned",
+  refundPending: "Refund Pending",
   refunded: "Refunded",
+  partiallyRefunded: "Partially Refunded",
 };
 
 export function OrderStatusBadge({
@@ -29,9 +37,14 @@ export function OrderStatusBadge({
    status === "delivered"
      ? "success"
      : status === "cancelled" ||
-         status === "refunded"
+         status === "refunded" ||
+         status === "returned" ||
+         status === "partiallyRefunded"
        ? "error"
-       : status === "pending"
+       : status === "pending" ||
+           status === "paymentPending" ||
+           status === "returnRequested" ||
+           status === "refundPending"
          ? "warning"
          : "gold";
 
