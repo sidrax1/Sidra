@@ -35,7 +35,7 @@ export async function setCartItems(
     );
 
     const subtotal = items.reduce(
-      (total, item) => total + item.price * item.quantity,
+      (total, item) => total + item.unitPrice * item.quantity,
       0
     );
 

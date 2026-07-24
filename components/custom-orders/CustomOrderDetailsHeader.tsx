@@ -48,7 +48,7 @@ export function CustomOrderDetailsHeader({
   referenceNumber,
 }: CustomOrderDetailsHeaderProps): React.JSX.Element {
   const attachmentCount =
-    customOrder.attachmentPaths?.length ?? 0;
+    customOrder.attachments.length;
 
   return (
     <header

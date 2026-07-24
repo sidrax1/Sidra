@@ -55,7 +55,7 @@ export function CustomOrderCard({
   onView,
 }: CustomOrderCardProps): React.JSX.Element {
   const attachmentCount =
-    customOrder.attachmentPaths?.length ?? 0;
+    customOrder.attachments.length;
 
   const detailsHref =
     ACCOUNT_ROUTES.CUSTOM_ORDER_DETAILS(customOrder.id);

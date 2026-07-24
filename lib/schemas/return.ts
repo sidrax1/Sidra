@@ -297,3 +297,24 @@ export type CancelReturnInput =
   z.infer<
     typeof cancelReturnSchema
   >;
+
+export interface ReturnEvidenceRequestInput {
+  readonly returnRequestId: string;
+  readonly message: string;
+  readonly requiredEvidence: readonly string[];
+}
+
+export interface ReturnPickupInput {
+  readonly returnRequestId: string;
+  readonly carrier: string;
+  readonly trackingNumber: string;
+  readonly trackingURL?: string;
+  readonly pickupDate: string;
+}
+
+export interface ReturnResolutionInput {
+  readonly returnRequestId: string;
+  readonly resolution: "replacement" | "refund" | "storeCredit";
+  readonly approvedRefundPaise: number;
+  readonly resolutionNote: string;
+}

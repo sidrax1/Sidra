@@ -75,7 +75,7 @@ export function ConversationCard({
        </span>
 
        <span className="mt-1 block truncate text-sm text-muted">
-        {conversation.lastMessagePreview ||
+        {conversation.lastMessageText ||
          "Start the conversation"}
        </span>
 

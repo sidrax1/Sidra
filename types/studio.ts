@@ -1,4 +1,4 @@
-import type { BaseEntity, Address } from "./common";
+import type { BaseEntity, PostalAddress } from "./common";
 
 export interface Studio extends BaseEntity {
  ownerId: string;
@@ -21,7 +21,7 @@ export interface Studio extends BaseEntity {
 
  reviewCount: number;
 
- address?: Address;
+ address?: PostalAddress;
 
  followers: number;
 

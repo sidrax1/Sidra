@@ -113,7 +113,7 @@ export function NotificationPreferencesForm({
     key: Key,
     value: AccountNotificationPreferencesInput[Key]
   ): void {
-    setValue(key, value, {
+    setValue(key, Boolean(value), {
       shouldDirty: true,
       shouldValidate: true,
     });
