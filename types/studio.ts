@@ -9,6 +9,8 @@ export interface Studio extends BaseEntity {
 
  description: string;
 
+ instagramURL?: string | null;
+
  logo: string;
 
  coverImage: string;

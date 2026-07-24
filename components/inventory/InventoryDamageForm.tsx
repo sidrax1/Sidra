@@ -129,7 +129,7 @@ export function InventoryDamageForm({
               inventoryId,
               quantity,
               reason: reason.trim(),
-              evidencePaths,
+              evidencePaths: [...evidencePaths],
             })
           }
         >

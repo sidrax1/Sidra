@@ -1,10 +1,10 @@
 import {
   getPerformance,
-  isSupported,
   trace,
-  type Performance,
-  type Trace,
 } from "firebase/performance";
+
+type Performance = ReturnType<typeof getPerformance>;
+type Trace = ReturnType<typeof trace>;
 
 import { firebaseApp } from "@/firebase/client";
 import { logger } from "@/lib/logger";
@@ -30,12 +30,6 @@ async function initializePerformance(): Promise<Performance | null> {
       }
 
      try {
-       const supported = await isSupported();
-
-       if (!supported) {
-         return null;
-       }
-
        performanceInstance = getPerformance(firebaseApp);
 
        return performanceInstance;

@@ -39,14 +39,13 @@ shadow-luxury hover:scale-[1.02]"
       Back to Home
      </Link>
 
-      <button
-       type="button"
-       onClick={() => history.back()}
+      <Link
+       href="/"
        className="sidra-transition rounded-full border border-primary/30 px-8 py-4
 hover:bg-primary/10"
       >
-       Go Back
-      </button>
+       Browse Sidra
+      </Link>
 
      </div>
 

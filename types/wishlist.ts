@@ -2,7 +2,7 @@ import type { BaseEntity } from "@/types/common";
 
 export interface Wishlist extends BaseEntity {
  readonly userId: string;
- readonly items: readonly Pick<WishlistItem, "productId" | "addedAt">[];
+ readonly items: readonly Pick<WishlistItem, "productId" | "createdAt">[];
  readonly totalItems: number;
 }
 

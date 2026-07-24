@@ -808,8 +808,9 @@ export function ReturnInspectionForm({
               acceptedQuantity,
               rejectedQuantity,
               conditionScore,
-              findings:
-                normalizedFindings,
+              findings: [
+                ...normalizedFindings,
+              ],
               internalNote:
                 internalNote.trim() ||
                 undefined,

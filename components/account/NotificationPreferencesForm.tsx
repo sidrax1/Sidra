@@ -107,13 +107,11 @@ export function NotificationPreferencesForm({
 
   const values = watch();
 
-  function updatePreference<
-    Key extends keyof AccountNotificationPreferencesInput,
-  >(
-    key: Key,
-    value: AccountNotificationPreferencesInput[Key]
+  function updatePreference(
+    key: keyof AccountNotificationPreferencesInput,
+    value: boolean
   ): void {
-    setValue(key, Boolean(value), {
+    setValue(key, value, {
       shouldDirty: true,
       shouldValidate: true,
     });

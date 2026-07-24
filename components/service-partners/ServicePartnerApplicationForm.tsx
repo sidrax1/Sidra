@@ -46,9 +46,14 @@ import {
   createServicePartnerApplicationSchema,
   type CreateServicePartnerApplicationInput,
 } from "@/lib/schemas/service-partner";
+import type { z } from "zod";
 import type {
   ServicePartnerCapability,
 } from "@/types/service-partner";
+
+type ServicePartnerApplicationFormInput = z.input<
+  typeof createServicePartnerApplicationSchema
+>;
 
 interface ServicePartnerApplicationFormProps {
   readonly documentPaths?: readonly string[];
@@ -204,7 +209,7 @@ export function ServicePartnerApplicationForm({
     register,
     watch,
   } =
-    useForm<CreateServicePartnerApplicationInput>(
+    useForm<ServicePartnerApplicationFormInput, unknown, CreateServicePartnerApplicationInput>(
       {
         resolver:
           zodResolver(

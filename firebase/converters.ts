@@ -31,7 +31,7 @@ function createConverter<T extends DocumentData>(): FirestoreDataConverter<T> {
         return {
           id: snapshot.id,
           ...data,
-        } as T;
+        } as unknown as T;
       },
     };
 }

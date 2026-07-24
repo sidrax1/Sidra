@@ -32,7 +32,7 @@ export function ReturnRequestCard({
         <div className="relative aspect-square overflow-hidden rounded-[var(--radius-md)] border border-border bg-[var(--color-gray-100)]">
           {primaryItem.productImageURL ? (
             <Image
-              src={primaryItem.imageURL}
+              src={primaryItem.productImageURL}
               alt={primaryItem.productTitle}
               fill
               sizes="110px"
