@@ -10,20 +10,11 @@ import {
 import { firebaseApp } from "@/firebase/client";
 import { logger } from "@/lib/logger";
 
-const auth = getAuth(firebaseApp);
-
-const googleProvider = new GoogleAuthProvider();
-
-googleProvider.setCustomParameters({
-  prompt: "select_account",
-});
-
-googleProvider.addScope("email");
-googleProvider.addScope("profile");
-
+let auth: Auth | undefined;
+let googleProvider: GoogleAuthProvider | undefined;
 let authConfigured = false;
 
-async function configureAuth(): Promise<void> {
+async function configureAuth(firebaseAuth: Auth): Promise<void> {
  if (authConfigured || typeof window === "undefined") {
    return;
  }
@@ -32,7 +23,7 @@ async function configureAuth(): Promise<void> {
 
  try {
    await setPersistence(
-     auth,
+     firebaseAuth,
      browserLocalPersistence
    );
 
@@ -42,7 +33,7 @@ async function configureAuth(): Promise<void> {
         "true"
    ){
      connectAuthEmulator(
-        auth,
+        firebaseAuth,
         "http://127.0.0.1:9099",
         {
           disableWarnings: true,
@@ -63,11 +54,24 @@ async function configureAuth(): Promise<void> {
 }
 
 export async function getFirebaseAuth(): Promise<Auth> {
- await configureAuth();
+ if (!auth) {
+   auth = getAuth(firebaseApp);
+ }
 
-    return auth;
+ await configureAuth(auth);
+
+ return auth;
 }
 
 export function getGoogleAuthProvider(): GoogleAuthProvider {
-  return googleProvider;
+ if (!googleProvider) {
+   googleProvider = new GoogleAuthProvider();
+   googleProvider.setCustomParameters({
+     prompt: "select_account",
+   });
+   googleProvider.addScope("email");
+   googleProvider.addScope("profile");
+ }
+
+ return googleProvider;
 }
