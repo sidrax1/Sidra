@@ -30,10 +30,10 @@ import type {
   z,
 } from "zod";
 
+type CustomOrderRequestFormInput =
+  z.input<typeof submitCustomOrderSchema>;
 type CustomOrderRequestInput =
-  z.infer<
-   typeof submitCustomOrderSchema
-  >;
+  z.output<typeof submitCustomOrderSchema>;
 
 interface CustomOrderRequestFormProps {
   readonly categoryId?: string;
@@ -63,7 +63,7 @@ export function CustomOrderRequestForm({
     },
     handleSubmit,
     register,
-  } = useForm<CustomOrderRequestInput>({
+  } = useForm<CustomOrderRequestFormInput, unknown, CustomOrderRequestInput>({
     resolver:
       zodResolver(
         submitCustomOrderSchema

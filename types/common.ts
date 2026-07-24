@@ -93,3 +93,5 @@ export interface PostalAddress {
 
   coordinates?: Coordinates;
 }
+
+export type Address = PostalAddress;

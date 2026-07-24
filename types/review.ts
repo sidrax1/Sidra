@@ -8,6 +8,15 @@ export type ReviewStatus =
   | "rejected"
   | "hidden";
 
+export interface Review extends BaseEntity {
+  readonly customerName: string;
+  readonly customerPhotoURL?: string;
+  readonly rating: 1 | 2 | 3 | 4 | 5;
+  readonly title: string;
+  readonly comment: string;
+  readonly verifiedPurchase: boolean;
+}
+
 export interface ProductReview
   extends BaseEntity {
   readonly productId: string;
