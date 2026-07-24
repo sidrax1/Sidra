@@ -44,10 +44,15 @@ import {
   createReturnRequestSchema,
   type CreateReturnRequestInput,
 } from "@/lib/schemas/return";
+import type { z } from "zod";
 import type {
   ReturnAddress,
   ReturnItemSnapshot,
 } from "@/types/return";
+
+type CreateReturnRequestFormInput = z.input<
+  typeof createReturnRequestSchema
+>;
 
 interface CreateReturnRequestFormProps {
   readonly orderId: string;
@@ -145,7 +150,7 @@ export function CreateReturnRequestForm({
     register,
     watch,
   } =
-    useForm<CreateReturnRequestInput>(
+    useForm<CreateReturnRequestFormInput, unknown, CreateReturnRequestInput>(
       {
         resolver:
           zodResolver(

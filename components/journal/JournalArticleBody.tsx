@@ -14,7 +14,7 @@ export function JournalArticleBody({
 }: JournalArticleBodyProps): React.JSX.Element {
   return (
     <Container
-     as="article"
+     as="section"
      spacing="md"
     >
      <div

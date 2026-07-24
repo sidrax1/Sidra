@@ -24,15 +24,15 @@ export function ReturnRequestCard({
   href,
   request,
 }: ReturnRequestCardProps): React.JSX.Element {
-  const primaryItem = request.items.at(0);
+  const primaryItem = request.item;
 
   return (
     <Card className="group overflow-hidden transition-[transform,border-color,box-shadow] hover:-translate-y-0.5 hover:border-[color:rgb(200_169_106_/_0.4)] hover:shadow-[var(--shadow-hover)]">
       <div className="grid gap-6 p-5 md:grid-cols-[110px_minmax(0,1fr)_auto] md:items-start">
         <div className="relative aspect-square overflow-hidden rounded-[var(--radius-md)] border border-border bg-[var(--color-gray-100)]">
-          {primaryItem?.imageURL ? (
+          {primaryItem.productImageURL ? (
             <Image
-              src={primaryItem.imageURL}
+              src={primaryItem.productImageURL}
               alt={primaryItem.productTitle}
               fill
               sizes="110px"
@@ -59,7 +59,7 @@ export function ReturnRequestCard({
           </h2>
 
           <p className="mt-3 line-clamp-2 text-sm leading-6 text-muted">
-            {request.explanation}
+            {request.description}
           </p>
 
           <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-xs text-muted">
@@ -77,7 +77,7 @@ export function ReturnRequestCard({
 
         <div className="flex items-center justify-between gap-4 md:flex-col md:items-end">
           <Price
-            amount={request.requestedRefundPaise / 100}
+            amount={request.financialSummary.finalRefundPaise / 100}
             size="lg"
           />
 

@@ -22,6 +22,9 @@ import {
   type PromotionInput,
 } from "@/lib/schemas/promotion";
 import type { Promotion } from "@/types/promotion";
+import type { z } from "zod";
+
+type PromotionFormInput = z.input<typeof promotionSchema>;
 
 interface PromotionFormProps {
   readonly promotion?: Promotion;
@@ -120,13 +123,13 @@ export function PromotionForm({
         promotion?.eligibility.maximumDiscountPaise ??
         undefined,
       productIds:
-        promotion?.eligibility.productIds ?? [],
+        [...(promotion?.eligibility.productIds ?? [])],
       categoryIds:
-        promotion?.eligibility.categoryIds ?? [],
+        [...(promotion?.eligibility.categoryIds ?? [])],
       studioIds:
-        promotion?.eligibility.studioIds ?? [],
+        [...(promotion?.eligibility.studioIds ?? [])],
       customerIds:
-        promotion?.eligibility.customerIds ?? [],
+        [...(promotion?.eligibility.customerIds ?? [])],
       firstOrderOnly:
         promotion?.eligibility.firstOrderOnly ?? false,
       totalUsageLimit:
@@ -151,7 +154,7 @@ export function PromotionForm({
     handleSubmit,
     register,
     watch,
-  } = useForm<PromotionInput>({
+  } = useForm<PromotionFormInput, unknown, PromotionInput>({
     resolver: zodResolver(promotionSchema),
     defaultValues,
   });
@@ -488,7 +491,7 @@ export function PromotionForm({
                   id="promotion-customer-ids"
                   rows={6}
                   disabled={loading}
-                  value={field.value.join("\n")}
+                  value={(field.value ?? []).join("\n")}
                   onChange={(event) =>
                     field.onChange(
                       splitIdentifiers(event.target.value)
@@ -514,7 +517,7 @@ export function PromotionForm({
                   id="promotion-product-ids"
                   rows={5}
                   disabled={loading}
-                  value={field.value.join("\n")}
+                  value={(field.value ?? []).join("\n")}
                   onChange={(event) =>
                     field.onChange(
                       splitIdentifiers(event.target.value)
@@ -538,7 +541,7 @@ export function PromotionForm({
                   id="promotion-category-ids"
                   rows={5}
                   disabled={loading}
-                  value={field.value.join("\n")}
+                  value={(field.value ?? []).join("\n")}
                   onChange={(event) =>
                     field.onChange(
                       splitIdentifiers(event.target.value)
@@ -562,7 +565,7 @@ export function PromotionForm({
                   id="promotion-studio-ids"
                   rows={5}
                   disabled={loading}
-                  value={field.value.join("\n")}
+                  value={(field.value ?? []).join("\n")}
                   onChange={(event) =>
                     field.onChange(
                       splitIdentifiers(event.target.value)

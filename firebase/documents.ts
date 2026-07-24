@@ -8,6 +8,7 @@ import {
   type DocumentData,
   type DocumentReference,
   type FirestoreDataConverter,
+  type PartialWithFieldValue,
   type SetOptions,
   type WithFieldValue,
 } from "firebase/firestore";
@@ -82,7 +83,7 @@ export async function mergeDocument<T extends DocumentData>(
     {
       ...data,
       updatedAt: serverTimestamp(),
-    },
+    } as PartialWithFieldValue<T>,
     {
       merge: true,
     }

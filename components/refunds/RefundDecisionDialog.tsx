@@ -196,7 +196,7 @@ export function RefundDecisionDialog({
           <Button
             variant={
               approved
-                ? "default"
+                ? "primary"
                 : "danger"
             }
             disabled={!valid}

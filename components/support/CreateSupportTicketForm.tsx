@@ -33,10 +33,10 @@ import type {
   z,
 } from "zod";
 
+type SupportTicketFormInput =
+  z.input<typeof createSupportTicketSchema>;
 type SupportTicketInput =
-  z.infer<
-   typeof createSupportTicketSchema
-  >;
+  z.output<typeof createSupportTicketSchema>;
 
 interface CreateSupportTicketFormProps {
   readonly loading?: boolean;
@@ -116,7 +116,7 @@ export function CreateSupportTicketForm({
     },
     handleSubmit,
     register,
-  } = useForm<SupportTicketInput>({
+  } = useForm<SupportTicketFormInput, unknown, SupportTicketInput>({
     resolver:
       zodResolver(
 

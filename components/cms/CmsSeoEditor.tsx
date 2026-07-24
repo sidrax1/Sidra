@@ -90,13 +90,7 @@ text-[var(--color-gold-600)]">
     label="SEO Title"
     labelFor="cms-seo-title"
     required
-    description={
-      <CharacterCounter
-       current={value.title.length}
-       recommendedMinimum={30}
-       recommendedMaximum={70}
-      />
-    }
+    description={`${value.title.length} characters · recommended 30–70`}
    >
 
  <Input
@@ -117,13 +111,7 @@ text-[var(--color-gold-600)]">
  label="Meta Description"
  labelFor="cms-seo-description"
  required
- description={
-   <CharacterCounter
-     current={value.description.length}
-     recommendedMinimum={120}
-     recommendedMaximum={170}
-   />
- }
+ description={`${value.description.length} characters · recommended 120–170`}
 >
  <Textarea
    id="cms-seo-description"
@@ -170,7 +158,7 @@ text-muted"
       </FormField>
 
     <Switch
-     checked={value.noIndex}
+     checked={value.noIndex ?? false}
      disabled={disabled}
      label="Prevent search indexing"
      description="Use this only for private, temporary or duplicate content."

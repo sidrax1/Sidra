@@ -52,7 +52,7 @@ export function SellerOrderCard({
           </span>
 
          <span>
-           Payment {order.payment.status}
+           Payment {order.paymentStatus}
          </span>
         </div>
        </div>
@@ -60,7 +60,7 @@ export function SellerOrderCard({
        <div className="flex flex-wrap items-center gap-3">
         <Price
 
-       amount={order.grandTotal}
+       amount={order.pricing.totalPaise}
        size="lg"
        className="mr-2"
       />

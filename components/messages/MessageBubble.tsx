@@ -103,13 +103,13 @@ export function MessageBubble({
  {own ? (
   <CheckCheck
    aria-label={
-     message.read
+     message.readBy.length > 0
       ? "Read"
       : "Delivered"
    }
    className={cn(
      "size-3.5",
-     message.read &&
+     message.readBy.length > 0 &&
       "text-[var(--color-success)]"
 
            )}

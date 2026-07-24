@@ -32,6 +32,9 @@ import {
   addressSchema,
   type AddressInput,
 } from "@/lib/schemas/address";
+import type { z } from "zod";
+
+type AddressFormInput = z.input<typeof addressSchema>;
 
 interface AddressFormProps {
   readonly initialValues?: Partial<AddressInput>;
@@ -82,7 +85,7 @@ export function AddressForm({
       },
       handleSubmit,
       register,
-    } = useForm<AddressInput>({
+    } = useForm<AddressFormInput, unknown, AddressInput>({
       resolver:
         zodResolver(
 

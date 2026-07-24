@@ -27,6 +27,11 @@ import {
 import type {
   Order,
 } from "@/types/order";
+import type { z } from "zod";
+
+type CreateDisputeFormInput = z.input<
+  typeof createDisputeSchema
+>;
 
 interface CreateDisputeFormProps {
   readonly order: Order;
@@ -121,7 +126,7 @@ export function CreateDisputeForm({
     handleSubmit,
     register,
     watch,
-  } = useForm<CreateDisputeInput>({
+  } = useForm<CreateDisputeFormInput, unknown, CreateDisputeInput>({
     resolver: zodResolver(
       createDisputeSchema
     ),

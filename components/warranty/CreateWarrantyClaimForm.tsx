@@ -27,9 +27,14 @@ import {
   createWarrantyClaimSchema,
   type CreateWarrantyClaimInput,
 } from "@/lib/schemas/warranty";
+import type { z } from "zod";
 import type {
   ProductWarranty,
 } from "@/types/warranty";
+
+type CreateWarrantyClaimFormInput = z.input<
+  typeof createWarrantyClaimSchema
+>;
 
 interface CreateWarrantyClaimFormProps {
   readonly warranty: ProductWarranty;
@@ -135,7 +140,7 @@ export function CreateWarrantyClaimForm({
     register,
     watch,
   } =
-    useForm<CreateWarrantyClaimInput>(
+    useForm<CreateWarrantyClaimFormInput, unknown, CreateWarrantyClaimInput>(
       {
         resolver:
           zodResolver(

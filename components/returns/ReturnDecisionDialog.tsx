@@ -316,7 +316,7 @@ export function ReturnDecisionDialog({
           <Button
             variant={
               approved
-                ? "default"
+                ? "primary"
                 : "danger"
             }
             disabled={!valid}

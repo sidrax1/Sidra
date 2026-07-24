@@ -32,6 +32,11 @@ import {
   createReviewReportSchema,
   type CreateReviewReportInput,
 } from "@/lib/schemas/review-report";
+import type { z } from "zod";
+
+type CreateReviewReportFormInput = z.input<
+  typeof createReviewReportSchema
+>;
 
 interface CreateReviewReportDialogProps {
   readonly open: boolean;
@@ -110,7 +115,7 @@ export function CreateReviewReportDialog({
     register,
     reset,
     watch,
-  } = useForm<CreateReviewReportInput>({
+  } = useForm<CreateReviewReportFormInput, unknown, CreateReviewReportInput>({
     resolver: zodResolver(
       createReviewReportSchema
     ),
